@@ -56,18 +56,24 @@ function FeaturedOn() {
           <div className="logo"><img className="logo-img" src={l12} alt="l4" /></div>
         </div>
       </div>
-      <div className="fo-head-txt">
+      <motion.div     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+    transition={{ duration: 0.5 }} className="fo-head-txt">
         Supported By
-      </div>
-      <div className="fo-spport-icon">
+      </motion.div>
+      <motion.div 
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+      className="fo-spport-icon">
         <div className="support-logo"><img className="support-logo-img" src={l13} alt="l1" /></div>
         <div className="support-logo"><img className="support-logo-img" src={l14} alt="l1" /></div>
-      </div>
+      </motion.div>
 
-      <div className="fo-head-txt">
+      <motion.div     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+    transition={{ duration: 0.5 }} className="fo-head-txt">
         Contacts Us
-      </div>
-      <div className="bt-bx">
+      </motion.div>
+      <motion.div     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+    transition={{ duration: 0.5 }} className="bt-bx">
         <p className='fo-bt-txt'>For collabs or inquiries</p>
         <button className='email-btn'>hello@wookiees.io</button>
         <div className="fo-bt-icons">
@@ -81,7 +87,7 @@ function FeaturedOn() {
           <img src={i8} alt="i8" className="fo-side-icons" />
           <img src={i9} alt="i9" className="fo-side-icons" />
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   )
 }
