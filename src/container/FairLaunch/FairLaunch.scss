@@ -1,5 +1,5 @@
 .fair-launch {
-  padding: 5rem;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,6 +17,17 @@
     border: 10px solid #FFC26F;
     border-radius: 20px;
     margin: 4rem;
-    width: 800px;
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fair-launch{
+    padding: 0;
+    // margin-left: 24rem;
+    // position: absolute;
+    .fair-img{
+      width: 320px;
+      height: 200px;
+    }
   }
 }

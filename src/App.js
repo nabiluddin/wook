@@ -7,17 +7,20 @@ import Wookonomics from './container/Wookonomic/Wookonomics'
 import Wookiemap from './container/Wookiemap/Wookiemap'
 import FeaturedOn from './container/FeaturedOn/FeaturedOn'
 import Footer from './container/Footer/Footer'
+import HowToBuy from './container/HowToBuy/HowToBuy'
 
 function App() {
   return (
     <div className='App'>
-      <Home />
-      <FairLaunch />
-      <TwoW/>
+      {/* <Home />
+      <HowToBuy />
       <Wookonomics/>
       <Wookiemap/>
       <FeaturedOn />
-      <Footer />
+    <Footer /> */}
+      
+      <FairLaunch />
+    <TwoW/>
     </div>
   )
 }

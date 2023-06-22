@@ -29,51 +29,77 @@ import i9 from "../../assets/i9.png";
 
 function FeaturedOn() {
   return (
-    <motion.div 
-    whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-    transition={{ duration: 0.5 }}
-    className='featured-on'>
+    <motion.div
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+      className='featured-on'>
       <div className="fo-head-txt">
         Featured ON
       </div>
       <div className="fo-companies-bg-bxs">
         <div className="fr-1">
-          <div className="logo"><img className="logo-img" src={l1} alt="l1" /></div>
-          <div className="logo"><img className="logo-img" src={l2} alt="l2" /></div>
-          <div className="logo"><img className="logo-img" src={l3} alt="l3" /></div>
-          <div className="logo"><img className="logo-img" src={l4} alt="l4" /></div>
+          <div className="logo">
+            <a  href="https://www.forbes.com/?sh=7160c72b2254">
+              <img className="logo-img" src={l1} alt="l1" />
+            </a>
+          </div>
+          <div className="logo">
+            <a  href="https://news.yahoo.com/">
+              <img className="logo-img" src={l2} alt="l2" /></a>
+          </div>
+          <div className="logo">
+            <a  href="https://www.benzinga.com/">
+              <img className="logo-img" src={l3} alt="l3" /></a>
+          </div>
+          <div className="logo">
+            <a  href="https://hackernoon.com/">
+              <img className="logo-img" src={l4} alt="l4" /></a>
+          </div>
         </div>
         <div className="fr-1">
-          <div className="logo"><img className="logo-img" src={l5} alt="l1" /></div>
-          <div className="logo"><img className="logo-img" src={l6} alt="l2" /></div>
-          <div className="logo"><img className="logo-img" src={l7} alt="l3" /></div>
-          <div className="logo"><img className="logo-img" src={l8} alt="l4" /></div>
+          <div className="logo">
+            <a  href="https://coincodex.com/">
+              <img className="logo-img" src={l5} alt="l1" /></a>
+          </div>
+          <div className="logo">
+            <a  href="https://www.investing.com/">
+              <img className="logo-img" src={l6} alt="l2" /></a>
+          </div>
+          <div className="logo"><a  href="https://www.marketwatch.com/">
+            <img className="logo-img" src={l7} alt="l3" /></a>
+          </div>
+          <div className="logo"><a  href="https://www.newsbtc.com/">
+            <img className="logo-img" src={l8} alt="l4" /></a>
+          </div>
         </div>
         <div className="fr-1">
           <div className="logo"><img className="logo-img" src={l9} alt="l1" /></div>
-          <div className="logo"><img className="logo-img" src={l10} alt="l2" /></div>
-          <div className="logo"><img className="logo-img" src={l11} alt="l3" /></div>
-          <div className="logo"><img className="logo-img" src={l12} alt="l4" /></div>
+          <div className="logo"><a  href="https://finance.yahoo.com/">
+            <img className="logo-img" src={l10} alt="l2" /></a></div>
+          <div className="logo"><a  href="https://finance.yahoo.com/">
+            <img className="logo-img" src={l11} alt="l3" /></a></div>
+          <div className="logo"><a  href="https://www.thestreet.com/">
+            <img className="logo-img" src={l12} alt="l4" /></a></div>
         </div>
       </div>
-      <motion.div     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-    transition={{ duration: 0.5 }} className="fo-head-txt">
+      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }} className="fo-head-txt">
         Supported By
       </motion.div>
-      <motion.div 
-          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
-      className="fo-spport-icon">
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="fo-spport-icon">
         <div className="support-logo"><img className="support-logo-img" src={l13} alt="l1" /></div>
         <div className="support-logo"><img className="support-logo-img" src={l14} alt="l1" /></div>
       </motion.div>
 
-      <motion.div     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-    transition={{ duration: 0.5 }} className="fo-head-txt">
+      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }} className="fo-head-txt">
         Contacts Us
       </motion.div>
-      <motion.div     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-    transition={{ duration: 0.5 }} className="bt-bx">
+      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }} className="bt-bx">
         <p className='fo-bt-txt'>For collabs or inquiries</p>
         <button className='email-btn'>hello@wookiees.io</button>
         <div className="fo-bt-icons">

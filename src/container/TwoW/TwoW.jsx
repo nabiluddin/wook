@@ -7,8 +7,8 @@ import { motion } from 'framer-motion';
 function TwoW() {
   return (
     <motion.div
-    whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-    transition={{ duration: 0.5 }} className="two-w">
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }} className="two-w">
       <div className="float-left">
         <div className="two-head-txt">
           <img src={wLite} alt="" className="wlite" />
@@ -18,7 +18,11 @@ function TwoW() {
         <div className="two-text-dn">But then, one day, something miraculous happened. From the skies, a group of Wookiees descended upon the ruined planet. These creatures, who hailed from a distant galaxy, were surprised and saddened to see the devastation that had been wrought upon Earth. The Wookiees were a peaceful species, but they were also skilled in the ways of combat. They had come to restore order and bring hope to the few remaining humans who had survived the apocalypse.</div>
         <button className="read-more">Read Wookieefesto</button>
       </div>
-      <img src={bitWoo} alt="bitwoo" className="img-right-float" />
+      <div className="img-float-right">
+        <div className="pulse1"></div>
+        <div className="pulse2"></div>
+        <img src={bitWoo} alt="bitwoo" className="img-right-float" />
+      </div>
     </motion.div>
   );
 }

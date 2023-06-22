@@ -1,0 +1,164 @@
+.htb {
+  // color: wheat;
+  position: relative;
+
+  margin-top: 7rem;
+
+  padding: 5rem 5rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50vh;
+  width: 70%;
+  margin-left: 3rem;
+}
+
+.htb-ul {
+  // position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+
+  // background: whitesmoke;
+  // color: wheat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.htb-ul li {
+  list-style: none;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid white;
+
+  transition: 0.5s;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0.8rem;
+
+}
+
+.htb-ul li:nth-child(1) {
+  background-size: cover;
+  background-position: left;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+  width: 100%;
+  .content{
+  opacity: 1;
+  }
+
+}
+
+.htb-ul li:nth-child(2) {
+  background-size: cover;
+  background-position: left;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+
+}
+
+.htb-ul li:nth-child(3) {
+  background-size: cover;
+  background-position: left;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+
+}
+
+.htb-ul li:nth-child(4) {
+  background-size: cover;
+  background-position: left;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+
+}
+
+.htb-ul:hover li {
+  width: 10%;
+}
+
+.htb-ul li:hover {
+  width: 60%;
+  opacity: 1;
+}
+
+.htb-ul li:hover .content {
+  position: relative;
+  // bottom: -10px;
+  // left: 0;
+  width: 100%;
+  border-radius: 16px;
+  // background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+
+  box-sizing: border-box;
+
+  opacity: 1;
+  // color: #fff;
+}
+
+.htb-ul li .content {
+  position: relative;
+  bottom: -10px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 0;
+}
+
+.htb-headt-txt {
+  color: #F9E0BB;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.htb-p-txt {
+  color: #FFF6E9;
+  font-size: 0.8rem;
+  font-family: Heebo;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 2rem;
+  top: 100px;
+}
+.slider-logo{
+  width: 40px;
+  position: absolute;
+  top: 70px;
+}
+.slider-logo-num{
+  width: 40px;
+  position: absolute;
+  top: 20px; 
+  padding-bottom: 1rem;
+}
+
+.arrow-slider{
+  width: 40px;
+  position: absolute;
+  bottom: -10px;
+  padding-bottom: 1rem;
+}
+
+.htb-head-txt {
+  color: #C38154;
+  font-size: 2.5rem;
+  font-family: Star Jedi;
+  margin: -9rem ;
+  margin-bottom: 5rem;
+  position: relative;
+}

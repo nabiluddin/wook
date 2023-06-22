@@ -1,5 +1,5 @@
 .two-w {
-  padding: 1rem 5rem;
+  padding: 1rem 9rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,7 +7,7 @@
 
   .float-left {
     position: relative;
-    float: left;
+    // float: left;
 
     .two-head-txt {
       .wlite {
@@ -57,8 +57,27 @@
   }
 
   .img-right-float {
-    width: 26rem;
+    width: 24rem;
     height: 22rem;
     margin-right: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .two-w{
+    padding: 1rem 10rem;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 350px;
+    .float-left{
+      .two-head-txt{
+        width: 120px;
+      }
+      .two-text-up{
+        width: 100%;
+      }
+    }
   }
 }
