@@ -1,0 +1,99 @@
+.woo-map {
+
+  padding: 5rem 5rem;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+  .map-head-txt {
+    color: #C38154;
+    font-size: 2.5rem;
+    font-family: Star Jedi;
+    margin: -9rem ;
+    margin-bottom: 5rem;
+    position: relative;
+  }
+
+  .woopath {
+    width: 400px;
+  }
+
+  .phases {
+    color: #FFF6E9;
+
+    position: absolute;
+
+    width: 21rem;
+    height: 13rem;
+    border-radius: 16px;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(17px);
+    padding: 1rem;
+
+    .phase-head {
+      color: #F9E0BB;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+
+  }
+
+  .phase-1{
+    top: 100px;
+    left: 190px;
+  }
+
+  .phase-2{
+
+  }
+
+  .phase-3{
+
+  }
+
+}
+
+.map-ul {
+  .map-li {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  padding-top: 1rem;
+}
+.cover-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 490px;
+  right: 360px;
+
+  .miniWookie-1{
+    width: 240px;
+    position: absolute;
+    top: -330px;
+  }
+
+}
+.cover-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 410px;
+  left: 420px;
+
+  .miniWookie-2{
+    width: 200px;
+    position: absolute;
+    top: -294px;
+  }
+
+}

@@ -1,0 +1,134 @@
+.wooko {
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .wooko-head-txt {
+    color: #C38154;
+    font-size: 2.5rem;
+    font-family: Star Jedi;
+    margin: 2rem 0;
+  }
+
+
+
+
+
+  .flex-row {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+  }
+}
+
+.wooko-fb-1 {
+  position: relative;
+  margin: 1.5rem;
+
+  .wooko-txt-lite {
+    position: absolute;
+    color: #F9E0BB;
+    font-size: 1.5rem;
+    width: 220px;
+    font-weight: 700;
+    opacity: 0.20000000298023224;
+    top: -25px;
+    left: 70px;
+
+  }
+
+  .wooko-bg-box {
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+    width: 280px;
+    height: 150px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /* Background Blur */
+    backdrop-filter: blur(7px);
+
+    .wooko-txt-head {
+      color: #F9E0BB;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    .wooko-txt-para {
+      color: #FFF6E9;
+      font-size: 0.95rem;
+      font-family: Heebo;
+    }
+  }
+}
+
+.bt-content {
+  padding: 7rem 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+
+  .chart-img {
+    float: left;
+    width: 480px;
+    // margin-left: 3rem;
+  }
+
+  .side-content {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    .total-supply {
+      color: #F9E0BB;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0.5rem 0.9rem;
+      border-radius: 50px;
+      background: linear-gradient(134deg, rgba(255, 255, 255, 0.23) 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .wooko-c-txt {
+      color: #FFF6E9;
+      font-size: 0.8rem;
+
+    }
+
+    .token-info {
+      color: #F9E0BB;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      border-radius: 10px;
+      padding: 1rem;
+      background: linear-gradient(134deg, rgba(255, 255, 255, 0.23) 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .wooko-bt-txt {
+      color: #FFF6E9;
+      font-size: 0.8rem;
+      .woo-list{
+        .woo-li{
+          margin: 0.3rem 0;
+        }
+
+      }
+    }
+
+  }
+}

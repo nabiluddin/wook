@@ -1,0 +1,22 @@
+.fair-launch {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .fair-head-txt {
+    font-family: 'Star Jedi', arial;
+    color: #C38154;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 63px;
+  }
+
+  .fair-img {
+    border: 10px solid #FFC26F;
+    border-radius: 20px;
+    margin: 4rem;
+    width: 800px;
+  }
+}
