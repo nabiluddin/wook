@@ -12,15 +12,15 @@ import HowToBuy from './container/HowToBuy/HowToBuy'
 function App() {
   return (
     <div className='App'>
-      {/* <Home />
+      <Home />
+      <FairLaunch />
+      <TwoW/>
       <HowToBuy />
       <Wookonomics/>
       <Wookiemap/>
       <FeaturedOn />
-    <Footer /> */}
+      <Footer />
       
-      <FairLaunch />
-    <TwoW/>
     </div>
   )
 }
