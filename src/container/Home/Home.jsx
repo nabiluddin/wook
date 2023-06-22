@@ -212,6 +212,60 @@ function Home() {
             <div className="slide">
               <img src={f6} alt="f1" className="f1-home" />
             </div>
+            <div className="slide">
+              <img src={f1} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f2} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f3} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f4} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f5} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f6} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f1} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f2} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f3} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f4} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f5} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f6} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f1} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f2} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f3} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f4} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f5} alt="f1" className="f1-home" />
+            </div>
+            <div className="slide">
+              <img src={f6} alt="f1" className="f1-home" />
+            </div>
 
           </div>
         </div>
