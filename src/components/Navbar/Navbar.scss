@@ -106,54 +106,6 @@ nav {
     text-decoration: none;
   }
 }
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #f9f9f9;
-  padding: 10px;
-}
-
-.menu-icon {
-  display: none; /* Hide the menu icon by default on larger screens */
-  cursor: pointer;
-}
-
-.fa-bars {
-  font-size: 20px;
-}
-
-.nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list li {
-  margin-left: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Show the menu icon on smaller screens */
-  }
-
-  .nav-list {
-    display: none; /* Hide the navigation list by default on smaller screens */
-  }
-
-  .nav-list.active {
-    display: flex; /* Show the navigation list when active class is added */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #f9f9f9;
-    padding: 10px;
-  }
-}
 
 
 .dropdown:hover .dropdown-menu {
