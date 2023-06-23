@@ -88,3 +88,74 @@ nav {
   }
 
 }
+.navbar li {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba($color: #23100a, $alpha: 1.0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 20px;
+  li a{
+    color: #FFF6E9;
+    text-decoration: none;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default on larger screens */
+  cursor: pointer;
+}
+
+.fa-bars {
+  font-size: 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show the menu icon on smaller screens */
+  }
+
+  .nav-list {
+    display: none; /* Hide the navigation list by default on smaller screens */
+  }
+
+  .nav-list.active {
+    display: flex; /* Show the navigation list when active class is added */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

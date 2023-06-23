@@ -3,6 +3,12 @@ import logo from '../../assets/logo-wookie.png'
 import './Navbar.scss'
 
 function Navbar() {
+  const dropdown = document.querySelector('.dropdown');
+dropdown?.addEventListener('click', function() {
+  const dropdownMenu = this.querySelector('.dropdown-menu');
+  dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+});
+
 
   // const googleTranslateElementInit = () => {
   //   new window.google.translate.TranslateElement(
@@ -38,8 +44,17 @@ function Navbar() {
         <li>Wookieenomics</li>
         <li>Wookieemap</li>
         <li>App</li>
-        <li>Whitelist</li>
+        <li class="dropdown">
+          Whitelist
+          <ul class="dropdown-menu">
+            <li><a href="/whitelist1">Whitelist 1</a></li>
+            <li><a href="/whitelist2">Whitelist 2</a></li>
+            <li><a href="/whitelist3">Whitelist 3</a></li>
+            <li><a href="/whitelist4">Whitelist 4</a></li>
+          </ul>
+        </li>
       </ul>
+      
       <div className='nav-side'>
         {/* <button className='nav-translate-btn' >En</button> */}
         <div id="google_translate_element"></div>
