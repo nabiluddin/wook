@@ -54,6 +54,8 @@
   padding: 12px 16px;
   z-index: 1;
   border-radius: 20px;
+  position: relative;
+  top: 100px;
 
   li a {
     color: #FFF6E9;
@@ -64,6 +66,8 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -86,6 +90,17 @@
     .footer-up-txt {
       font-size: 0.9rem;
       text-align: center;
+    }
+  }
+  .dropdown-menu{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 400px;
+    max-width: 160px;
+    li{
+      max-width: 80px;
+      padding: 0 1rem;
     }
   }
 }
