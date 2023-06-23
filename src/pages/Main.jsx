@@ -18,7 +18,7 @@ function Main() {
       <Wookonomics />
       <Wookiemap />
       <FeaturedOn />
-      <Footer />
+      <Footer check="true" />
       </div>
   )
 }

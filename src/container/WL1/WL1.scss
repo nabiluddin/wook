@@ -9,6 +9,7 @@
   font-family: 'Heebo';
 
 }
+
 .WL1-head-txt {
   color: #C38154;
   font-size: 2.5rem;
@@ -18,6 +19,7 @@
   display: flex;
   justify-content: center;
 }
+
 .center-content-1 {
 
   display: flex;
@@ -168,7 +170,8 @@
   color: #F9E0BB;
   gap: 2rem;
   padding: 2rem;
-  .footer-nav-item{
+
+  .footer-nav-item {
     cursor: pointer;
     font-family: 'Heebo', serif;
   }
@@ -184,12 +187,13 @@
   padding-bottom: 1rem;
 }
 
-.wl-foo{
+.wl-foo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .wl-right-bar-1 {
   background: linear-gradient(90.46deg, rgba(255, 255, 255, 0.152) -4.83%, rgba(255, 255, 255, 0) 100%);
 
@@ -655,89 +659,7 @@
 }
 
 
-@media screen and (max-width:768px) {
 
-  .wl-right-bar-1{
-    // display: none;
-    right: -20px;
-    height: 400px;
-    .WL1-side-icons {
-      padding: 0.4rem 0.4rem;
-      width: 33px;
-    }
-    
-  }
-  .WL1{
-    width: 300px;
-    width: 100vw;
-    // height: 100vh;
-  }
-
-  .center-content-1{
-    padding: 0;
-    margin-top: 6rem;
-    .circles {
-      // width: 10px;
-    }
-    .main-logo{
-      width: 220px;
-    }
-  }
-
-  .c-center .WL1-f-1 {
-    width: 330px;
-    height: 330px;
-  }
-  .c-center .WL1-f-2 {
-    width: 300px;
-    height: 300px;
-  }
-  .pulse1{
-    width: 330px;
-    height: 330px;
-  }
-  .pulse2{
-    width: 330px;
-    height: 330px;
-  }
-  .wk-up-1{
-    width: 400px;
-    position: absolute;
-    top: -110px;
-    left: -10px;
-    z-index: 4;
-    color: #FFF;
-    font-size: 2rem;
-    font-family: Star Jedi;
-  }
-  .wk-dn-1{
-    width: 170px;
-    position: absolute;
-    // top: -17px;
-    bottom: -20px;
-    left: 170px;
-    z-index: 3;
-  }
-  .WL1-audit{
-    display: none;
-  }
-  .WL1-contract{
-    position: absolute;
-    padding: 3rem;
-    border-radius: 50px;
-    padding: 0.9rem;
-    cursor: pointer;
-    // width: 100px;
-    right: 0;
-    bottom: -170px;
-    margin: 0;
-  }
-  .footer-nav-1{
-    gap: 1.4rem;
-    padding-top: 0;
-  }
-
-}
 
 
 .navbar li {
@@ -763,4 +685,115 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
+  position: relative;
+  top: 0
+}
+
+@media screen and (max-width:768px) {
+
+  .wl-right-bar-1 {
+    // display: none;
+    right: -20px;
+    height: 400px;
+
+    .WL1-side-icons {
+      padding: 0.4rem 0.4rem;
+      width: 33px;
+    }
+
+  }
+
+  .WL1 {
+    width: 300px;
+    width: 100vw;
+    // height: 100vh;
+  }
+
+  .center-content-1 {
+    padding: 0;
+    margin-top: 6rem;
+
+    .circles {
+      // width: 10px;
+    }
+
+    .main-logo {
+      width: 220px;
+    }
+  }
+
+  .c-center .WL1-f-1 {
+    width: 330px;
+    height: 330px;
+  }
+
+  .c-center .WL1-f-2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .pulse1 {
+    width: 330px;
+    height: 330px;
+  }
+
+  .pulse2 {
+    width: 330px;
+    height: 330px;
+  }
+
+  .wk-up-1 {
+    width: 400px;
+    position: absolute;
+    top: -110px;
+    left: -10px;
+    z-index: 4;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Star Jedi;
+  }
+
+  .wk-dn-1 {
+    width: 170px;
+    position: absolute;
+    // top: -17px;
+    bottom: -20px;
+    left: 170px;
+    z-index: 3;
+  }
+
+  .WL1-audit {
+    display: none;
+  }
+
+  .WL1-contract {
+    position: absolute;
+    padding: 3rem;
+    border-radius: 50px;
+    padding: 0.9rem;
+    cursor: pointer;
+    // width: 100px;
+    right: 0;
+    bottom: -170px;
+    margin: 0;
+  }
+
+  .footer-nav-1 {
+    gap: 1.4rem;
+    padding-top: 0;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    // bottom: 0;
+    // right: 0;
+    top: 0px;
+    height: 100px;
+    max-width: 160px;
+
+    li {
+      max-width: 80px;
+      padding: 0 1rem;
+    }
+  }
 }

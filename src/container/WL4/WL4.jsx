@@ -141,16 +141,24 @@ function WL4() {
         <p className="footer-up-txt">
           <img src={logo} alt='img' className='nav-logo' />
         </p>
-        <div className="footer-nav-1">
-          <span className="footer-nav-item">About</span>
-          <span className="footer-nav-item">How to Buy</span>
+        <div className="footer-nav-4">
+          <span className="footer-nav-item"><a className='a-tag' href={ "/"}> About</a></span>
+          <span className="footer-nav-item"><a className='a-tag' href={ "/"}> How to Buy</a></span>
 
         </div>
-        <div className="footer-nav-1">
-          <span className="footer-nav-item">Wookieenomics</span>
-          <span className="footer-nav-item">Wookieemap</span>
-          <span className="footer-nav-item">App</span>
-          <span className="footer-nav-item">Whitelist</span>
+        <div className="footer-nav-4">
+          <span className="footer-nav-item"><a className='a-tag' href={"/"}>Wookieenomics</a> </span>
+          <span className="footer-nav-item"><a className='a-tag' href={"/"}>Wookieemap</a> </span>
+          <span className="footer-nav-item"><a className='a-tag' href="/app">App</a></span>
+          <li class="dropdown">
+            Whitelist
+            <ul class="dropdown-menu">
+              <li><a href="/whitelist1">Whitelist 1</a></li>
+              <li><a href="/whitelist2">Whitelist 2</a></li>
+              <li><a href="/whitelist3">Whitelist 3</a></li>
+              <li><a href="/whitelist4">Whitelist 4</a></li>
+            </ul>
+          </li>
         </div>
         <div className="footer-copyright">
           © 2023 Wookiees, All right Reserved

@@ -10,24 +10,24 @@ dropdown?.addEventListener('click', function() {
 });
 
 
-  const googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: "en",
-        autoDisplay: false
-      },
-      "google_translate_element"
-    );
-  };
-  useEffect(() => {
-    var addScript = document.createElement("script");
-    addScript.setAttribute(
-      "src",
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    );
-    document.body.appendChild(addScript);
-    window.googleTranslateElementInit = googleTranslateElementInit;
-  }, []);
+  // const googleTranslateElementInit = () => {
+  //   new window.google.translate.TranslateElement(
+  //     {
+  //       pageLanguage: "en",
+  //       autoDisplay: false
+  //     },
+  //     "google_translate_element"
+  //   );
+  // };
+  // useEffect(() => {
+  //   var addScript = document.createElement("script");
+  //   addScript.setAttribute(
+  //     "src",
+  //     "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  //   );
+  //   document.body.appendChild(addScript);
+  //   window.googleTranslateElementInit = googleTranslateElementInit;
+  // }, []);
   // return (
   //   <>
   //     <div id="google_translate_element"></div>
@@ -43,7 +43,7 @@ dropdown?.addEventListener('click', function() {
         <li><a className='a-tag' href={props.check?"#htb":"/"}> How</a></li>
         <li><a  className='a-tag' href={props.check?"#wookie":"/"}>Wookieenomics</a> </li>
         <li><a className='a-tag' href={props.check?"#woomap":"/"}>Wookieemap</a> </li>
-        <li><a className='a-tag' href="/app"> App</a></li>
+        <li><a className='a-tag' href="/app">App</a></li>
         <li className="dropdown">
           Whitelist
           <ul className="dropdown-menu">

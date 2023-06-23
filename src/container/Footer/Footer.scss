@@ -40,7 +40,10 @@
 
 }
 
-
+  .a-tag{
+    text-decoration: none;
+    color: #F9E0BB;
+  }
 .navbar li {
   display: inline-block;
 }
@@ -58,8 +61,12 @@
   top: 100px;
 
   li a {
-    color: #FFF6E9;
+    color: #F9E0BB;
     text-decoration: none;
+    .a-tag{
+      text-decoration: none;
+      color: #F9E0BB;
+    }
   }
 }
 
