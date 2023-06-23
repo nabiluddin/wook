@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Heebo';
 
   .float-left {
     position: relative;
@@ -62,8 +63,9 @@
     margin-right: 5rem;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .two-w{
+  .two-w {
     padding: 1rem 10rem;
     // position: relative;
     display: flex;
@@ -71,13 +73,81 @@
     justify-content: center;
     align-items: flex-end;
     width: 350px;
-    .float-left{
-      .two-head-txt{
+
+    .float-left {
+      .two-head-txt {
         width: 120px;
       }
-      .two-text-up{
+
+      .two-text-up {
         width: 100%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .two-w {
+    width: 100vw;
+    height: 100vh;
+    padding: 0.5rem;
+    margin-top: 8rem;
+
+    .float-left {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+
+
+      .two-text-up {
+        position: relative;
+        // padding-top: 11rem;
+        color: #FFF6E9;
+        font-size: 0.8rem;
+        width: 23rem;
+      }
+  
+      .two-text-dn {
+        position: relative;
+        // padding: 7rem 0;
+        // padding-top: 1.7rem;
+        color: #FFF6E9;
+        font-size: 1rem;
+        width: 23rem;
+      }
+      .two-head-txt {
+        // padding-top: 3rem;
+
+        .wlite {
+          width: 80vw;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 15px;
+          left: 50px;
+        }
+
+        .two-head-txt-up {
+          position: absolute;
+          color: #C38154;
+          font-size: 1.8rem;
+          font-family: Star Jedi;
+          top: 15px;
+          left: 50px;
+          // margin-top: 3rem;
+
+        }
+      }
+      
+    }
+    .img-right-float {
+      width: 98vw;
+      height: 55vh;
+      margin: 0;
     }
   }
 }

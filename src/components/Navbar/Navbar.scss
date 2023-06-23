@@ -78,3 +78,13 @@ nav {
     }
   }
 }
+@media screen and (max-width:768px) {
+  nav{
+
+    
+    .nav-links{
+      display: none;
+    }
+  }
+
+}

@@ -58,7 +58,7 @@ function Home() {
 
     <div className="home">
 
-      <Navbar />
+      <Navbar className="navbar-top" />
       <div
       >
         <div className="right-bar">
@@ -71,7 +71,8 @@ function Home() {
           <img src={i6} alt="i6" className="home-side-icons" />
           <img src={i7} alt="i7" className="home-side-icons" />
           <img src={i8} alt="i8" className="home-side-icons" />
-          <img src={i9} alt="i9" className="home-side-icons" />
+          <a href="https://zealy.io/c/wookiees/questboard">
+          <img src={i9} alt="i9" className="home-side-icons" /></a>
         </div>
       </div>
 
@@ -92,7 +93,7 @@ function Home() {
             Contract :- 0x24086EAb82DBDaa4771d0A5D
           </div>
         </div>
-        <div className="c-center">
+        <div className="home-c-center">
           <div className="ellipse home-f-1">
             <div className="pulse1"></div>
             <div class="mybtns anim">
@@ -102,7 +103,7 @@ function Home() {
                 <span> </span>
                 <span> </span>
                 <span> </span>
-                Buy Now
+                Buy on Pinksale
               </a>
             </div>
 
@@ -113,10 +114,10 @@ function Home() {
               whileInView={{ opacity: [0, 1], scale: [1, 1.1] }}
               transition={{ duration: 1 }}
 
-              src={wkUp} alt="wkUp" className="wk-up" />
+              src={wkUp} alt="wkUp" className="home-wk-up" />
             <motion.img
               whileInView={{ opacity: [0, 1], scale: [1, 1.1], }}
-              transition={{ duration: 1 }} src={wkDn} alt="wkDn" className="wk-dn" />
+              transition={{ duration: 1 }} src={wkDn} alt="wkDn" className="home-wk-dn" />
 
               <div className="home-audit">
                 <img src={tick} alt="tick" className="tick" />

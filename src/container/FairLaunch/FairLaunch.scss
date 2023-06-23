@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Heebo';
 
   .fair-head-txt {
     font-family: 'Star Jedi', arial;
@@ -23,11 +24,25 @@
 @media screen and (max-width: 768px) {
   .fair-launch{
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    // right: -30px;
+    margin-bottom: 3rem;
     // margin-left: 24rem;
     // position: absolute;
+    .fair-head-txt {
+      position: relative;
+      right: -10px;
+    }
     .fair-img{
-      width: 320px;
-      height: 200px;
+      position: relative;
+      right: -16px;
+      width: 360px;
+      height: 250px;
     }
   }
 }

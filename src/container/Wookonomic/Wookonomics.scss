@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Heebo';
 
   .wooko-head-txt {
     color: #C38154;
@@ -122,13 +123,56 @@
     .wooko-bt-txt {
       color: #FFF6E9;
       font-size: 0.8rem;
-      .woo-list{
-        .woo-li{
+
+      .woo-list {
+        .woo-li {
           margin: 0.3rem 0;
         }
 
       }
     }
 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wooko {
+    padding: 0;
+    margin-top: 0;
+    position: relative;
+    width: 100vw;
+
+    .flex-row {
+      flex-direction: column;
+    }
+
+    .bt-content {
+      padding: 0;
+      padding-top: 3rem;
+
+      flex-direction: column;
+
+      .chart-img {
+        width: 300px;
+        margin-bottom: -4rem;
+      }
+    }
+
+  }
+
+  .wooko-fb-1 {
+
+    .wooko-txt-lite {
+      position: absolute;
+      font-size: 1.5rem;
+      width: 220px;
+      font-weight: 700;
+      opacity: 0.20000000298023224;
+      top: -50px;
+      left: 70px;
+
+    }
+    
+    margin: 2rem 0;
   }
 }

@@ -101,7 +101,9 @@ function FeaturedOn() {
       <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }} className="bt-bx">
         <p className='fo-bt-txt'>For collabs or inquiries</p>
-        <button className='email-btn'>hello@wookiees.io</button>
+        <button className='email-btn'>
+          <a href="mailto:hello@wookiees.io" >
+          hello@wookiees.io</a></button>
         <div className="fo-bt-icons">
           <img src={i1} alt="i1" className="fo-side-icons" />
           <img src={i2} alt="i2" className="fo-side-icons" />

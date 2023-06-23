@@ -15,6 +15,9 @@ function Footer() {
       <div className="footer-nav">
         <span className="footer-nav-item">About</span>
         <span className="footer-nav-item">How to Buy</span>
+
+      </div>
+      <div className="footer-nav">
         <span className="footer-nav-item">Wookieenomics</span>
         <span className="footer-nav-item">Wookieemap</span>
         <span className="footer-nav-item">App</span>

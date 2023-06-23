@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  font-family: 'Heebo';
 
 
   .map-head-txt {
@@ -63,7 +64,7 @@
     font-size: 0.9rem;
     line-height: 1.5rem;
   }
-  padding-top: 1rem;
+  // padding-top: 1rem;
 }
 .cover-1{
   display: flex;
@@ -96,4 +97,46 @@
     top: -294px;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  .woo-map{
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 15rem;
+    .map-head-txt{
+      margin-bottom: 2rem;
+    }
+
+    .phase-1{
+      top: 0;left: 0;
+    }
+    .woopath{
+      display: none;
+    }
+    .phases {
+      position: relative;
+      width: 24rem;
+      height: 14rem;
+    }
+  }
+  .cover-1{
+    position: relative;
+    top: 0;left: 0;
+    .miniWookie-1{
+      display: none;
+    }
+  }
+  .cover-2{
+    position: relative;
+    top: 0;left: 0;
+    .miniWookie-2{
+      display: none;
+    }
+  }
 }
