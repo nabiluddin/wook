@@ -738,3 +738,29 @@
   }
 
 }
+
+
+.navbar li {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba($color: #23100a, $alpha: 1.0);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 20px;
+
+  li a {
+    color: #FFF6E9;
+    text-decoration: none;
+  }
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

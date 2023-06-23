@@ -37,9 +37,14 @@ nav {
 
       color: #FFF6E9;
       cursor: pointer;
+      .a-tag{
+        text-decoration: none;
+        color: #FFF6E9;
+      }
     }
   }
 
+  
   .nav-side {
     display: flex;
     flex-direction: row;

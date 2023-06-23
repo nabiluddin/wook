@@ -58,7 +58,7 @@ function Home() {
 
     <div className="home">
 
-      <Navbar className="navbar-top" />
+      <Navbar check="true" className="navbar-top" />
       <div
       >
         <div className="right-bar">

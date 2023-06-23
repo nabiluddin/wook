@@ -14,9 +14,9 @@ import { motion } from 'framer-motion';
 
 function HowToBuy() {
   return (
-    <div className='htb'>
-    <motion.div     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-    transition={{ duration: 0.5 }} className="htb-head-txt">
+    <div className='htb' id="htb">
+      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }} className="htb-head-txt">
         How To Buy
       </motion.div>
 

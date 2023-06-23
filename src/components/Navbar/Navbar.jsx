@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import logo from '../../assets/logo-wookie.png'
 import './Navbar.scss'
 
-function Navbar() {
+function Navbar(props) {
   const dropdown = document.querySelector('.dropdown');
 dropdown?.addEventListener('click', function() {
   const dropdownMenu = this.querySelector('.dropdown-menu');
@@ -39,14 +39,14 @@ dropdown?.addEventListener('click', function() {
     <nav>
       <img src={logo} alt='img' className='nav-logo' />
       <ul className='nav-links'>
-        <li>About</li>
-        <li>How</li>
-        <li>Wookieenomics</li>
-        <li>Wookieemap</li>
-        <li>App</li>
-        <li class="dropdown">
+        <li><a className='a-tag' href={props.check?"#about":"/"}> About</a></li>
+        <li><a className='a-tag' href={props.check?"#htb":"/"}> How</a></li>
+        <li><a  className='a-tag' href={props.check?"#wookie":"/"}>Wookieenomics</a> </li>
+        <li><a className='a-tag' href={props.check?"#woomap":"/"}>Wookieemap</a> </li>
+        <li><a className='a-tag' href="/app"> App</a></li>
+        <li className="dropdown">
           Whitelist
-          <ul class="dropdown-menu">
+          <ul className="dropdown-menu">
             <li><a href="/whitelist1">Whitelist 1</a></li>
             <li><a href="/whitelist2">Whitelist 2</a></li>
             <li><a href="/whitelist3">Whitelist 3</a></li>
