@@ -41,6 +41,13 @@ nav {
         text-decoration: none;
         color: #FFF6E9;
       }
+      transition: all 0.3s ease-in-out;
+    }
+    li:hover{
+      color: #C38154; 
+      .a-tag:hover{
+        color: #C38154;
+      }
     }
   }
 
