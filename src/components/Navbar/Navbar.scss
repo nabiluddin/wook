@@ -117,7 +117,7 @@ nav {
   display: inline-block;
 }
 
-.dropdown-menu {
+.dropdown-menu-nav {
   display: none;
   position: absolute;
   background-color: rgba($color: #23100a, $alpha: 1.0);
@@ -134,6 +134,6 @@ nav {
 }
 
 
-.dropdown:hover .dropdown-menu {
+.dropdown-nav:hover .dropdown-menu-nav {
   display: block;
 }

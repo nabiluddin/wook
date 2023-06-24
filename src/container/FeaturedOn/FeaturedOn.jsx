@@ -105,7 +105,7 @@ function FeaturedOn() {
           <a href="mailto:hello@wookiees.io" >
           hello@wookiees.io</a></button>
         <div className="fo-bt-icons">
-          <img src={i1} alt="i1" className="fo-side-icons" />
+          {/* <img src={i1} alt="i1" className="fo-side-icons" />
           <img src={i2} alt="i2" className="fo-side-icons" />
           <img src={i3} alt="i3" className="fo-side-icons" />
           <img src={i4} alt="i4" className="fo-side-icons" />
@@ -113,7 +113,25 @@ function FeaturedOn() {
           <img src={i6} alt="i6" className="fo-side-icons" />
           <img src={i7} alt="i7" className="fo-side-icons" />
           <img src={i8} alt="i8" className="fo-side-icons" />
-          <img src={i9} alt="i9" className="fo-side-icons" />
+          <img src={i9} alt="i9" className="fo-side-icons" /> */}
+          <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
+            <img src={i1} alt="i1" className="fo-side-icons" /></a>
+          <a target="_blank" href="https://www.pinksale.finance/?chain=BSC" rel="noreferrer">
+            <img src={i2} alt="i2" className="fo-side-icons" /></a>
+          <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
+            <img src={i3} alt="i3" className="fo-side-icons" /></a>
+          <a target="_blank" href="https://www.dexview.com/" rel="noreferrer">
+            <img src={i4} alt="i4" className="fo-side-icons" /></a>
+          <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
+            <img src={i5} alt="i5" className="fo-side-icons" /></a>
+          <a target="_blank" href="https://coinmarketcap.com/" rel="noreferrer">
+            <img src={i6} alt="i6" className="fo-side-icons" /></a>
+          <a target="_blank" href="https://www.coingecko.com/" rel="noreferrer">
+            <img src={i7} alt="i7" className="fo-side-icons" /></a>
+          <a target="_blank" href="https://www.dextools.io/app/en/pairs" rel="noreferrer">
+            <img src={i8} alt="i8" className="fo-side-icons" /></a>
+          <a target="_blank" href="https://wookiees.gitbook.io/wookiees/" rel="noreferrer">
+            <img src={i9} alt="i9" className="fo-side-icons" /></a>
         </div>
       </motion.div>
     </motion.div>

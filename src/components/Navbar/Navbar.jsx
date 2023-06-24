@@ -40,13 +40,13 @@ dropdown?.addEventListener('click', function() {
       <img src={logo} alt='img' className='nav-logo' />
       <ul className='nav-links'>
         <li><a className='a-tag' href={props.check?"#about":"/"}> About</a></li>
-        <li><a className='a-tag' href={props.check?"#htb":"/"}> How</a></li>
+        <li><a className='a-tag' href={props.check?"#htb":"/"}>How to Buy</a></li>
         <li><a  className='a-tag' href={props.check?"#wookie":"/"}>Wookieenomics</a> </li>
         <li><a className='a-tag' href={props.check?"#woomap":"/"}>Wookieemap</a> </li>
         <li><a className='a-tag' href="/app">App</a></li>
-        <li className="dropdown">
+        <li className="dropdown-nav">
           Whitelist
-          <ul className="dropdown-menu">
+          <ul className="dropdown-menu-nav">
             <li><a href="/whitelist1">Whitelist 1</a></li>
             <li><a href="/whitelist2">Whitelist 2</a></li>
             <li><a href="/whitelist3">Whitelist 3</a></li>

@@ -62,26 +62,33 @@ function Home() {
       <div
       >
         <div className="right-bar">
-          <img src={i1} alt="i1" className="home-side-icons" />
-          <img src={i2} alt="i2" className="home-side-icons" />
-          <img src={i3} alt="i3" className="home-side-icons" />
-          <img src={i4} alt="i4" className="home-side-icons" />
-          <a  href="https://twitter.com/wookieescoin">
-          <img src={i5} alt="i5" className="home-side-icons" /></a>
-          <img src={i6} alt="i6" className="home-side-icons" />
-          <img src={i7} alt="i7" className="home-side-icons" />
-          <img src={i8} alt="i8" className="home-side-icons" />
-          <a href="https://zealy.io/c/wookiees/questboard">
-          <img src={i9} alt="i9" className="home-side-icons" /></a>
+          <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
+            <img src={i1} alt="i1" className="home-side-icons" /></a>
+          <a target="_blank" href="https://www.pinksale.finance/?chain=BSC" rel="noreferrer">
+            <img src={i2} alt="i2" className="home-side-icons" /></a>
+          <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
+            <img src={i3} alt="i3" className="home-side-icons" /></a>
+          <a target="_blank" href="https://www.dexview.com/" rel="noreferrer">
+            <img src={i4} alt="i4" className="home-side-icons" /></a>
+          <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
+            <img src={i5} alt="i5" className="home-side-icons" /></a>
+          <a target="_blank" href="https://coinmarketcap.com/" rel="noreferrer">
+            <img src={i6} alt="i6" className="home-side-icons" /></a>
+          <a target="_blank" href="https://www.coingecko.com/" rel="noreferrer">
+            <img src={i7} alt="i7" className="home-side-icons" /></a>
+          <a target="_blank" href="https://www.dextools.io/app/en/pairs" rel="noreferrer">
+            <img src={i8} alt="i8" className="home-side-icons" /></a>
+          <a target="_blank" href="https://wookiees.gitbook.io/wookiees/" rel="noreferrer">
+            <img src={i9} alt="i9" className="home-side-icons" /></a>
         </div>
       </div>
 
       <div className="center-content">
         <div className="c-left">
           <img src={cleft} alt="circle" className="circles" />
-          <a 
+          <a target="_blank"
             href="https://twitter.com/wookieescoin"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none" }} rel="noreferrer"
           >
             <button className="tw-btn-down">
               <img src={twitterImg} alt="" />
@@ -95,10 +102,10 @@ function Home() {
         </div>
         <div className="home-c-center">
           <div className="ellipse home-f-1">
-            <div className="pulse1"></div>
+            {/* <div className="pulse1"></div> */}
             <div class="mybtns anim">
 
-              <a  href="https://www.pinksale.finance/">
+              <a target="_blank" href="https://www.pinksale.finance/" rel="noreferrer">
                 <span> </span>
                 <span> </span>
                 <span> </span>
@@ -119,11 +126,11 @@ function Home() {
               whileInView={{ opacity: [0, 1], scale: [1, 1.1], }}
               transition={{ duration: 1 }} src={wkDn} alt="wkDn" className="home-wk-dn" />
 
-              <div className="home-audit">
-                <img src={tick} alt="tick" className="tick" />
-                <p>Audit By:</p>
-                <img src={audit} alt="audit" className="audit"/>
-              </div>
+            <div className="home-audit">
+              <img src={tick} alt="tick" className="tick" />
+              <p>Audit By:</p>
+              <img src={audit} alt="audit" className="audit" />
+            </div>
           </div>
 
           {/* <img src={mainLogo} alt="logo" className="main-logo ellipse" /> */}
@@ -137,9 +144,9 @@ function Home() {
 
         </div>
         <div className="c-right">
-          <a 
-            href="https://twitter.com/wookieescoin"
-            style={{ textDecoration: "none" }}
+          <a target="_blank"
+            href="https://t.me/wookieescoin"
+            style={{ textDecoration: "none" }} rel="noreferrer"
           >
             <button className="tw-btn-up">
               <img src={telegImg} alt="" />
