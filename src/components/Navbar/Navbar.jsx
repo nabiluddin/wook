@@ -58,7 +58,7 @@ dropdown?.addEventListener('click', function() {
       <div className='nav-side'>
         {/* <button className='nav-translate-btn' >En</button> */}
         <div id="google_translate_element"></div>
-        <button className='nav-use-app'>Use App</button>
+        <button className='nav-use-app'>Use App <div className='coming-soon-badge'>coming soon</div></button>
       </div>
     </nav>
   )

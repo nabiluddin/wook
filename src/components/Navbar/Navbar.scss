@@ -50,7 +50,21 @@ nav {
       }
     }
   }
-
+  .coming-soon-badge {
+    display: none;
+  }
+  .nav-use-app:hover  .coming-soon-badge {
+    background-color: #23100a; /* Choose your desired background color */
+    color: #ffffff; /* Choose your desired text color */
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top:  0;
+    right:  0;
+  }
   
   .nav-side {
     display: flex;
