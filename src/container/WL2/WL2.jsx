@@ -75,7 +75,7 @@ function WL2() {
         </div>
         <div className="c-center">
           <div className="ellipse WL1-f-2">
-            {/* <div className="pulse1"></div> */}
+            <div className="pulse1"></div>
             <div class="mybtns anim">
 
               <a href="https://www.pinksale.finance/">

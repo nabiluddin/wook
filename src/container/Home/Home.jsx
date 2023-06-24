@@ -102,7 +102,7 @@ function Home() {
         </div>
         <div className="home-c-center">
           <div className="ellipse home-f-1">
-            {/* <div className="pulse1"></div> */}
+            <div className="pulse1"></div>
             <div class="mybtns anim">
 
               <a target="_blank" href="https://www.pinksale.finance/" rel="noreferrer">
