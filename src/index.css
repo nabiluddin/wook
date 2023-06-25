@@ -23,3 +23,5 @@
 body {
   background: #100501;
 }
+
+html, body {width: 99vw; overflow-x: hidden!important} 
