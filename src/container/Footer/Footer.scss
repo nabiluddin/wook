@@ -14,7 +14,7 @@
   .footer-up-txt {
     color: #FFF6E9;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .footer-nav {
@@ -70,6 +70,10 @@
   }
 }
 
+.dropdown{
+  list-style: none;
+  display: block;
+}
 
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -98,7 +102,7 @@
       padding-bottom: 1rem;
     }
     .footer-up-txt {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       text-align: center;
     }
   }

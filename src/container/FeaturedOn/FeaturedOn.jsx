@@ -90,8 +90,8 @@ function FeaturedOn() {
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
         className="fo-spport-icon">
-        <div className="support-logo"><img className="support-logo-img" src={l13} alt="l1" /></div>
-        <div className="support-logo"><img className="support-logo-img" src={l14} alt="l1" /></div>
+       <a target='_blank' rel="noreferrer" href="https://panteracapital.com/"> <div className="support-logo"><img className="support-logo-img" src={l13} alt="l1" /></div></a>
+       <a target='_blank' rel="noreferrer" href="https://dcg.co/portfolio"> <div className="support-logo"><img className="support-logo-img" src={l14} alt="l1" /></div></a>
       </motion.div>
 
       <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}

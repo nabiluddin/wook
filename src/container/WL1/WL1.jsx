@@ -47,16 +47,24 @@ function WL1() {
       <div
       >
         <div className="wl-right-bar-1">
-          <img src={i1} alt="i1" className="WL1-side-icons" />
-          <img src={i2} alt="i2" className="WL1-side-icons" />
-          <img src={i3} alt="i3" className="WL1-side-icons" />
-          <img src={i4} alt="i4" className="WL1-side-icons" />
-          <a href="https://twitter.com/wookieescoin">
+        <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
+            <img src={i1} alt="i1" className="WL1-side-icons" /></a>
+          <a target="_blank" href="https://www.pinksale.finance/?chain=BSC" rel="noreferrer">
+            <img src={i2} alt="i2" className="WL1-side-icons" /></a>
+          <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
+            <img src={i3} alt="i3" className="WL1-side-icons" /></a>
+          <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
+            <img src={i4} alt="i4" className="WL1-side-icons" /></a>
+          <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
             <img src={i5} alt="i5" className="WL1-side-icons" /></a>
-          <img src={i6} alt="i6" className="WL1-side-icons" />
-          <img src={i7} alt="i7" className="WL1-side-icons" />
-          <img src={i8} alt="i8" className="WL1-side-icons" />
-          <img src={i9} alt="i9" className="WL1-side-icons" />
+          <a target="_blank" href="https://coinmarketcap.com/" rel="noreferrer">
+            <img src={i6} alt="i6" className="WL1-side-icons" /></a>
+          <a target="_blank" href="https://www.coingecko.com/" rel="noreferrer">
+            <img src={i7} alt="i7" className="WL1-side-icons" /></a>
+          <a target="_blank" href="https://www.dextools.io/app/en/pairs" rel="noreferrer">
+            <img src={i8} alt="i8" className="WL1-side-icons" /></a>
+          <a target="_blank" href="https://wookiees.gitbook.io/wookiees/" rel="noreferrer">
+            <img src={i9} alt="i9" className="WL1-side-icons" /></a>
         </div>
       </div>
 
@@ -153,10 +161,10 @@ function WL1() {
           <li class="dropdown">
             Whitelist
             <ul class="dropdown-menu">
-              <li><a href="/whitelist1">Whitelist 1</a></li>
-              <li><a href="/whitelist2">Whitelist 2</a></li>
-              <li><a href="/whitelist3">Whitelist 3</a></li>
-              <li><a href="/whitelist4">Whitelist 4</a></li>
+            <li><a href="/whitelist1">$250K Giveaway</a></li>
+            <li><a href="/whitelist2">Whitelist 1</a></li>
+            <li><a href="/whitelist3">Whitelist 2</a></li>
+            <li><a href="/whitelist4">Whitelist 3</a></li>
             </ul>
           </li>
         </div>

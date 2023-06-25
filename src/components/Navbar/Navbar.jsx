@@ -10,24 +10,24 @@ function Navbar(props) {
   });
 
 
-  const googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: "en",
-        autoDisplay: false
-      },
-      "google_translate_element"
-    );
-  };
-  useEffect(() => {
-    var addScript = document.createElement("script");
-    addScript.setAttribute(
-      "src",
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    );
-    document.body.appendChild(addScript);
-    window.googleTranslateElementInit = googleTranslateElementInit;
-  }, []);
+  // const googleTranslateElementInit = () => {
+  //   new window.google.translate.TranslateElement(
+  //     {
+  //       pageLanguage: "en",
+  //       autoDisplay: false
+  //     },
+  //     "google_translate_element"
+  //   );
+  // };
+  // useEffect(() => {
+  //   var addScript = document.createElement("script");
+  //   addScript.setAttribute(
+  //     "src",
+  //     "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  //   );
+  //   document.body.appendChild(addScript);
+  //   window.googleTranslateElementInit = googleTranslateElementInit;
+  // }, []);
   // return (
   //   <>
   //     <div id="google_translate_element"></div>
@@ -40,7 +40,7 @@ function Navbar(props) {
       <div className='logo-tr'>
 
         <img src={logo} alt='img' className='nav-logo' />
-        <div id="google_translate_element"></div>
+        {/* <div id="google_translate_element"></div> */}
       </div>
       <ul className='nav-links'>
         <li><a className='a-tag' href={props.check ? "#about" : "/"}> About</a></li>
@@ -51,10 +51,10 @@ function Navbar(props) {
         <li className="dropdown-nav">
           Whitelist
           <ul className="dropdown-menu-nav">
-            <li><a href="/whitelist1">Whitelist 1</a></li>
-            <li><a href="/whitelist2">Whitelist 2</a></li>
-            <li><a href="/whitelist3">Whitelist 3</a></li>
-            <li><a href="/whitelist4">Whitelist 4</a></li>
+            <li><a href="/whitelist1">$250K Giveaway</a></li>
+            <li><a href="/whitelist2">Whitelist 1</a></li>
+            <li><a href="/whitelist3">Whitelist 2</a></li>
+            <li><a href="/whitelist4">Whitelist 3</a></li>
           </ul>
         </li>
       </ul>
