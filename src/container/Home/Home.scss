@@ -160,10 +160,12 @@
   border-radius: 50px;
   padding: 0.5rem;
   // width: ;
-  margin-top: 3rem;
-  margin-left: 4rem;
+  margin-top: 1rem;
+  // margin-left: 4rem;
   // display: none;
   cursor: pointer;
+  position: relative;
+  left: -90px;
 }
 
 .right-bar {
@@ -857,6 +859,7 @@
     bottom: -180px;
     margin: 0;
     font-size: 0.8rem;
+    
 
 
 
@@ -865,6 +868,6 @@
 
   .footerbar {
     position: absolute;
-    bottom: 80px;
+    bottom: 20px;
   }
 }

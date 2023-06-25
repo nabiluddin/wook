@@ -102,7 +102,7 @@ function Home() {
             </button>
           </a>
           <a target="_blank"  style={{textDecoration:"none"}} href="https://etherscan.io/token/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer"> <div id="myDiv" onClick={() => navigator.clipboard.writeText('Contract :- 0x24086EAb82DBDaa4771d0A5D')} className="home-contract">
-            Contract :- 0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298
+            Contract :- 0x7bD95684cA33b2bFC356A3<br/>36CC7cF1e8AfAE0298
           </div></a>
         </div>
         <div className="home-c-center">

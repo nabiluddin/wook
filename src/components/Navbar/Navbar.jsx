@@ -10,24 +10,24 @@ function Navbar(props) {
   });
 
 
-  const googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: "en",
-        autoDisplay: false
-      },
-      "google_translate_element"
-    );
-  };
-  useEffect(() => {
-    var addScript = document.createElement("script");
-    addScript.setAttribute(
-      "src",
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    );
-    document.body.appendChild(addScript);
-    window.googleTranslateElementInit = googleTranslateElementInit;
-  }, []);
+  // const googleTranslateElementInit = () => {
+  //   new window.google.translate.TranslateElement(
+  //     {
+  //       pageLanguage: "en",
+  //       autoDisplay: false
+  //     },
+  //     "google_translate_element"
+  //   );
+  // };
+  // useEffect(() => {
+  //   var addScript = document.createElement("script");
+  //   addScript.setAttribute(
+  //     "src",
+  //     "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  //   );
+  //   document.body.appendChild(addScript);
+  //   window.googleTranslateElementInit = googleTranslateElementInit;
+  // }, []);
   // return (
   //   <>
   //     <div id="google_translate_element"></div>
@@ -40,7 +40,7 @@ function Navbar(props) {
       <div className='logo-tr'>
 
         <img src={logo} alt='img' className='nav-logo' />
-        <div id="google_translate_element"></div>
+        {/* <div id="google_translate_element"></div> */}
       </div>
       <ul className='nav-links'>
         <li><a className='a-tag' href={props.check ? "#about" : "/"}> About</a></li>
