@@ -11,7 +11,7 @@ function Wookonomics() {
     transition={{ duration: 0.5 }}
     className='wooko'>
       <div className="wooko-head-txt">
-        Wookonomics
+        Wookieenomics
       </div>
       <div className="flex-row">
         <div className="wooko-fb-1">

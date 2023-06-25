@@ -96,7 +96,7 @@ function WL1() {
 
               src={wkUp} alt="wkUp" className="wk-up" /> */}
             <p className="wk-up-1">
-              wookiees whitlist 3000 spots
+              wookiees whitelist 3500 spots
             </p>
             <motion.img
               whileInView={{ opacity: [0, 1], scale: [1, 1.1], }}
@@ -134,7 +134,7 @@ function WL1() {
       <div className="WL1-head-txt">
         Complete all Task To get whitlisted
       </div>
-      <iframe src="https://sweepwidget.com/c/71136-0ickon8v" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
+      <iframe src="https://sweepwidget.com/c/71247-t1nsecyd" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
 
 
       <div className="wl-foo">

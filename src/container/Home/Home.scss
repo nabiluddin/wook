@@ -116,6 +116,7 @@
   margin-top: 2.5rem;
   margin-left: 10rem;
   cursor: pointer;
+  height: 40px;
 
   img {
     width: 25px;
@@ -139,6 +140,7 @@
   margin-top: -16rem;
   margin-bottom: 2rem;
   margin-left: 7rem;
+  height: 40px;
 
   img {
     width: 25px;
@@ -219,7 +221,9 @@
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.50);
   backdrop-filter: blur(7px);
-  padding: 0.3rem;
+  padding: 0.1rem 0.8rem;
+  height: 40px;
+
 
   .tick {
     width: 10px;
@@ -235,7 +239,7 @@
   }
 
   .audit {
-    width: 75px;
+    width: 55px;
   }
 }
 
@@ -373,6 +377,11 @@
   font-size: 25px;
   padding: 10px 30px;
 }
+
+.home-contract:hover {
+  background: #C38154;
+}
+
 
 .mybtns.anim a span:nth-child(1) {
   position: absolute;
@@ -752,66 +761,79 @@
 
 
 @media screen and (max-width:768px) {
-  .tw-btn-down{
+  .tw-btn-down {
     display: none;
   }
-  .tw-btn-up{
+
+  .tw-btn-up {
     display: none;
   }
-  .right-bar{
+
+  .right-bar {
     // display: none;
     right: -10px;
     height: 400px;
+
     .home-side-icons {
       padding: 0.4rem 0.4rem;
       width: 33px;
     }
-    
+
   }
-  .home{
+
+  .home {
     width: 300px;
     width: 100vw;
     height: 100vh;
   }
 
-  .center-content{
+  .center-content {
     padding: 0;
     margin-top: 10rem;
+
     .circles {
       // width: 10px;
     }
-    .main-logo{
+
+    .main-logo {
       width: 220px;
     }
   }
+
   .mybtns.anim a {
     bottom: -90px;
     left: 39px;
   }
+
   .home-c-center .home-f-1 {
     width: 330px;
     height: 330px;
   }
+
   .home-c-center .home-f-2 {
     width: 300px;
     height: 300px;
   }
-  .pulse1{
+
+  .pulse1 {
     width: 330px;
     height: 330px;
   }
-  .pulse2{
+
+  .pulse2 {
     width: 330px;
     height: 330px;
   }
-  .home-wk-up{
+
+  .home-wk-up {
     width: 180px;
     position: absolute;
     top: 0px;
     left: -10px;
     z-index: 3;
   }
-  .home-wk-dn{
+
+  .home-wk-dn {
     width: 170px;
     position: absolute;
     // top: -17px;
@@ -819,10 +841,12 @@
     left: 160px;
     z-index: 3;
   }
-  .home-audit{
+
+  .home-audit {
     display: none;
   }
-  .home-contract{
+
+  .home-contract {
     position: absolute;
     padding: 3rem;
     border-radius: 50px;
@@ -832,13 +856,14 @@
     right: 0;
     bottom: -180px;
     margin: 0;
+    font-size: 0.8rem;
 
-  
 
 
 
   }
-  .footerbar{
+
+  .footerbar {
     position: absolute;
     bottom: 80px;
   }

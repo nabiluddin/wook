@@ -24,7 +24,7 @@ import i5 from "../../assets/i5.png";
 import i6 from "../../assets/i6.png";
 import i7 from "../../assets/i7.png";
 import i8 from "../../assets/i8.png";
-import i9 from "../../assets/i9.png";
+import i9 from "../../assets/gitbook_logo.png";
 
 
 function FeaturedOn() {
@@ -34,7 +34,7 @@ function FeaturedOn() {
       transition={{ duration: 0.5 }}
       className='featured-on'>
       <div className="fo-head-txt">
-        Featured ON
+        Featured on
       </div>
       <div className="fo-companies-bg-bxs">
         <div className="fr-1">
@@ -96,7 +96,7 @@ function FeaturedOn() {
 
       <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }} className="fo-head-txt">
-        Contacts Us
+        Contacts us
       </motion.div>
       <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }} className="bt-bx">
@@ -120,7 +120,7 @@ function FeaturedOn() {
             <img src={i2} alt="i2" className="fo-side-icons" /></a>
           <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
             <img src={i3} alt="i3" className="fo-side-icons" /></a>
-          <a target="_blank" href="https://www.dexview.com/" rel="noreferrer">
+          <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
             <img src={i4} alt="i4" className="fo-side-icons" /></a>
           <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
             <img src={i5} alt="i5" className="fo-side-icons" /></a>

@@ -12,7 +12,7 @@ function Wookiemap() {
     transition={{ duration: 0.5 }}
     className='woo-map'>
       <div className="map-head-txt">
-        Wookiwmap
+        Wookieemap
       </div>
 
       <img src={woopath} alt="woopath" className='woopath' />

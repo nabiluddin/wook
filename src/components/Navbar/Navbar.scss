@@ -3,11 +3,22 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  margin-top: -1rem;
 
-  .nav-logo {
-    width: 150.8px;
-    height: 31px;
-    cursor: pointer;
+  .logo-tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .nav-logo {
+      margin-top: 2rem;
+      width: 270px;
+      height: 57px;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
   }
 
   .nav-links {
@@ -21,7 +32,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 0 0.5rem;
-    gap: 36px;
+    gap: 6px;
 
 
     background: rgba(255, 255, 255, 0.1);
@@ -37,35 +48,43 @@ nav {
 
       color: #FFF6E9;
       cursor: pointer;
-      .a-tag{
+
+      .a-tag {
         text-decoration: none;
         color: #FFF6E9;
       }
+
       transition: all 0.3s ease-in-out;
     }
-    li:hover{
-      color: #C38154; 
-      .a-tag:hover{
+
+    li:hover {
+      color: #C38154;
+
+      .a-tag:hover {
         color: #C38154;
       }
     }
   }
+
   .coming-soon-badge {
     display: none;
   }
-  .nav-use-app:hover  .coming-soon-badge {
-    background-color: #23100a; /* Choose your desired background color */
-    color: #ffffff; /* Choose your desired text color */
+
+  .nav-use-app:hover .coming-soon-badge {
+    background-color: #23100a;
+    /* Choose your desired background color */
+    color: #ffffff;
+    /* Choose your desired text color */
     font-weight: bold;
     font-size: 16px;
     padding: 8px 16px;
     border-radius: 4px;
     display: inline-block;
     position: absolute;
-    top:  0;
-    right:  0;
+    top: 0;
+    right: 0;
   }
-  
+
   .nav-side {
     display: flex;
     flex-direction: row;
@@ -127,7 +146,7 @@ nav {
   }
 
   .goog-te-gadget .goog-te-combo {
-    width: 97px;
+    width: 127px;
     position: relative;
     // left: -100px;
   }

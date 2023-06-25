@@ -4,30 +4,30 @@ import './Navbar.scss'
 
 function Navbar(props) {
   const dropdown = document.querySelector('.dropdown');
-dropdown?.addEventListener('click', function() {
-  const dropdownMenu = this.querySelector('.dropdown-menu');
-  dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-});
+  dropdown?.addEventListener('click', function () {
+    const dropdownMenu = this.querySelector('.dropdown-menu');
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+  });
 
 
-  const googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: "en",
-        autoDisplay: false
-      },
-      "google_translate_element"
-    );
-  };
-  useEffect(() => {
-    var addScript = document.createElement("script");
-    addScript.setAttribute(
-      "src",
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    );
-    document.body.appendChild(addScript);
-    window.googleTranslateElementInit = googleTranslateElementInit;
-  }, []);
+  // const googleTranslateElementInit = () => {
+  //   new window.google.translate.TranslateElement(
+  //     {
+  //       pageLanguage: "en",
+  //       autoDisplay: false
+  //     },
+  //     "google_translate_element"
+  //   );
+  // };
+  // useEffect(() => {
+  //   var addScript = document.createElement("script");
+  //   addScript.setAttribute(
+  //     "src",
+  //     "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  //   );
+  //   document.body.appendChild(addScript);
+  //   window.googleTranslateElementInit = googleTranslateElementInit;
+  // }, []);
   // return (
   //   <>
   //     <div id="google_translate_element"></div>
@@ -37,12 +37,16 @@ dropdown?.addEventListener('click', function() {
 
   return (
     <nav>
-      <img src={logo} alt='img' className='nav-logo' />
+      <div className='logo-tr'>
+
+        <img src={logo} alt='img' className='nav-logo' />
+        {/* <div id="google_translate_element"></div> */}
+      </div>
       <ul className='nav-links'>
-        <li><a className='a-tag' href={props.check?"#about":"/"}> About</a></li>
-        <li><a className='a-tag' href={props.check?"#htb":"/"}>How to Buy</a></li>
-        <li><a  className='a-tag' href={props.check?"#wookie":"/"}>Wookieenomics</a> </li>
-        <li><a className='a-tag' href={props.check?"#woomap":"/"}>Wookieemap</a> </li>
+        <li><a className='a-tag' href={props.check ? "#about" : "/"}> About</a></li>
+        <li><a className='a-tag' href={props.check ? "#htb" : "/"}>How to Buy</a></li>
+        <li><a className='a-tag' href={props.check ? "#wookie" : "/"}>Wookieenomics</a> </li>
+        <li><a className='a-tag' href={props.check ? "#woomap" : "/"}>Wookieemap</a> </li>
         <li><a className='a-tag' href="/app">App</a></li>
         <li className="dropdown-nav">
           Whitelist
@@ -54,10 +58,10 @@ dropdown?.addEventListener('click', function() {
           </ul>
         </li>
       </ul>
-      
+
       <div className='nav-side'>
         {/* <button className='nav-translate-btn' >En</button> */}
-        <div id="google_translate_element"></div>
+
         <button className='nav-use-app'>Use App <div className='coming-soon-badge'>coming soon</div></button>
       </div>
     </nav>

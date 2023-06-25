@@ -96,7 +96,7 @@ function WL4() {
 
               src={wkUp} alt="wkUp" className="wk-up" /> */}
             <p className="wk-up-1">
-              wookiees whitlist 3000 spots
+              wookiees whitelist 3500 spots
             </p>
             <motion.img
               whileInView={{ opacity: [0, 1], scale: [1, 1.1], }}

@@ -17,7 +17,7 @@ import f4 from '../../assets/f4.png'
 import f5 from '../../assets/f5.png'
 import f6 from '../../assets/f6.png'
 import tick from '../../assets/tick-circle.png'
-import audit from '../../assets/audit-block.png'
+import cv1 from '../../assets/cover_resized_1.jpg'
 
 
 import { FiArrowUpRight } from "react-icons/fi";
@@ -30,7 +30,7 @@ import i5 from "../../assets/i5.png";
 import i6 from "../../assets/i6.png";
 import i7 from "../../assets/i7.png";
 import i8 from "../../assets/i8.png";
-import i9 from "../../assets/i9.png";
+import i9 from "../../assets/gitbook_logo.png";
 
 function Home() {
 
@@ -52,6 +52,11 @@ function Home() {
     // Optionally, provide some visual feedback to the user
     alert("Content copied to clipboard: " + textToCopy);
   }
+
+
+
+
+
   return (
 
 
@@ -68,7 +73,7 @@ function Home() {
             <img src={i2} alt="i2" className="home-side-icons" /></a>
           <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
             <img src={i3} alt="i3" className="home-side-icons" /></a>
-          <a target="_blank" href="https://www.dexview.com/" rel="noreferrer">
+          <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
             <img src={i4} alt="i4" className="home-side-icons" /></a>
           <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
             <img src={i5} alt="i5" className="home-side-icons" /></a>
@@ -96,9 +101,9 @@ function Home() {
               <FiArrowUpRight />
             </button>
           </a>
-          <div id="myDiv" onClick={() => navigator.clipboard.writeText('Contract :- 0x24086EAb82DBDaa4771d0A5D')} className="home-contract">
-            Contract :- 0x24086EAb82DBDaa4771d0A5D
-          </div>
+          <a target="_blank"  style={{textDecoration:"none"}} href="https://etherscan.io/token/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer"> <div id="myDiv" onClick={() => navigator.clipboard.writeText('Contract :- 0x24086EAb82DBDaa4771d0A5D')} className="home-contract">
+            Contract :- 0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298
+          </div></a>
         </div>
         <div className="home-c-center">
           <div className="ellipse home-f-1">
@@ -129,7 +134,7 @@ function Home() {
             <div className="home-audit">
               <img src={tick} alt="tick" className="tick" />
               <p>Audit By:</p>
-              <img src={audit} alt="audit" className="audit" />
+              <img src={cv1} alt="audit" className="audit" />
             </div>
           </div>
 
