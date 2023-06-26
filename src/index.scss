@@ -30,7 +30,7 @@
 html, body {
   width: 99vw;
   overflow-x: hidden!important;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 
@@ -38,7 +38,7 @@ html, body {
 // n is the number of stars required
 @function multiple-box-shadow($n) {
   $value: '#{random(2000)}px #{random(2000)}px #FFF';
-  @for $i from 5000 through $n {
+  @for $i from 500 through $n {
     $value: '#{$value}, #{random(2000)}px #{random(20000)}px #FFF';
   }
 
@@ -53,7 +53,7 @@ html {
   // height: 100%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   // overflow: hidden;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 #stars {

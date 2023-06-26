@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 function TwoW() {
   return (
-    <div id="about"
+    <motion.div id="about"
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }} className="two-w">
       <div className="float-left">
@@ -23,7 +23,7 @@ function TwoW() {
         {/* <div className="pulse2"></div> */}
         <img src={bitWoo} alt="bitwoo" className="img-right-float" />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

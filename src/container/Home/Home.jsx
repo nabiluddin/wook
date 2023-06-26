@@ -61,7 +61,7 @@ function Home() {
 
 
 
-    <div className="home">
+    <motion.div className="home">
 
       <Navbar check="true" className="navbar-top" />
       <div
@@ -286,7 +286,7 @@ function Home() {
 
 
 
-    </div>
+    </motion.div>
 
   );
 }
