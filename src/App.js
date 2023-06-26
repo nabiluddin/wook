@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Main from "./pages/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WL1 from "./container/WL1/WL1";
@@ -17,6 +17,7 @@ function App() {
         <Route path="/whitelist3" element={<WL3 />} />
         <Route path="/whitelist4" element={<WL4 />} />
       </Routes>
+     
     </BrowserRouter>
   );
 }

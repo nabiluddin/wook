@@ -19,8 +19,8 @@ function TwoW() {
         <a style={{textDecoration:"none", color:"#C38154"}} href="https://wookiees.gitbook.io/wookiees/"><button className="read-more"> Read Wookieefesto</button></a>
       </div>
       <div className="img-float-right">
-        <div className="pulse1"></div>
-        <div className="pulse2"></div>
+        {/* <div className="pulse1"></div> */}
+        {/* <div className="pulse2"></div> */}
         <img src={bitWoo} alt="bitwoo" className="img-right-float" />
       </div>
     </motion.div>
