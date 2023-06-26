@@ -49,13 +49,15 @@ $shadows-small: multiple-box-shadow(7000);
 $shadows-medium: multiple-box-shadow(2000);
 $shadows-big: multiple-box-shadow(1000);
 
-html {
+body {
   // height: 100%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   // overflow: hidden;
   scroll-behavior: smooth;
 }
-
+html{
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
 #stars {
   width: 1px;
   height: 1px;
