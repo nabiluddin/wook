@@ -140,7 +140,7 @@ function WL4() {
 
 
       <div className="WL1-head-txt">
-        Complete all Task To get whitlisted
+        Complete all Task To get whitelisted
       </div>
       <iframe src="https://giveaway.com/en/6VviqlvFb6B" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
 

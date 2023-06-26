@@ -140,7 +140,7 @@ function WL1() {
 
 
       <div className="WL1-head-txt">
-        Complete all Task To get whitlisted
+        Complete all Task To get whitelisted
       </div>
       <iframe src="https://sweepwidget.com/c/71247-t1nsecyd" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
 

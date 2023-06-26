@@ -38,8 +38,8 @@ function Navbar(props) {
   return (
     <nav>
       <div className='logo-tr'>
-
-        <img src={logo} alt='img' className='nav-logo' />
+        <a href="/">
+        <img src={logo} alt='img' className='nav-logo' /></a>
         {/* <div id="google_translate_element"></div> */}
       </div>
       <ul className='nav-links'>

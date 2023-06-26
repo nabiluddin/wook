@@ -27,7 +27,7 @@ function Wookiemap() {
             Attracting 1,000+ Holders
           </li>
           <li className='map-li'>
-            ReleaseCoinGecko/Coinmarketcap Listings
+            Release on CoinGecko/Coinmarketcap Listings
           </li>
           <li className='map-li'>
             Use the power of memes to get $Wookiee trending
