@@ -15,7 +15,7 @@ import i5 from "../../assets/i5.png";
 import i6 from "../../assets/i6.png";
 import i7 from "../../assets/i7.png";
 import i8 from "../../assets/i8.png";
-import i9 from "../../assets/i9.png";
+import i9 from "../../assets/gitbook_logo.png";
 
 function WL4() {
 
