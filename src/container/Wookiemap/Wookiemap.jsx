@@ -7,7 +7,7 @@ import woopath from '../../assets/path-woo.png'
 
 function Wookiemap() {
   return (
-    <motion.div id='woomap'
+    <div id='woomap'
     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
     transition={{ duration: 0.5 }}
     className='woo-map'>
@@ -62,7 +62,7 @@ function Wookiemap() {
       </div >
 
 
-    </motion.div>
+    </div>
   )
 }
 

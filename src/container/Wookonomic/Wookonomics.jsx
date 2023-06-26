@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 function Wookonomics() {
   return (
-    <motion.div  id='wookie'
+    <div  id='wookie'
     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
     transition={{ duration: 0.5 }}
     className='wooko'>
@@ -55,7 +55,7 @@ function Wookonomics() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

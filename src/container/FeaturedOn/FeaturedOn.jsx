@@ -29,7 +29,7 @@ import i9 from "../../assets/gitbook_logo.png";
 
 function FeaturedOn() {
   return (
-    <motion.div
+    <div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
       className='featured-on'>
@@ -82,23 +82,23 @@ function FeaturedOn() {
             <img className="logo-img" src={l12} alt="l4" /></a></div>
         </div>
       </div>
-      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      <div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }} className="fo-head-txt">
         Supported By
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
         className="fo-spport-icon">
        <a target='_blank' rel="noreferrer" href="https://panteracapital.com/"> <div className="support-logo"><img className="support-logo-img" src={l13} alt="l1" /></div></a>
        <a target='_blank' rel="noreferrer" href="https://dcg.co/portfolio"> <div className="support-logo"><img className="support-logo-img" src={l14} alt="l1" /></div></a>
-      </motion.div>
+      </div>
 
-      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      <div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }} className="fo-head-txt">
         Contacts us
-      </motion.div>
-      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      </div>
+      <div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }} className="bt-bx">
         <p className='fo-bt-txt'>For collabs or inquiries</p>
         <button className='email-btn'>
@@ -133,8 +133,8 @@ function FeaturedOn() {
           <a target="_blank" href="https://wookiees.gitbook.io/wookiees/" rel="noreferrer">
             <img src={i9} alt="i9" className="fo-side-icons" /></a>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   )
 }
 

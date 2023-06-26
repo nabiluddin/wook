@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function Footer(props) {
   return (
-    <motion.div
+    <div
     whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
     transition={{ duration: 0.5 }}
     className='footer'>
@@ -34,7 +34,7 @@ function Footer(props) {
       <div className="footer-copyright">
         © 2023 Wookiees, All right Reserved
       </div>
-    </motion.div>
+    </div>
   )
 }
 
