@@ -38,7 +38,7 @@ html, body {
 // n is the number of stars required
 @function multiple-box-shadow($n) {
   $value: '#{random(2000)}px #{random(2000)}px #FFF';
-  @for $i from 500 through $n {
+  @for $i from 5000 through $n {
     $value: '#{$value}, #{random(2000)}px #{random(20000)}px #FFF';
   }
 
@@ -141,3 +141,25 @@ html {
     transform: translateX(-1200px);
   }
 }
+
+@media screen and (max-width:768px) {
+  #stars{
+    display: none;
+  }
+  #stars2{
+    display: none;
+  }
+  #stars3{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
