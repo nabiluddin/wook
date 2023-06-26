@@ -39,7 +39,7 @@ function Navbar(props) {
     <nav>
       <div className='logo-tr'>
         <a href="/">
-        <img src={logo} alt='img' className='nav-logo' /></a>
+          <img src={logo} alt='img' className='nav-logo' /></a>
         <div id="google_translate_element"></div>
       </div>
       <ul className='nav-links'>
@@ -49,7 +49,7 @@ function Navbar(props) {
         <li><a className='a-tag' href={props.check ? "#woomap" : "/"}>Wookieemap</a> </li>
         <li><a className='a-tag' href="/app">App</a></li>
         <li className="dropdown-nav">
-          Whitelist
+          Whitelists ->
           <ul className="dropdown-menu-nav">
             <li><a href="/whitelist1">$250K Giveaway</a></li>
             <li><a href="/whitelist2">Whitelist 1</a></li>
@@ -63,6 +63,31 @@ function Navbar(props) {
         {/* <button className='nav-translate-btn' >En</button> */}
 
         <button className='nav-use-app'>Use App <div className='coming-soon-badge'>coming soon</div></button>
+
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul className='menu' id='menu'>
+              <li><a className='a-tag-menu' href={props.check ? "#about" : "/"}> About</a></li>
+              <li><a className='a-tag-menu' href={props.check ? "#htb" : "/"}>How to Buy</a></li>
+              <li><a className='a-tag-menu' href={props.check ? "#wookie" : "/"}>Wookieenomics</a> </li>
+              <li><a className='a-tag-menu' href={props.check ? "#woomap" : "/"}>Wookieemap</a> </li>
+              <li><a className='a-tag-menu' href="/app">App</a></li>
+              <li className="dropdown-nav">
+                <p className='whiteL'>Whitelists -></p>
+                <ul className="dropdown-menu-nav">
+                  <li><a href="/whitelist1">$250K Giveaway</a></li>
+                  <li><a href="/whitelist2">Whitelist 1</a></li>
+                  <li><a href="/whitelist3">Whitelist 2</a></li>
+                  <li><a href="/whitelist4">Whitelist 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </nav>
   )

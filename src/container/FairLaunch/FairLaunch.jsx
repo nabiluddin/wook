@@ -10,6 +10,20 @@ function FairLaunch() {
       className='fair-launch'>
       <p className='fair-head-txt'>Fair Launch</p>
       <img src={fairLaunch} alt="fairLaunch" className='fair-img' />
+
+
+
+
+    
+   
+   
+
+
+
+
+
+
+
     </motion.div>
   )
 }
