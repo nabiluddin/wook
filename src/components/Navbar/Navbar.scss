@@ -283,6 +283,9 @@ ul {
     cursor: pointer;
 }
 
+.mobile-menu{
+  display: none;
+}
 
 
 
@@ -312,6 +315,9 @@ ul {
     width: 127px;
     position: relative;
     // left: -100px;
+  }
+  .mobile-menu{
+    display: block;
   }
 
 }

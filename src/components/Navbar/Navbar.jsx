@@ -64,7 +64,7 @@ function Navbar(props) {
 
         <button className='nav-use-app'>Use App <div className='coming-soon-badge'>coming soon</div></button>
 
-        <nav role="navigation">
+        <nav className='mobile-menu' role="navigation">
           <div id="menuToggle">
             <input type="checkbox" />
             <span></span>
