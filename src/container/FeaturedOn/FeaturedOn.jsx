@@ -116,7 +116,7 @@ function FeaturedOn() {
           <img src={i9} alt="i9" className="fo-side-icons" /> */}
           <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
             <img src={i1} alt="i1" className="fo-side-icons" /></a>
-          <a target="_blank" href="https://www.pinksale.finance/?chain=BSC" rel="noreferrer">
+          <a target="_blank" href="https://www.pinksale.finance/launchpad/0x314857fa43243360440580Becb85686fAa606500?chain=ETH" rel="noreferrer">
             <img src={i2} alt="i2" className="fo-side-icons" /></a>
           <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
             <img src={i3} alt="i3" className="fo-side-icons" /></a>

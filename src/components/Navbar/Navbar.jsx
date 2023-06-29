@@ -10,24 +10,24 @@ function Navbar(props) {
   });
 
 
-  const googleTranslateElementInit = () => {
-    new window.google.translate.TranslateElement(
-      {
-        pageLanguage: "en",
-        autoDisplay: false
-      },
-      "google_translate_element"
-    );
-  };
-  useEffect(() => {
-    var addScript = document.createElement("script");
-    addScript.setAttribute(
-      "src",
-      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    );
-    document.body.appendChild(addScript);
-    window.googleTranslateElementInit = googleTranslateElementInit;
-  }, []);
+  // const googleTranslateElementInit = () => {
+  //   new window.google.translate.TranslateElement(
+  //     {
+  //       pageLanguage: "en",
+  //       autoDisplay: false
+  //     },
+  //     "google_translate_element"
+  //   );
+  // };
+  // useEffect(() => {
+  //   var addScript = document.createElement("script");
+  //   addScript.setAttribute(
+  //     "src",
+  //     "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  //   );
+  //   document.body.appendChild(addScript);
+  //   window.googleTranslateElementInit = googleTranslateElementInit;
+  // }, []);
   // return (
   //   <>
   //     <div id="google_translate_element"></div>
@@ -40,29 +40,31 @@ function Navbar(props) {
       <div className='logo-tr'>
         <a href="/">
           <img src={logo} alt='img' className='nav-logo' /></a>
-        <div id="google_translate_element"></div>
+        {/* <div id="google_translate_element"></div> */}
       </div>
       <ul className='nav-links'>
-        <li><a className='a-tag' href={props.check ? "#about" : "/"}> About</a></li>
-        <li><a className='a-tag' href={props.check ? "#htb" : "/"}>How to Buy</a></li>
-        <li><a className='a-tag' href={props.check ? "#wookie" : "/"}>Wookieenomics</a> </li>
-        <li><a className='a-tag' href={props.check ? "#woomap" : "/"}>Wookieemap</a> </li>
-        <li><a className='a-tag' href="/app">App</a></li>
-        <li className="dropdown-nav">
-          Whitelists ->
+        <li><a className='a-tag' href={props.check ? "#about" : "/"}> {props.ulli ? `${props.ulli[0]}` : "About"}</a></li>
+        <li><a className='a-tag' href={props.check ? "#htb" : "/"}>{props.ulli ? `${props.ulli[1]}` : "How to Buy"}</a></li>
+        <li><a className='a-tag' href={props.check ? "#wookie" : "/"}>{props.ulli ? `${props.ulli[2]}` : "Wookieenomics"}</a> </li>
+        <li><a className='a-tag' href={props.check ? "#woomap" : "/"}>{props.ulli ? `${props.ulli[3]}` : "Wookieemap"}</a> </li>
+        {props.ulli ? `` : <li><a className='a-tag' href="#">{props.ulli ? '' : "App"} <div className='coming-soon-badge'>coming soon</div> </a></li>}
+        {props.ulli ? `` : <li><a className='a-tag' href="#">{props.ulli ? '' : "WNFT"} <div className='coming-soon-badge'>coming soon</div> </a></li>}
+        {props.ulli ? `` : <li className="dropdown-nav">
+          {props.ulli ? "" : "Whitelists ->"}
           <ul className="dropdown-menu-nav">
             <li><a href="/whitelist1">$250K Giveaway</a></li>
             <li><a href="/whitelist2">Whitelist 1</a></li>
             <li><a href="/whitelist3">Whitelist 2</a></li>
             <li><a href="/whitelist4">Whitelist 3</a></li>
           </ul>
-        </li>
+        </li>}
+
       </ul>
 
       <div className='nav-side'>
         {/* <button className='nav-translate-btn' >En</button> */}
 
-        <button className='nav-use-app'>Use App <div className='coming-soon-badge'>coming soon</div></button>
+        <button className='nav-use-app'>{props.ulli ? `Connect Wallet` : "Use App"} <div className='coming-soon-badge'>coming soon</div></button>
 
         <nav className='mobile-menu' role="navigation">
           <div id="menuToggle">
@@ -75,7 +77,8 @@ function Navbar(props) {
               <li><a className='a-tag-menu' href={props.check ? "#htb" : "/"}>How to Buy</a></li>
               <li><a className='a-tag-menu' href={props.check ? "#wookie" : "/"}>Wookieenomics</a> </li>
               <li><a className='a-tag-menu' href={props.check ? "#woomap" : "/"}>Wookieemap</a> </li>
-              <li><a className='a-tag-menu' href="/app">App</a></li>
+              <li><a className='a-tag-menu' href="#">App <div className='coming-soon-badge'>coming soon</div></a></li>
+              <li><a className='a-tag-menu' href="#">WNFT <div className='coming-soon-badge'>coming soon</div></a></li>
               <li className="dropdown-nav">
                 <p className='whiteL'>Whitelists -></p>
                 <ul className="dropdown-menu-nav">

@@ -20,7 +20,8 @@ function Footer(props) {
       <div className="footer-nav">
         <span className="footer-nav-item"><a  className='a-tag' href={props.check?"#wookie":"/"}>Wookieenomics</a> </span>
         <span className="footer-nav-item"><a className='a-tag' href={props.check?"#woomap":"/"}>Wookieemap</a> </span>
-        <span className="footer-nav-item"><a className='a-tag' href="/app">App</a></span>
+        <span className="footer-nav-item"><a className='a-tag' href="#">App </a></span>
+        <span className="footer-nav-item"><a className='a-tag' href="#">WNFT </a></span>
         <li class="dropdown">
           Whitelist
           <ul class="dropdown-menu">

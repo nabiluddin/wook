@@ -22,6 +22,16 @@
     width: 1000px;
   }
 }
+.iframe{
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.mt20{
+  margin-top: 5rem;
+}
+.mb20{
+  margin-bottom: 2.5rem;
+}
 @media screen and (max-width: 768px) {
   .fair-launch{
     padding: 0;
@@ -45,5 +55,8 @@
       width: 360px;
       height: 250px;
     }
+  }
+  .iframe{
+    height: 500px;
   }
 }

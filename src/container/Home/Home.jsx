@@ -69,7 +69,7 @@ function Home() {
         <div className="right-bar">
           <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
             <img src={i1} alt="i1" className="home-side-icons" /></a>
-          <a target="_blank" href="https://www.pinksale.finance/?chain=BSC" rel="noreferrer">
+          <a target="_blank" href="https://www.pinksale.finance/launchpad/0x314857fa43243360440580Becb85686fAa606500?chain=ETH" rel="noreferrer">
             <img src={i2} alt="i2" className="home-side-icons" /></a>
           <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
             <img src={i3} alt="i3" className="home-side-icons" /></a>
@@ -110,7 +110,7 @@ function Home() {
             <div className="pulse1"></div>
             <div class="mybtns anim">
 
-              <a target="_blank" href="https://www.pinksale.finance/" rel="noreferrer">
+              <a target="_blank" href="https://www.pinksale.finance/launchpad/0x314857fa43243360440580Becb85686fAa606500?chain=ETH" rel="noreferrer">
                 <span> </span>
                 <span> </span>
                 <span> </span>
@@ -131,11 +131,11 @@ function Home() {
               whileInView={{ opacity: [0, 1], scale: [1, 1.1], }}
               transition={{ duration: 1 }} src={wkDn} alt="wkDn" className="home-wk-dn" />
 
-            <div className="home-audit">
+            <a href="https://github.com/cyberscope-io/audits/blob/main/wookiee/audit.pdf" className="home-audit">
               <img src={tick} alt="tick" className="tick" />
               <p>Audit By:</p>
               <img src={cv1} alt="audit" className="audit" />
-            </div>
+            </a>
           </div>
 
           {/* <img src={mainLogo} alt="logo" className="main-logo ellipse" /> */}
