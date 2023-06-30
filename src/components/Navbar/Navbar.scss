@@ -95,6 +95,7 @@ nav {
 
     .nav-translate-btn {
       border: 1px solid;
+      
       // border-image-source: linear-gradient(91.9deg, #CF9545 4.97%, rgba(207, 149, 69, 0.3) 96.76%);
       border-image-slice: 1;
       background: transparent;
@@ -117,6 +118,7 @@ nav {
       gap: 10px;
       color: white;
       border: 1px solid white;
+      border: none;
       font-weight: 500;
       font-size: 18px;
       line-height: 28px;

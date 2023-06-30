@@ -7,6 +7,7 @@ import WL2 from "./container/WL2/WL2";
 import WL3 from "./container/WL3/WL3";
 import WL4 from "./container/WL4/WL4";
 import UseApp from "./container/UseApp/UseApp";
+import WNFT from "./container/WNFT/WNFT";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/whitelist2" element={<WL2 />} />
         <Route path="/whitelist3" element={<WL3 />} />
         <Route path="/whitelist4" element={<WL4 />} />
+        {/* <Route path="/wnft" element={<WNFT />} /> */}
       </Routes>
      
     </BrowserRouter>
