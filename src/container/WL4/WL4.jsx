@@ -149,15 +149,16 @@ function WL4() {
         <p className="footer-up-txt">
           <img src={logo} alt='img' className='nav-logo' />
         </p>
-        <div className="footer-nav-4">
+        <div className="footer-nav-4 reduce-mb">
           <span className="footer-nav-item"><a className='a-tag' href={ "/"}> About</a></span>
           <span className="footer-nav-item"><a className='a-tag' href={ "/"}> How to Buy</a></span>
+          <span className="footer-nav-item"><a className='a-tag' href={"/"}>Wookieenomics</a> </span>
 
         </div>
         <div className="footer-nav-4">
-          <span className="footer-nav-item"><a className='a-tag' href={"/"}>Wookieenomics</a> </span>
           <span className="footer-nav-item"><a className='a-tag' href={"/"}>Wookieemap</a> </span>
-          <span className="footer-nav-item"><a className='a-tag' href="/app">App</a></span>
+          <span className="footer-nav-item"><a className='a-tag' href="#">App</a></span>
+          <span className="footer-nav-item"><a className='a-tag' href="#">WNFT</a></span>
           <li class="dropdown">
             Whitelist
             <ul class="dropdown-menu">
