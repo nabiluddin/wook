@@ -12,13 +12,13 @@ function Footer(props) {
       <p className="footer-up-txt">
         The Wookiee coin pays tribute to the iconic Wookiee meme and is not associated with any products, videos, productions, films or animation studios. The token is a nod to a beloved alien that is widely recognized and appreciated. WOOKIEE is a cryptocurrency based on a meme that has no inherent value or guarantee of financial return. It is in fact very risky to buy if you are looking for financial rewards. Participate only a meme enthusiast and collector rather than a speculator of future value. The coin does not have a formal team or a specific roadmap for development. There are some things outlined, but those are only bonus activities and may never come to fruition. It is a non-functional coin and exists solely for entertainment purposes. $WOOKIEE is not an investment of any form. Do not buy this expecting financial returns. Always consult a financial advisor before making any investment decisions.
       </p>
-      <div className="footer-nav">
+      <div className="footer-nav reduce-mb">
         <span className="footer-nav-item"><a className='a-tag' href={props.check?"#about":"/"}> About</a></span>
         <span className="footer-nav-item"><a className='a-tag' href={props.check?"#htb":"/"}>How to Buy</a></span>
+        <span className="footer-nav-item"><a  className='a-tag' href={props.check?"#wookie":"/"}>Wookieenomics</a> </span>
 
       </div>
       <div className="footer-nav">
-        <span className="footer-nav-item"><a  className='a-tag' href={props.check?"#wookie":"/"}>Wookieenomics</a> </span>
         <span className="footer-nav-item"><a className='a-tag' href={props.check?"#woomap":"/"}>Wookieemap</a> </span>
         <span className="footer-nav-item"><a className='a-tag' href="#">App </a></span>
         <span className="footer-nav-item"><a className='a-tag' href="#">WNFT </a></span>
