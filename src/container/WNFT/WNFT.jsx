@@ -6,7 +6,8 @@ import logo from '../../assets/logo-wookie.png'
 import Navbar from "../../components/Navbar/Navbar";
 import mainLogo from "../../assets/main-logo.png";
 import wkDn from "../../assets/wookieesdn.png";
-import triangle from '../../assets/triangle.png'
+import ethimg from '../../assets/eth-img.png'
+
 
 import f1 from '../../assets/f1.png'
 import f2 from '../../assets/f2.png'
@@ -179,12 +180,12 @@ function WNFT() {
             Wookiees NFT Drop
           </div>
           <div className="nft-drop-desc">
-            Users have the opportunity to participate in the Pepebaby NFT drop, with the ability to mint up to 15550 NFTs. As a reward, users will receive the Pepbaby token (Pepebaby) via airdrop.
+            Users have the opportunity to participate in the Wookiee NFT drop, with the ability to mint up to 2850 NFTs. As a reward, users will receive the Wookiee token (Wookiee) via airdrop.
           </div>
           <div className="nft-hr-rule"></div>
           <div className="nft-flex-row">
             <p>Total Minted</p>
-            <p>15500/15500 Claimed</p>
+            <p>2850/2850 Claimed</p>
           </div>
           <div className="nft-hr-rule"></div>
           <div className="nft-flex-row">
@@ -195,7 +196,7 @@ function WNFT() {
               <span class="plus">+</span>
             </div>
           </div>
-          <button className='nft-btn'> <img src={triangle} alt="tri"  className="triangle"/> Mint Now(0.25 BNB)</button>
+          <button className='nft-btn'> <img src={ethimg} alt="tri"  className="triangle"/> Mint Now(0.089 ETH)</button>
         </div>
 
       </motion.div>
