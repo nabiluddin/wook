@@ -142,7 +142,7 @@ function WL3() {
       <div className="WL1-head-txt">
         Complete all Task To get whitelisted
       </div>
-      <iframe src="https://zealy.io/c/wookiees/questboard" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
+      <iframe src="https://s.giveaway.com/1cgr98j" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
 
 
       <div className="wl-foo">
