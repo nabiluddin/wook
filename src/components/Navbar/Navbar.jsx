@@ -48,7 +48,9 @@ function Navbar(props) {
         <li><a className='a-tag' href={props.check ? "#wookie" : "/"}>{props.ulli ? `${props.ulli[2]}` : "Wookieenomics"}</a> </li>
         <li><a className='a-tag' href={props.check ? "#woomap" : "/"}>{props.ulli ? `${props.ulli[3]}` : "Wookieemap"}</a> </li>
         {props.ulli ? `` : <li><a className='a-tag' href="#">{props.ulli ? '' : "App"} <div className='coming-soon-badge'>coming soon</div> </a></li>}
-        {props.ulli ? `` : <li><a className='a-tag' href="#">{props.ulli ? '' : "WNFT"} <div className='coming-soon-badge'>coming soon</div> </a></li>}
+        {props.ulli ? `` : <li><a className='a-tag' href="/wnft">{props.ulli ? '' : "WNFT"}
+         {/* <div className='coming-soon-badge'>coming soon</div>  */}
+         </a></li>}
         {props.ulli ? `` : <li className="dropdown-nav">
           {props.ulli ? "" : "Whitelists ->"}
           <ul className="dropdown-menu-nav">
@@ -78,7 +80,9 @@ function Navbar(props) {
               <li><a className='a-tag-menu' href={props.check ? "#wookie" : "/"}>Wookieenomics</a> </li>
               <li><a className='a-tag-menu' href={props.check ? "#woomap" : "/"}>Wookieemap</a> </li>
               <li><a className='a-tag-menu' href="#">App <div className='coming-soon-badge'>coming soon</div></a></li>
-              <li><a className='a-tag-menu' href="#">WNFT <div className='coming-soon-badge'>coming soon</div></a></li>
+              <li><a className='a-tag-menu' href="/wnft">WNFT
+               {/* <div className='coming-soon-badge'>coming soon</div> */}
+               </a></li>
               <li className="dropdown-nav">
                 <p className='whiteL'>Whitelists -></p>
                 <ul className="dropdown-menu-nav">

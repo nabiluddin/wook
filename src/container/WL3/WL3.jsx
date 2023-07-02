@@ -158,7 +158,7 @@ function WL3() {
         <div className="footer-nav-3">
           <span className="footer-nav-item"><a className='a-tag' href={"/"}>Wookieemap</a> </span>
           <span className="footer-nav-item"><a className='a-tag' href="#">App</a></span>
-          <span className="footer-nav-item"><a className='a-tag' href="#">WNFT</a></span>
+          <span className="footer-nav-item"><a className='a-tag' href="/wnft">WNFT</a></span>
           <li class="dropdown">
             Whitelist
             <ul class="dropdown-menu">

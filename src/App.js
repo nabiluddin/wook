@@ -19,7 +19,7 @@ function App() {
         <Route path="/whitelist2" element={<WL2 />} />
         <Route path="/whitelist3" element={<WL3 />} />
         <Route path="/whitelist4" element={<WL4 />} />
-        {/* <Route path="/wnft" element={<WNFT />} /> */}
+        <Route path="/wnft" element={<WNFT />} />
       </Routes>
      
     </BrowserRouter>
