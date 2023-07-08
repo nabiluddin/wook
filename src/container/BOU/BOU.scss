@@ -1,0 +1,36 @@
+.BOU {
+  position: relative;
+    // padding: 15rem 0;
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // font-family: 'Heebo';
+  scroll-behavior: smooth;
+
+  .htb-headt-txt {
+    color: #F9E0BB;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.bgBOU{
+  width: 500px;
+  height: 600px;
+  position: relative;
+  top: -30px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.BOUimg{
+  width: 88%;
+  border-radius: 9px;
+}

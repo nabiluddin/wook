@@ -1,0 +1,63 @@
+.ucx {
+  position: relative;
+  // padding: 15rem 0;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // font-family: 'Heebo';
+  scroll-behavior: smooth;
+
+  width: 100%;
+
+}
+.ucx-htb-head-txt {
+  // margin: -8rem;
+  margin-bottom: 4rem;
+  position: relative;
+  font-family: 'Star Jedi', arial;
+  color: #C38154;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 63px;
+  text-align: center;
+  width: 100%;
+}
+
+.all-cmps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: auto;
+  gap: 1rem;
+
+}
+
+.one-bg-bx {
+  width: 110px;
+  border-radius: 0.625rem;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+  padding: 7px 10px;
+
+}
+
+.one-bg-bx-item {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .ucx {
+    .htb-headt-txt {
+      width: 70%;
+    }
+  }
+
+  .all-cmps {
+    width: 90%;
+  }
+}

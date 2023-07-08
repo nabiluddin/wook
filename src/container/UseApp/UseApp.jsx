@@ -22,12 +22,12 @@ function UseApp() {
       <div className="use-app-right-bar">
           <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
             <img src={ft1} alt="i1" className="home-side-icons" /></a>
-          <a target="_blank" href="https://www.pinksale.finance/?chain=BSC" rel="noreferrer">
-            <img src={ft2} alt="i2" className="home-side-icons" /></a>
+          {/* <a target="_blank" href="https://www.pinksale.finance/?chain=BSC" rel="noreferrer">
+            <img src={ft2} alt="i2" className="home-side-icons" /></a> */}
           <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
             <img src={ft3} alt="i3" className="home-side-icons" /></a>
-          <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
-            <img src={ft4} alt="i4" className="home-side-icons" /></a>
+          {/* <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
+            <img src={ft4} alt="i4" className="home-side-icons" /></a> */}
 
         </div>
         <p className='use-app-sm-txt'>we relay on maths not validators</p>

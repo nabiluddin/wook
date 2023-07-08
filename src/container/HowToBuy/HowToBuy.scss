@@ -164,11 +164,11 @@
   margin-bottom: 7rem;
   position: relative;
   font-family: 'Star Jedi', arial;
-    color: #C38154;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 63px;
-    text-align: center;
+  color: #C38154;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 63px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -213,7 +213,7 @@
 
   .arrow-slider {
     right: 0;
-    
+
   }
 
   .slider-logo {
@@ -222,9 +222,11 @@
     left: 0;
 
   }
-  .slider-logo-num{
+
+  .slider-logo-num {
     left: 0;
   }
+
   .htb-ul li:hover {
     width: 50%;
     opacity: 1;

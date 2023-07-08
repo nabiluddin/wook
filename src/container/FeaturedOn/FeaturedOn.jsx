@@ -94,8 +94,9 @@ function FeaturedOn() {
        <a target='_blank' rel="noreferrer" href="https://dcg.co/portfolio"> <div className="support-logo"><img className="support-logo-img" src={l14} alt="l1" /></div></a>
       </motion.div>
 
-      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }} className="fo-head-txt">
+      <motion.div
+       whileInView={{ y: [0], opacity: [ 1] }} transition={{ duration: 0.5 }}
+       className="fo-head-txt">
         Contacts us
       </motion.div>
       <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
@@ -116,12 +117,12 @@ function FeaturedOn() {
           <img src={i9} alt="i9" className="fo-side-icons" /> */}
           <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
             <img src={i1} alt="i1" className="fo-side-icons" /></a>
-          <a target="_blank" href="https://www.pinksale.finance/launchpad/0x314857fa43243360440580Becb85686fAa606500?chain=ETH" rel="noreferrer">
-            <img src={i2} alt="i2" className="fo-side-icons" /></a>
+          {/* <a target="_blank" href="https://www.pinksale.finance/launchpad/0x314857fa43243360440580Becb85686fAa606500?chain=ETH" rel="noreferrer">
+            <img src={i2} alt="i2" className="fo-side-icons" /></a> */}
           <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
             <img src={i3} alt="i3" className="fo-side-icons" /></a>
-          <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
-            <img src={i4} alt="i4" className="fo-side-icons" /></a>
+          {/* <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
+            <img src={i4} alt="i4" className="fo-side-icons" /></a> */}
           <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
             <img src={i5} alt="i5" className="fo-side-icons" /></a>
           <a target="_blank" href="https://coinmarketcap.com/" rel="noreferrer">
