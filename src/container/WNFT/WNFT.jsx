@@ -99,19 +99,8 @@ function WNFT() {
         </div>
       </div>
 
-      <div className="center-content-1">
-        <div className="c-left">
-          {/* <img src={cleft} alt="circle" className="circles" /> */}
-          <a
-            href="https://twitter.com/wookieescoin"
-            style={{ textDecoration: "none" }}
-          >
-
-          </a>
-          {/* <div id="myDiv" onClick={() => navigator.clipboard.writeText('Contract :- 0x24086EAb82DBDaa4771d0A5D')} className="WL1-contract">
-            Contract :- 0x24086EAb82DBDaa4771d0A5D
-          </div> */}
-        </div>
+      <div className="wnft-center-content-1">
+        
         <div className="c-center">
           <div className="ellipse WL1-f-1">
             <div className="pulse1"></div>
@@ -158,20 +147,7 @@ function WNFT() {
 
 
         </div>
-        <div className="c-right">
-          <a
-            href="https://twitter.com/wookieescoin"
-            style={{ textDecoration: "none" }}
-          >
-
-          </a>
-          {/* <img src={cright} alt="circle" className="circles" /> */}
-        </div>
-      </div>
-
-
-
-      <motion.div className="nft-drop"
+        <motion.div className="nft-drop"
          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
          transition={{ duration: 0.5 }}
       >
@@ -200,6 +176,12 @@ function WNFT() {
         </div>
 
       </motion.div>
+        
+      </div>
+
+
+
+     
       {/* <iframe src="https://sweepwidget.com/c/71247-t1nsecyd" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe> */}
 
       <div className="footerbar footerbar-wnft">

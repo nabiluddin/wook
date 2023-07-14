@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.scss";
 import { motion } from 'framer-motion';
 import Navbar from "../../components/Navbar/Navbar";
@@ -68,6 +68,48 @@ function Home() {
     alert("Content copied to clipboard: " + textToCopy);
   }
 
+  useEffect(() => {
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        open(); // Call the open function after the timeout
+      }, 100);
+    });
+
+    function open() {
+      document.querySelector(".popup").style.display = "flex";
+    }
+
+    document.querySelector("#close").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "none";
+    })
+  })
+
+  useEffect(() => {
+    const input = document.querySelector('.input');
+    const progress = document.querySelector('.progress-done');
+    let finalValue = 50;
+    let max = 0;
+
+    function changeWidth() {
+      progress.style.width = `${finalValue}%`
+      // progress.innerText=`${Math.ceil(finalValue)}%`
+    }
+
+    // input.addEventListener('keyup', function () {
+    //   finalValue = parseInt(input.value, 10);
+    //   console.log('finalValue', finalValue);
+    // });
+    changeWidth()
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      // input.removeEventListener('keyup', function () {
+      //   finalValue = parseInt(input.value, 10);
+      //   console.log('finalValue', finalValue);
+      // });
+    };
+  }, []); // Empty dependency array to run the effect only once
+
 
 
 
@@ -77,6 +119,10 @@ function Home() {
 
 
     <motion.div className="home">
+      <div className="popup">
+        <button id="close">&times;</button>
+        <iframe title="popup" className="popup-iframe" src="https://form.zootools.co/go/MmGZLkrdb0VEd5lHfBQB" frameborder="0"></iframe>
+      </div>
 
       <Navbar check="true" className="navbar-top" />
       <div
@@ -184,12 +230,20 @@ function Home() {
 
         <div className="la-right " style={{ backgroundImage: `url(${bgYel})` }}>
           <div className="next-price">
-            <div className="n-c-1"> </div>
+            <div className="n-c-1 progress-done"> </div>
+            <div>
+              {/* <div className="progress">
+                <div className="progress-done">
+                
+                </div>
+              </div> */}
+
+            </div>
             <div className="n-c-price text-white text-sm  pl-4 opacity-100">Until Next Price:$0.0000272</div>
           </div>
           <div className="usdt-raised">USDT Raised: $1,319,276.99 / $1,980,000</div>
           <div className="bg-hr-gradient">
-            <div className="usdt-raised">1 $Wookiee AI = $0.0000000001200</div>
+            <div className="usdt-raised usdt2">1 $Wookiee AI = $0.0000000001200</div>
           </div>
           <div className="row-btn">
             <div className="bgs-bxs">
@@ -198,7 +252,7 @@ function Home() {
             </div>
             <div className="bgs-bxs">
               <img src={usdt} alt="eth" className="row-btn-logo" />
-              <p className="row-btn-p usdt"><p style={{fontSize:"1rem" , marginBottom:"-3px" , fontWeight:"500"}}> USDT</p> <p>ERC20</p> </p>
+              <p className="row-btn-p usdt"><p style={{ fontSize: "1rem", marginBottom: "-3px", fontWeight: "500" }}> USDT</p> <p>ERC20</p> </p>
             </div>
             <div className="bgs-bxs">
               <img src={card} alt="eth" className="row-btn-logo" />
@@ -216,7 +270,7 @@ function Home() {
               </div>
             </div>
             <div className="each-input">
-              <p>Amount in ETH you pay</p>
+              <p>Amount Wookiee you receive</p>
               <div className="input-container">
                 <input type="number" name="" id="" />
                 <img src={wookieeinputlogo} alt="eth" className="row-btn-logo" />

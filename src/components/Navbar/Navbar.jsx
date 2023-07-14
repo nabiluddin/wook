@@ -28,6 +28,7 @@ function Navbar(props) {
     document.body.appendChild(addScript);
     window.googleTranslateElementInit = googleTranslateElementInit;
   }, []);
+  
   // return (
   //   <>
   //     <div id="google_translate_element"></div>
@@ -66,7 +67,7 @@ function Navbar(props) {
       <div className='nav-side'>
         {/* <button className='nav-translate-btn' >En</button> */}
 
-        <button className='nav-use-app'>{props.ulli ? `Connect Wallet` : "Use App"} <div className='coming-soon-badge'>coming soon</div></button>
+        <button className='nav-use-app'>Connect Wallet <div className='coming-soon-badge'>coming soon</div></button>
 
         <nav className='mobile-menu' role="navigation">
           <div id="menuToggle">
