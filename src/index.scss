@@ -1,26 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 // @import compass;
 
-@import url(//db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi);
-@font-face {
-  font-family: "Star Jedi";
-  src: url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot");
-  src: url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.svg#Star Jedi")
-      format("svg");
-}
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Heebo", "Star Jedi", sans-serif;
+  font-family: "Heebo", "Carter One", sans-serif;
 }
 
 // body {

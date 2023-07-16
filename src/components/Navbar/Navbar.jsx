@@ -29,7 +29,7 @@ function Navbar(props) {
       );
       document.body.appendChild(addScript);
       window.googleTranslateElementInit = googleTranslateElementInit;
-    }, 100000);
+    }, 100);
   }, []);
 
   // return (

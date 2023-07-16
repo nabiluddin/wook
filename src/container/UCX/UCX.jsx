@@ -24,7 +24,7 @@ function UCX() {
     <div className='ucx'>
       <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }} className="ucx-htb-head-txt">
-        Find Wookiees upcoming on exchanges
+        Find Wookiees Upcoming On Exchanges
       </motion.div>
       <div className="all-cmps">  
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">

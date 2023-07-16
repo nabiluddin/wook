@@ -310,6 +310,9 @@ ul {
   display: none;
 }
 
+.dropdown-nav{
+  z-index: 6;
+}
 
 
 
@@ -347,6 +350,7 @@ ul {
 
   .mobile-menu {
     display: block;
+    z-index: 6;
   }
 
 }
