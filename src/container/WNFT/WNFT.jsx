@@ -4,7 +4,7 @@ import "./WNFT.scss";
 import { motion } from 'framer-motion';
 import logo from '../../assets/logo-wookie.png'
 import Navbar from "../../components/Navbar/Navbar";
-import mainLogo from "../../assets/main-logo.png";
+import mainLogo from "../../assets/main-logo.webp";
 import wkDn from "../../assets/wookieesdn.png";
 import ethimg from '../../assets/eth-img.png'
 

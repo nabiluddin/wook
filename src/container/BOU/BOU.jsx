@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import './BOU.scss'
 import bgBOU from '../../assets/bg-BOU.png'
-import BOUimg from '../../assets/BOU-img.png'
+import BOUimg from '../../assets/BOU-img.webp'
 
 function BOU() {
   return (

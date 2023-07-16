@@ -1,6 +1,5 @@
 import React from 'react'
 import Home from '../container/Home/Home'
-import FairLaunch from '../container/FairLaunch/FairLaunch'
 import TwoW from '../container/TwoW/TwoW'
 import Wookonomics from '../container/Wookonomic/Wookonomics'
 import Wookiemap from '../container/Wookiemap/Wookiemap'
@@ -14,7 +13,6 @@ function Main() {
   return (
     <div>  
       <Home />
-      {/* <FairLaunch /> */}
       <UCX />
       <BOU />
       <TwoW />

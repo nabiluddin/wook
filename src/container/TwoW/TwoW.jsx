@@ -1,6 +1,6 @@
 import React from "react";
 import wLite from "../../assets/wookiees-lite.png";
-import bitWoo from "../../assets/bit-woo.png";
+import bitWoo from "../../assets/bit-woo.webp";
 import './TwoW.scss'
 import { motion } from 'framer-motion';
 

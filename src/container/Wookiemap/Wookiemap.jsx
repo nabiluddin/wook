@@ -1,9 +1,9 @@
 import React from 'react'
 import './Wookiemap.scss'
-import miniWookie from '../../assets/mini-wookie.png'
+import miniWookie from '../../assets/mini-wookie.webp'
 import { motion } from 'framer-motion';
 
-import woopath from '../../assets/path-woo.png'
+import woopath from '../../assets/path-woo.webp'
 
 function Wookiemap() {
   return (

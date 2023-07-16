@@ -1,6 +1,6 @@
 import React from 'react'
 import './Wookonomics.scss'
-import chartImg from '../../assets/chart-woo.png'
+import chartImg from '../../assets/chart-woo.webp'
 import { motion } from 'framer-motion';
 
 

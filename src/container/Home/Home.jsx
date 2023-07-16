@@ -4,10 +4,9 @@ import { motion } from 'framer-motion';
 import Navbar from "../../components/Navbar/Navbar";
 import cleft from "../../assets/left-circle.png";
 import cright from "../../assets/right-circle.png";
-import mainLogo from "../../assets/main-logo.png";
+import mainLogo from "../../assets/main-logo.webp";
 import twitterImg from "../../assets/twitter-img.png";
 import telegImg from "../../assets/teleg-img.png";
-import footerbar from "../../assets/footerbar.png";
 import wkUp from "../../assets/wookieesup.png";
 import wkDn from "../../assets/wookieesdn.png";
 import f1 from '../../assets/f1.png'
