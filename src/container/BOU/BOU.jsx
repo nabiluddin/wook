@@ -4,6 +4,9 @@ import './BOU.scss'
 import bgBOU from '../../assets/bg-BOU.png'
 import BOUimg from '../../assets/BOU-img.webp'
 
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 function BOU() {
   return (
     <div className='BOU'>
@@ -12,7 +15,7 @@ function BOU() {
         Buy on uniswap
       </motion.div>
       <div style={{backgroundImage : `url(${bgBOU})`}} className='bgBOU'>
-      <img src={BOUimg} alt="" className='BOUimg' />
+      <LazyLoadImage src={BOUimg} alt="" className='BOUimg' />
 
       </div>
     </div>

@@ -26,6 +26,8 @@ import bnbyel from '../../assets/bnb-yel.png'
 import card from '../../assets/cards.png'
 import btnbg from '../../assets/bg-btn.png';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 
 
@@ -128,36 +130,36 @@ function Home() {
       >
         <div className="right-bar">
           <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
-            <img src={i1} alt="i1" className="home-side-icons" /></a>
+            <LazyLoadImage src={i1} alt="i1" className="home-side-icons" /></a>
           {/* <a target="_blank" href="https://www.pinksale.finance/launchpad/0x314857fa43243360440580Becb85686fAa606500?chain=ETH" rel="noreferrer">
-            <img src={i2} alt="i2" className="home-side-icons" /></a> */}
+            <LazyLoadImage src={i2} alt="i2" className="home-side-icons" /></a> */}
           <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
-            <img src={i3} alt="i3" className="home-side-icons" /></a>
+            <LazyLoadImage src={i3} alt="i3" className="home-side-icons" /></a>
           {/* <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
-            <img src={i4} alt="i4" className="home-side-icons" /></a> */}
+            <LazyLoadImage src={i4} alt="i4" className="home-side-icons" /></a> */}
           <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
-            <img src={i5} alt="i5" className="home-side-icons" /></a>
+            <LazyLoadImage src={i5} alt="i5" className="home-side-icons" /></a>
           <a target="_blank" href="https://coinmarketcap.com/" rel="noreferrer">
-            <img src={i6} alt="i6" className="home-side-icons" /></a>
+            <LazyLoadImage src={i6} alt="i6" className="home-side-icons" /></a>
           <a target="_blank" href="https://www.coingecko.com/" rel="noreferrer">
-            <img src={i7} alt="i7" className="home-side-icons" /></a>
+            <LazyLoadImage src={i7} alt="i7" className="home-side-icons" /></a>
           <a target="_blank" href="https://www.dextools.io/app/en/pairs" rel="noreferrer">
-            <img src={i8} alt="i8" className="home-side-icons" /></a>
+            <LazyLoadImage src={i8} alt="i8" className="home-side-icons" /></a>
           <a target="_blank" href="https://wookiees.gitbook.io/wookiees/" rel="noreferrer">
-            <img src={i9} alt="i9" className="home-side-icons" /></a>
+            <LazyLoadImage src={i9} alt="i9" className="home-side-icons" /></a>
         </div>
       </div>
 
       <div className="center-content c-and-la">
         <div className="center-content w-50">
           <div className="c-left ">
-            <img src={cleft} alt="circle" className="circles" />
+            <LazyLoadImage src={cleft} alt="circle" className="circles" />
             <a target="_blank" className="hidden"
               href="https://twitter.com/wookieescoin"
               style={{ textDecoration: "none" }} rel="noreferrer"
             >
               <button className="tw-btn-down">
-                <img src={twitterImg} alt="" />
+                <LazyLoadImage src={twitterImg} alt="" />
                 <p> Twitter </p>
                 <FiArrowUpRight />
               </button>
@@ -196,19 +198,24 @@ function Home() {
                 className="home-audit"
               // className=" hidden"
               >
-                <img src={tick} alt="tick" className="tick" />
+                <LazyLoadImage src={tick} alt="tick" className="tick" />
                 <p>Audit By:</p>
-                <img src={cv1} alt="audit" className="audit" />
+                <LazyLoadImage src={cv1} alt="audit" className="audit" />
               </a>
             </div>
 
-            {/* <img src={mainLogo} alt="logo" className="main-logo ellipse" /> */}
-            <motion.img
+            {/* <LazyLoadImage src={mainLogo} alt="logo" className="main-logo ellipse" /> */}
 
-              src={mainLogo}
-              alt='profile_circle'
-              className="main-logo ellipse "
-            />
+
+              <LazyLoadImage 
+                src={mainLogo}
+                effect="blur"
+                // placeholderSrc=""
+                className="main-logo ellipse "
+
+              />
+
+              {/* alt='profile_circle' */}
 
 
           </div>
@@ -218,12 +225,12 @@ function Home() {
               style={{ textDecoration: "none" }} rel="noreferrer"
             >
               <button className="tw-btn-up">
-                <img src={telegImg} alt="" />
+                <LazyLoadImage src={telegImg} alt="" />
                 <p> Telegram </p>
                 <FiArrowUpRight />
               </button>
             </a>
-            <img src={cright} alt="circle" className="circles" />
+            <LazyLoadImage src={cright} alt="circle" className="circles" />
           </div>
         </div>
 
@@ -246,15 +253,15 @@ function Home() {
           </div>
           <div className="row-btn">
             <div className="bgs-bxs">
-              <img src={ethinputlogo} alt="eth" className="row-btn-logo" />
+              <LazyLoadImage src={ethinputlogo} alt="eth" className="row-btn-logo" />
               <p className="row-btn-p">ETH</p>
             </div>
             <div className="bgs-bxs">
-              <img src={usdt} alt="eth" className="row-btn-logo" />
+              <LazyLoadImage src={usdt} alt="eth" className="row-btn-logo" />
               <p className="row-btn-p usdt"><p style={{ fontSize: "1rem", marginBottom: "-3px", fontWeight: "500" }}> USDT</p> <p>ERC20</p> </p>
             </div>
             <div className="bgs-bxs">
-              <img src={card} alt="eth" className="row-btn-logo" />
+              <LazyLoadImage src={card} alt="eth" className="row-btn-logo" />
               <p className="row-btn-p">CARD</p>
             </div>
           </div>
@@ -265,14 +272,14 @@ function Home() {
               <p>Amount in ETH you pay</p>
               <div className="input-container">
                 <input type="number" name="" id="" />
-                <img src={ethinputlogo} alt="eth" className="row-btn-logo" />
+                <LazyLoadImage src={ethinputlogo} alt="eth" className="row-btn-logo" />
               </div>
             </div>
             <div className="each-input">
               <p>Amount Wookiee you receive</p>
               <div className="input-container">
                 <input type="number" name="" id="" />
-                <img src={wookieeinputlogo} alt="eth" className="row-btn-logo" />
+                <LazyLoadImage src={wookieeinputlogo} alt="eth" className="row-btn-logo" />
               </div>
             </div>
           </div>
@@ -293,27 +300,27 @@ function Home() {
 
           <div className="flex flex-row flex-wrap w-full justify-center items-center gap-2">
             <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-green rounded-full py-[0.4rem] px-[0.5rem] gap-2">
-              <img src={ethinputlogo} alt="eth" className='w-6' />
+              <LazyLoadImage src={ethinputlogo} alt="eth" className='w-6' />
               <p className="text-white text-sm">ETH</p>
             </div>
             <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-[#9c9f2c] rounded-full py-[0.2rem] px-[0.5rem] gap-2">
-              <img src={usdt} alt="eth" className='w-6' />
+              <LazyLoadImage src={usdt} alt="eth" className='w-6' />
               <p className="text-white text-sm">USDT
                 <p className="text-xs mt-[-0.4rem]">ERC20</p>
               </p>
             </div>
             <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-[#9c9f2c] rounded-full py-[0.4rem] px-[0.5rem] gap-2">
-              <img src={bnbyel} alt="eth" className='w-6' />
+              <LazyLoadImage src={bnbyel} alt="eth" className='w-6' />
               <p className="text-white text-sm">ETH</p>
             </div>
             <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-[#9c9f2c] rounded-full py-[0.2rem] px-[0.5rem] gap-2">
-              <img src={usdt} alt="eth" className='w-6' />
+              <LazyLoadImage src={usdt} alt="eth" className='w-6' />
               <p className="text-white text-sm">USDT
                 <p className="text-xs mt-[-0.4rem]">BEP20</p>
               </p>
             </div>
             <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-[#9c9f2c] rounded-full py-[0.4rem] px-[0.5rem] gap-2">
-              <img src={card} alt="eth" className='w-6' />
+              <LazyLoadImage src={card} alt="eth" className='w-6' />
               <p className="text-white text-sm">CARD</p>
             </div>
 
@@ -328,7 +335,7 @@ function Home() {
 
               <div className="input-div-1 w-[80%] flex flex-row rounded-full border-green border-[1px] bg-[#9da02c] pl-4">
                 <input type="number" name="coin1" id="coin1" className='w-[80%] bg-transparent outline-none' />
-                <img src={ethinputlogo} alt="ethinputlogo" className='w-10' />
+                <LazyLoadImage src={ethinputlogo} alt="ethinputlogo" className='w-10' />
               </div>
             </div>
             <div className="flex flex-col justify-center items-center w-full">
@@ -336,7 +343,7 @@ function Home() {
               <div className="usdt-raised md:w-[80%] text-center sm:w-[80%] flex text-white md:text-sm sm:text-base p-2">Amount in $AI you receive</div>
               <div className="input-div-2 w-[80%] flex flex-row rounded-full border-green border-[1px] bg-[#9da02c] pl-4">
                 <input type="number" name="coin2" id="coin2" className='w-[80%] bg-transparent outline-none' />
-                <img src={pepeinputlogo} alt="ethinputlogo" className='w-8 m-1' />
+                <LazyLoadImage src={pepeinputlogo} alt="ethinputlogo" className='w-8 m-1' />
               </div>
             </div>
 
@@ -354,63 +361,63 @@ function Home() {
 
       <div className="footerbar">
 
-        {/* <img src={footerbar} alt="" /> */}
+        {/* <LazyLoadImage src={footerbar} alt="" /> */}
 
         <div className="slider">
           <div className="slide-track">
             <div className="slide">
-              <img src={f1} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f1} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f2} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f2} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f3} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f3} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f4} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f4} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f5} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f5} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f6} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f6} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f1} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f1} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f2} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f2} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f3} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f3} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f4} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f4} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f5} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f5} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f6} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f6} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f1} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f1} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f2} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f2} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f3} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f3} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f4} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f4} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f5} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f5} alt="f1" className="f1-home" />
             </div>
             <div className="slide">
-              <img src={f6} alt="f1" className="f1-home" />
+              <LazyLoadImage src={f6} alt="f1" className="f1-home" />
             </div>
 
           </div>

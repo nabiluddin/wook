@@ -26,6 +26,8 @@ import i7 from "../../assets/i7.png";
 import i8 from "../../assets/i8.png";
 import i9 from "../../assets/gitbook_logo.png";
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 function FeaturedOn() {
   return (
@@ -40,46 +42,46 @@ function FeaturedOn() {
         <div className="fr-1">
           <div className="logo">
             <a  href="https://www.forbes.com/?sh=7160c72b2254">
-              <img className="logo-img" src={l1} alt="l1" />
+              <LazyLoadImage className="logo-img" src={l1} alt="l1" />
             </a>
           </div>
           <div className="logo">
             <a  href="https://news.yahoo.com/">
-              <img className="logo-img" src={l2} alt="l2" /></a>
+              <LazyLoadImage className="logo-img" src={l2} alt="l2" /></a>
           </div>
           <div className="logo">
             <a  href="https://www.benzinga.com/">
-              <img className="logo-img" src={l3} alt="l3" /></a>
+              <LazyLoadImage className="logo-img" src={l3} alt="l3" /></a>
           </div>
           <div className="logo">
             <a  href="https://hackernoon.com/">
-              <img className="logo-img" src={l4} alt="l4" /></a>
+              <LazyLoadImage className="logo-img" src={l4} alt="l4" /></a>
           </div>
         </div>
         <div className="fr-1">
           <div className="logo">
             <a  href="https://coincodex.com/">
-              <img className="logo-img" src={l5} alt="l1" /></a>
+              <LazyLoadImage className="logo-img" src={l5} alt="l1" /></a>
           </div>
           <div className="logo">
             <a  href="https://www.investing.com/">
-              <img className="logo-img" src={l6} alt="l2" /></a>
+              <LazyLoadImage className="logo-img" src={l6} alt="l2" /></a>
           </div>
           <div className="logo"><a  href="https://www.marketwatch.com/">
-            <img className="logo-img" src={l7} alt="l3" /></a>
+            <LazyLoadImage className="logo-img" src={l7} alt="l3" /></a>
           </div>
           <div className="logo"><a  href="https://www.newsbtc.com/">
-            <img className="logo-img" src={l8} alt="l4" /></a>
+            <LazyLoadImage className="logo-img" src={l8} alt="l4" /></a>
           </div>
         </div>
         <div className="fr-1">
-          <div className="logo"><img className="logo-img" src={l9} alt="l1" /></div>
+          <div className="logo"><LazyLoadImage className="logo-img" src={l9} alt="l1" /></div>
           <div className="logo"><a  href="https://finance.yahoo.com/">
-            <img className="logo-img" src={l10} alt="l2" /></a></div>
+            <LazyLoadImage className="logo-img" src={l10} alt="l2" /></a></div>
           <div className="logo"><a  href="https://finance.yahoo.com/">
-            <img className="logo-img" src={l11} alt="l3" /></a></div>
+            <LazyLoadImage className="logo-img" src={l11} alt="l3" /></a></div>
           <div className="logo"><a  href="https://www.thestreet.com/">
-            <img className="logo-img" src={l12} alt="l4" /></a></div>
+            <LazyLoadImage className="logo-img" src={l12} alt="l4" /></a></div>
         </div>
       </div>
       <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
@@ -90,8 +92,8 @@ function FeaturedOn() {
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
         className="fo-spport-icon">
-       <a target='_blank' rel="noreferrer" href="https://panteracapital.com/"> <div className="support-logo"><img className="support-logo-img" src={l13} alt="l1" /></div></a>
-       <a target='_blank' rel="noreferrer" href="https://dcg.co/portfolio"> <div className="support-logo"><img className="support-logo-img" src={l14} alt="l1" /></div></a>
+       <a target='_blank' rel="noreferrer" href="https://panteracapital.com/"> <div className="support-logo"><LazyLoadImage className="support-logo-img" src={l13} alt="l1" /></div></a>
+       <a target='_blank' rel="noreferrer" href="https://dcg.co/portfolio"> <div className="support-logo"><LazyLoadImage className="support-logo-img" src={l14} alt="l1" /></div></a>
       </motion.div>
 
       <motion.div
@@ -106,33 +108,33 @@ function FeaturedOn() {
           <a href="mailto:hello@wookiees.io" >
           hello@wookiees.io</a></button>
         <div className="fo-bt-icons">
-          {/* <img src={i1} alt="i1" className="fo-side-icons" />
-          <img src={i2} alt="i2" className="fo-side-icons" />
-          <img src={i3} alt="i3" className="fo-side-icons" />
-          <img src={i4} alt="i4" className="fo-side-icons" />
-          <img src={i5} alt="i5" className="fo-side-icons" />
-          <img src={i6} alt="i6" className="fo-side-icons" />
-          <img src={i7} alt="i7" className="fo-side-icons" />
-          <img src={i8} alt="i8" className="fo-side-icons" />
-          <img src={i9} alt="i9" className="fo-side-icons" /> */}
+          {/* <LazyLoadImage src={i1} alt="i1" className="fo-side-icons" />
+          <LazyLoadImage src={i2} alt="i2" className="fo-side-icons" />
+          <LazyLoadImage src={i3} alt="i3" className="fo-side-icons" />
+          <LazyLoadImage src={i4} alt="i4" className="fo-side-icons" />
+          <LazyLoadImage src={i5} alt="i5" className="fo-side-icons" />
+          <LazyLoadImage src={i6} alt="i6" className="fo-side-icons" />
+          <LazyLoadImage src={i7} alt="i7" className="fo-side-icons" />
+          <LazyLoadImage src={i8} alt="i8" className="fo-side-icons" />
+          <LazyLoadImage src={i9} alt="i9" className="fo-side-icons" /> */}
           <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
-            <img src={i1} alt="i1" className="fo-side-icons" /></a>
+            <LazyLoadImage src={i1} alt="i1" className="fo-side-icons" /></a>
           {/* <a target="_blank" href="https://www.pinksale.finance/launchpad/0x314857fa43243360440580Becb85686fAa606500?chain=ETH" rel="noreferrer">
-            <img src={i2} alt="i2" className="fo-side-icons" /></a> */}
+            <LazyLoadImage src={i2} alt="i2" className="fo-side-icons" /></a> */}
           <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
-            <img src={i3} alt="i3" className="fo-side-icons" /></a>
+            <LazyLoadImage src={i3} alt="i3" className="fo-side-icons" /></a>
           {/* <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
-            <img src={i4} alt="i4" className="fo-side-icons" /></a> */}
+            <LazyLoadImage src={i4} alt="i4" className="fo-side-icons" /></a> */}
           <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
-            <img src={i5} alt="i5" className="fo-side-icons" /></a>
+            <LazyLoadImage src={i5} alt="i5" className="fo-side-icons" /></a>
           <a target="_blank" href="https://coinmarketcap.com/" rel="noreferrer">
-            <img src={i6} alt="i6" className="fo-side-icons" /></a>
+            <LazyLoadImage src={i6} alt="i6" className="fo-side-icons" /></a>
           <a target="_blank" href="https://www.coingecko.com/" rel="noreferrer">
-            <img src={i7} alt="i7" className="fo-side-icons" /></a>
+            <LazyLoadImage src={i7} alt="i7" className="fo-side-icons" /></a>
           <a target="_blank" href="https://www.dextools.io/app/en/pairs" rel="noreferrer">
-            <img src={i8} alt="i8" className="fo-side-icons" /></a>
+            <LazyLoadImage src={i8} alt="i8" className="fo-side-icons" /></a>
           <a target="_blank" href="https://wookiees.gitbook.io/wookiees/" rel="noreferrer">
-            <img src={i9} alt="i9" className="fo-side-icons" /></a>
+            <LazyLoadImage src={i9} alt="i9" className="fo-side-icons" /></a>
         </div>
       </motion.div>
     </motion.div>

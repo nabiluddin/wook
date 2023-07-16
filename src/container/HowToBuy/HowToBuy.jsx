@@ -11,6 +11,9 @@ import img4 from '../../assets/04.png'
 import arrow from '../../assets/arrow.png'
 import { motion } from 'framer-motion';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
 
 function HowToBuy() {
   return (
@@ -22,42 +25,42 @@ function HowToBuy() {
 
       <ul className='htb-ul'>
         <li >
-          <img src={img1} alt="" className='slider-logo-num' />
-          <img src={slider1} alt="" className="slider-logo" />
+          <LazyLoadImage src={img1} alt="" className='slider-logo-num' />
+          <LazyLoadImage src={slider1} alt="" className="slider-logo" />
           <div className="content">
             <h2 className="htb-headt-txt">Get a Wallet</h2>
             <p className="htb-p-txt">Download Metamask or your wallet of choice from the app store or Google Play Store for free. Desktop users, download the Google Chrome extension by going to metamask.io.</p>
           </div>
-          <img src={arrow} alt="" className='arrow-slider' />
+          <LazyLoadImage src={arrow} alt="" className='arrow-slider' />
         </li>
         <li>
-          <img src={img2} alt="" className='slider-logo-num' />
-          <img src={slider2} alt="" className="slider-logo" />
+          <LazyLoadImage src={img2} alt="" className='slider-logo-num' />
+          <LazyLoadImage src={slider2} alt="" className="slider-logo" />
           <div className="content">
             <h2 className="htb-headt-txt">Get Some ETH</h2>
             <p className="htb-p-txt">Get Some ETH Have ETH in your wallet to switch to $WOOKIE. If you don’t have any ETH, you can buy directly on Metamask, transfer from another wallet, or buy on another exchange.</p>
           </div>
-          <img src={arrow} alt="" className='arrow-slider' />
+          <LazyLoadImage src={arrow} alt="" className='arrow-slider' />
 
         </li>
         <li>
-          <img src={img3} alt="" className='slider-logo-num' />
-          <img src={slider3} alt="" className="slider-logo" />
+          <LazyLoadImage src={img3} alt="" className='slider-logo-num' />
+          <LazyLoadImage src={slider3} alt="" className="slider-logo" />
           <div className="content">
             <h2 className="htb-headt-txt">Go to Uniswap</h2>
             <p className="htb-p-txt">Go to Uniswap Go to app.uniswap.org in Google Chrome or on the browser inside your Metamask app. Connect your wallet. Paste the token address into Uniswap, select Wookie, confirm. </p>
           </div>
-          <img src={arrow} alt="" className='arrow-slider' />
+          <LazyLoadImage src={arrow} alt="" className='arrow-slider' />
 
         </li>
         <li>
-          <img src={img4} alt="" className='slider-logo-num' />
-          <img src={slider4} alt="" className="slider-logo" />
+          <LazyLoadImage src={img4} alt="" className='slider-logo-num' />
+          <LazyLoadImage src={slider4} alt="" className="slider-logo" />
           <div className="content">
             <h2 className="htb-headt-txt">Hold $WOOKIEE</h2>
             <p className="htb-p-txt">HODL your $WOOKIEE HODL your $WOOKIEE until you need to pay your bills or buy a fricken boat or something! But the first rule of Wookiee, is HODL until the price is too good not to let go!</p>
           </div>
-          <img src={arrow} alt="" className='arrow-slider' />
+          <LazyLoadImage src={arrow} alt="" className='arrow-slider' />
 
         </li>
       </ul>

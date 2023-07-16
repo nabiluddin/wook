@@ -350,13 +350,14 @@
   width: auto;
   // background-color: #f5be0b;
   // background-image: url('../assets/bg-footerbar.png');
+  background-color: #F9E0BB;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .slider .slide-track {
-  animation: scroll 100s linear infinite;
+  animation: scroll 12s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
@@ -1017,6 +1018,8 @@
     text-align: left;
     padding-left: 1rem;
     outline: none;
+    color: white;
+    border: none;
   }
 }
 

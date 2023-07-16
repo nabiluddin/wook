@@ -3,6 +3,8 @@ import wLite from "../../assets/wookiees-lite.png";
 import bitWoo from "../../assets/bit-woo.webp";
 import './TwoW.scss'
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 function TwoW() {
   return (
@@ -11,7 +13,7 @@ function TwoW() {
       transition={{ duration: 0.5 }} className="two-w">
       <div className="float-left">
         <div className="two-head-txt">
-          <img src={wLite} alt="" className="wlite" />
+          <LazyLoadImage src={wLite} alt="" className="wlite" />
           <p className="two-head-txt-up">The wookiees have arrived</p>
         </div>
         <div className="two-text-up">Once upon a time, in a distant future, the humans had destroyed their planet through endless wars and the use of atomic bombs. The once-beautiful Earth was now a barren wasteland, devoid of life and hope. The few surviving humans had retreated into underground bunkers, desperate to eke out a meager existence in the shadows. They had forsaken their once-great civilization, leaving behind nothing but ruins and dust.</div>
@@ -21,7 +23,7 @@ function TwoW() {
       <div className="img-float-right">
         {/* <div className="pulse1"></div> */}
         {/* <div className="pulse2"></div> */}
-        <img src={bitWoo} alt="bitwoo" className="img-right-float" />
+        <LazyLoadImage src={bitWoo} alt="bitwoo" className="img-right-float" />
       </div>
     </motion.div>
   );

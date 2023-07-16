@@ -4,6 +4,8 @@ import miniWookie from '../../assets/mini-wookie.webp'
 import { motion } from 'framer-motion';
 
 import woopath from '../../assets/path-woo.webp'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 function Wookiemap() {
   return (
@@ -15,7 +17,7 @@ function Wookiemap() {
         Wookieemap
       </div>
 
-      <img src={woopath} alt="woopath" className='woopath' />
+      <LazyLoadImage src={woopath} alt="woopath" className='woopath' />
 
       <div className="phases phase-1">
         <p className="phase-head">Phase 1</p>
@@ -35,7 +37,7 @@ function Wookiemap() {
         </ul>
       </div>
       <div className="cover-1">
-        <img src={miniWookie} alt="miniWookie"  className='miniWookie-1'/>
+        <LazyLoadImage src={miniWookie} alt="miniWookie"  className='miniWookie-1'/>
         <div className="phases phase-2">
           <p className="phase-head">Phase 2</p>
           <ul class="map-ul">
@@ -48,7 +50,7 @@ function Wookiemap() {
         </div>
       </div>
       <div className="cover-2">
-      <img src={miniWookie} alt="miniWookie" className='miniWookie-2' />
+      <LazyLoadImage src={miniWookie} alt="miniWookie" className='miniWookie-2' />
 
         <div className="phases phase-3">
           <p className="phase-head">Phase 3</p>

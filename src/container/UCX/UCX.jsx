@@ -17,6 +17,7 @@ import gecko from '../../assets/Frame 265.png'
 import dextol from '../../assets/Frame 271.png'
 import etherscan from '../../assets/Frame 271 (1).png'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function UCX() {
   return (
@@ -318,58 +319,58 @@ function UCX() {
         </svg>
 
         {/* <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div>
         <div className="one-bg-bx">
-          <img src={coinbase} alt="coinbase" className='one-bg-bx-item' />
+          <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />
         </div> */}
       </div>
     </div>

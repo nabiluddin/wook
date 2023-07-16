@@ -2,6 +2,8 @@ import React from 'react'
 import './Wookonomics.scss'
 import chartImg from '../../assets/chart-woo.webp'
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 
 function Wookonomics() {
@@ -38,7 +40,7 @@ function Wookonomics() {
       </div>
       <div className="bt-content">
         <div className="chart-img">
-          <img src={chartImg} alt="chart" className='chart-img' />
+          <LazyLoadImage src={chartImg} alt="chart" className='chart-img' />
         </div>
         <div className="side-content">
           <div className="total-supply">Total Supply : 420,000,000,000 $WOOKIEE</div>
