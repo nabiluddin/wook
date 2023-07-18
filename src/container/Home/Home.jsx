@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./Home.scss";
 import { motion } from 'framer-motion';
 import Navbar from "../../components/Navbar/Navbar";
@@ -70,15 +70,15 @@ function Home() {
   }
 
   useEffect(() => {
-    // window.addEventListener("load", function () {
-    //   setTimeout(() => {
-    //     open(); // Call the open function after the timeout
-    //   }, 60000);
-    // });
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        open(); // Call the open function after the timeout
+      }, 100);
+    });
 
-    // function open() {
-    //   document.querySelector(".popup").style.display = "flex";
-    // }
+    function open() {
+      document.querySelector(".popup").style.display = "flex";
+    }
 
     document.querySelector("#close").addEventListener("click", function () {
       document.querySelector(".popup").style.display = "none";
@@ -111,20 +111,7 @@ function Home() {
     };
   }, []); // Empty dependency array to run the effect only once
 
-  const [showPopup, setShowPopup] = useState(false);
 
-  useEffect(() => {
-    // Set the delay time (in milliseconds)
-    const delayTime = 2000; // 5000ms = 5 seconds
-
-    // Fetch and set the state to show the popup after the specified delay
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, delayTime);
-
-    // Clean up the timer when the component unmounts
-    return () => clearTimeout(timer);
-  }, []);
 
 
 
@@ -135,14 +122,7 @@ function Home() {
     <motion.div className="home">
       <div className="popup">
         <button id="close">&times;</button>
-        {showPopup && (
-          <iframe
-            title="popup"
-            className="popup-iframe"
-            src="https://form.zootools.co/go/MmGZLkrdb0VEd5lHfBQB"
-            frameBorder="0"
-          ></iframe>
-        )}
+        <iframe title="popup" className="popup-iframe" src="https://form.zootools.co/go/MmGZLkrdb0VEd5lHfBQB" frameborder="0"></iframe>
       </div>
 
       <Navbar check="true" className="navbar-top" />
@@ -227,15 +207,15 @@ function Home() {
             {/* <LazyLoadImage src={mainLogo} alt="logo" className="main-logo ellipse" /> */}
 
 
-            <LazyLoadImage
-              src={mainLogo}
-              effect="blur"
-              // placeholderSrc=""
-              className="main-logo ellipse "
+              <LazyLoadImage 
+                src={mainLogo}
+                effect="blur"
+                // placeholderSrc=""
+                className="main-logo ellipse "
 
-            />
+              />
 
-            {/* alt='profile_circle' */}
+              {/* alt='profile_circle' */}
 
 
           </div>
