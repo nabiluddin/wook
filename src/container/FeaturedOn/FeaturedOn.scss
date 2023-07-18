@@ -137,12 +137,10 @@
 
 @media screen and (max-width: 768px) {
   .featured-on{
-    // display: none;
     width: 60vw;
     height: 100%;
     padding: 5rem 0;
     position: relative;
-    // right: -80px;
     left: 80px;
     .fo-companies-bg-bxs {
       .fr-1 .logo .logo-img {
@@ -166,7 +164,6 @@
   .bt-bx {
     width: 98vw;
     .fo-bt-icons {
-      // display: none;
       gap: 0.5rem;
     }
   }

@@ -32,12 +32,7 @@ function Navbar(props) {
     }, 100);
   }, []);
 
-  // return (
-  //   <>
-  //     <div id="google_translate_element"></div>
-  //     <h4>Start building your app. Happy Coding!</h4>
-  //   </>
-  // );
+
 
   return (
     <nav>
@@ -68,7 +63,6 @@ function Navbar(props) {
       </ul>
 
       <div className='nav-side'>
-        {/* <button className='nav-translate-btn' >En</button> */}
 
         <button className='nav-use-app'>Connect Wallet <div className='coming-soon-badge'>coming soon</div></button>
 
@@ -85,7 +79,6 @@ function Navbar(props) {
               <li><a className='a-tag-menu' href={props.check ? "#woomap" : "/"}>Wookieemap</a> </li>
               <li><a className='a-tag-menu' href="#">App <div className='coming-soon-badge'>coming soon</div></a></li>
               <li><a className='a-tag-menu' href="/wnft">WNFT
-                {/* <div className='coming-soon-badge'>coming soon</div> */}
               </a></li>
               <li className="dropdown-nav">
                 <p className='whiteL'>Whitelists -></p>

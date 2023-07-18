@@ -64,8 +64,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    /* Background Blur */
-    backdrop-filter: blur(7px);
+         backdrop-filter: blur(7px);
 
     .wooko-txt-head {
       color: #F9E0BB;
@@ -93,7 +92,7 @@
   .chart-img {
     float: left;
     width: 480px;
-    // margin-left: 3rem;
+     
   }
 
   .side-content {

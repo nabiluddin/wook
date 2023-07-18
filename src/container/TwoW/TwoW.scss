@@ -9,7 +9,7 @@
 
   .float-left {
     position: relative;
-    // float: left;
+     
 
     .two-head-txt {
       .wlite {
@@ -36,7 +36,7 @@
 
     .two-text-dn {
       position: relative;
-      // padding: 7rem 0;
+       
       padding-top: 1.7rem;
       color: #FFF6E9;
       font-size: 1rem;
@@ -68,7 +68,7 @@
 @media screen and (max-width: 768px) {
   .two-w {
     padding: 1rem 10rem;
-    // position: relative;
+     
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +107,7 @@
 
       .two-text-up {
         position: relative;
-        // padding-top: 11rem;
+         
         color: #FFF6E9;
         font-size: 1rem;
         width: 21rem;
@@ -116,15 +116,15 @@
   
       .two-text-dn {
         position: relative;
-        // padding: 7rem 0;
-        // padding-top: 1.7rem;
+         
+         
         color: #FFF6E9;
         font-size: 1rem;
         width: 21rem;
         padding-right: 1rem;
       }
       .two-head-txt {
-        // padding-top: 3rem;
+         
 
         .wlite {
           width: 80vw;
@@ -143,7 +143,7 @@
           font-family: Carter One;
           top: 15px;
           left: 50px;
-          // margin-top: 3rem;
+           
 
         }
       }

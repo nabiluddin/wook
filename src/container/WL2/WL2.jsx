@@ -22,19 +22,19 @@ function WL2() {
   const copyToClipboard = () => {
     var textToCopy = document.getElementById("myDiv").innerText;
 
-    // Create a temporary textarea element to hold the text
+     
     var tempTextArea = document.createElement("textarea");
     tempTextArea.value = textToCopy;
     document.body.appendChild(tempTextArea);
 
-    // Copy the text from the textarea to the clipboard
+     
     tempTextArea.select();
     document.execCommand("copy");
 
-    // Remove the temporary textarea
+     
     document.body.removeChild(tempTextArea);
 
-    // Optionally, provide some visual feedback to the user
+     
     alert("Content copied to clipboard: " + textToCopy);
   }
   return (

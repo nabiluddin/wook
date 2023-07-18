@@ -53,26 +53,26 @@ function Home() {
   const copyToClipboard = () => {
     var textToCopy = document.getElementById("myDiv").innerText;
 
-    // Create a temporary textarea element to hold the text
+     
     var tempTextArea = document.createElement("textarea");
     tempTextArea.value = textToCopy;
     document.body.appendChild(tempTextArea);
 
-    // Copy the text from the textarea to the clipboard
+     
     tempTextArea.select();
     document.execCommand("copy");
 
-    // Remove the temporary textarea
+     
     document.body.removeChild(tempTextArea);
 
-    // Optionally, provide some visual feedback to the user
+     
     alert("Content copied to clipboard: " + textToCopy);
   }
 
   useEffect(() => {
     window.addEventListener("load", function () {
       setTimeout(() => {
-        open(); // Call the open function after the timeout
+        open();  
       }, 100);
     });
 
@@ -93,23 +93,16 @@ function Home() {
 
     function changeWidth() {
       progress.style.width = `${finalValue}%`
-      // progress.innerText=`${Math.ceil(finalValue)}%`
     }
 
-    // input.addEventListener('keyup', function () {
-    //   finalValue = parseInt(input.value, 10);
-    //   console.log('finalValue', finalValue);
-    // });
+   
     changeWidth()
 
-    // Clean up the event listener when the component unmounts
+     
     return () => {
-      // input.removeEventListener('keyup', function () {
-      //   finalValue = parseInt(input.value, 10);
-      //   console.log('finalValue', finalValue);
-      // });
+
     };
-  }, []); // Empty dependency array to run the effect only once
+  }, []); 
 
 
 
@@ -131,12 +124,8 @@ function Home() {
         <div className="right-bar">
           <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
             <LazyLoadImage src={i1} alt="i1" className="home-side-icons" /></a>
-          {/* <a target="_blank" href="https://www.pinksale.finance/launchpad/0x314857fa43243360440580Becb85686fAa606500?chain=ETH" rel="noreferrer">
-            <LazyLoadImage src={i2} alt="i2" className="home-side-icons" /></a> */}
-          <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
+         <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
             <LazyLoadImage src={i3} alt="i3" className="home-side-icons" /></a>
-          {/* <a target="_blank" href="https://www.dexview.com/eth/0x7bD95684cA33b2bFC356A336CC7cF1e8AfAE0298" rel="noreferrer">
-            <LazyLoadImage src={i4} alt="i4" className="home-side-icons" /></a> */}
           <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
             <LazyLoadImage src={i5} alt="i5" className="home-side-icons" /></a>
           <a target="_blank" href="https://coinmarketcap.com/" rel="noreferrer">
@@ -196,7 +185,6 @@ function Home() {
 
               <a href="https://github.com/cyberscope-io/audits/blob/main/wookiee/audit.pdf"
                 className="home-audit"
-              // className=" hidden"
               >
                 <LazyLoadImage src={tick} alt="tick" className="tick" />
                 <p>Audit By:</p>
@@ -204,18 +192,15 @@ function Home() {
               </a>
             </div>
 
-            {/* <LazyLoadImage src={mainLogo} alt="logo" className="main-logo ellipse" /> */}
 
 
               <LazyLoadImage 
                 src={mainLogo}
                 effect="blur"
-                // placeholderSrc=""
                 className="main-logo ellipse "
 
               />
 
-              {/* alt='profile_circle' */}
 
 
           </div>
@@ -237,14 +222,6 @@ function Home() {
         <div className="la-right " style={{ backgroundImage: `url(${bgYel})` }}>
           <div className="next-price">
             <div className="n-c-1 progress-done"> </div>
-            <div>
-              {/* <div className="progress">
-                <div className="progress-done">
-                
-                </div>
-              </div> */}
-
-            </div>
             <div className="n-c-price text-white text-sm  pl-4 opacity-100">Until Next Price:$0.0000272</div>
           </div>
           <div className="usdt-raised">USDT Raised: $1,319,276.99 / $1,980,000</div>
@@ -289,80 +266,12 @@ function Home() {
           <div><a target="_blank" className="list-price" href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" >Not enough ETH? Top up now</a></div>
 
         </div>
-        {/* <div className="la-right flex flex-col justify-center items-center gap-5 bg-cover bg-no-repeat bg-center md:w-[510px] sm:w-full md:h-[560px] sm:h-[600px] m-[-7rem] md:mt-[-4.5rem] md:mr-[-2rem] sm:mt-10 mr-[0rem]" style={{ backgroundImage: `url(${bgYel})` }} >
-          <div className="next-price flex  relative bg-[#71903c] pl-16    rounded-full w-[80%]">
-            <div className="w-[60px] absolute  left-0 ro h-full  rounded-full bg-green"> </div>
-            <div className="price text-white text-sm  pl-4 opacity-100">Until Next Price:$0.0000272</div>
-          </div>
-          <div className="usdt-raised flex text-white text-base">USDT Raised: $1,319,276.99 / $1,980,000</div>
-          <div className="bg-gradient-to-r from-transparent from-0% via-[#19725D] via-50% to-100% h-[2px] w-[100%] flex justify-center items-center  ">
-
-            <div className={`usdt-raised flex text-green font-medium text-base  sm:ml-16 md:ml-28 bg-[#f5be0b]  `}>1 $Doge AI = $0.0000000001200</div></div>
-
-          <div className="flex flex-row flex-wrap w-full justify-center items-center gap-2">
-            <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-green rounded-full py-[0.4rem] px-[0.5rem] gap-2">
-              <LazyLoadImage src={ethinputlogo} alt="eth" className='w-6' />
-              <p className="text-white text-sm">ETH</p>
-            </div>
-            <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-[#9c9f2c] rounded-full py-[0.2rem] px-[0.5rem] gap-2">
-              <LazyLoadImage src={usdt} alt="eth" className='w-6' />
-              <p className="text-white text-sm">USDT
-                <p className="text-xs mt-[-0.4rem]">ERC20</p>
-              </p>
-            </div>
-            <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-[#9c9f2c] rounded-full py-[0.4rem] px-[0.5rem] gap-2">
-              <LazyLoadImage src={bnbyel} alt="eth" className='w-6' />
-              <p className="text-white text-sm">ETH</p>
-            </div>
-            <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-[#9c9f2c] rounded-full py-[0.2rem] px-[0.5rem] gap-2">
-              <LazyLoadImage src={usdt} alt="eth" className='w-6' />
-              <p className="text-white text-sm">USDT
-                <p className="text-xs mt-[-0.4rem]">BEP20</p>
-              </p>
-            </div>
-            <div className="bgs-log flex felx-row justify-between w-[87px] items-center bg-[#9c9f2c] rounded-full py-[0.4rem] px-[0.5rem] gap-2">
-              <LazyLoadImage src={card} alt="eth" className='w-6' />
-              <p className="text-white text-sm">CARD</p>
-            </div>
-
-          </div>
-
-          <div className="usdt-raised flex text-white text-base ">BNB balance 0</div>
-          <div className="bg-gradient-to-r from-transparent from-0% via-[#19725D] via-50% to-100% my-[-1rem] h-[1px] w-[80%]"></div>
-
-          <div className="two-inputs-cions flex flex-row justify-around w-[99%] items-center">
-            <div className="flex flex-col justify-center items-center w-full">
-              <div className="usdt-raised md:w-[80%] text-center sm:w-[80%] flex text-white md:text-sm sm:text-base p-2">Amount in ETH you pay</div>
-
-              <div className="input-div-1 w-[80%] flex flex-row rounded-full border-green border-[1px] bg-[#9da02c] pl-4">
-                <input type="number" name="coin1" id="coin1" className='w-[80%] bg-transparent outline-none' />
-                <LazyLoadImage src={ethinputlogo} alt="ethinputlogo" className='w-10' />
-              </div>
-            </div>
-            <div className="flex flex-col justify-center items-center w-full">
-
-              <div className="usdt-raised md:w-[80%] text-center sm:w-[80%] flex text-white md:text-sm sm:text-base p-2">Amount in $AI you receive</div>
-              <div className="input-div-2 w-[80%] flex flex-row rounded-full border-green border-[1px] bg-[#9da02c] pl-4">
-                <input type="number" name="coin2" id="coin2" className='w-[80%] bg-transparent outline-none' />
-                <LazyLoadImage src={pepeinputlogo} alt="ethinputlogo" className='w-8 m-1' />
-              </div>
-            </div>
-
-
-          </div>
-          <div className="text-white text-base text-center w-[80%]">0.015 ETH is reserved for gas. The actual amount used will depend on the network.</div>
-          <button style={{ backgroundImage: `url(${btnbg})` }} className='sm:w-[140px]  bg-contain bg-no-repeat bg-center md:w-[120px] text-green text-xl font-bold p-2 m-[-0.8rem] '>Buy now</button>
-          <div className="text-white text-base text-center">LISTING PRICE: $0.0000336</div>
-
-
-        </div> */}
       </div>
 
 
 
       <div className="footerbar">
 
-        {/* <LazyLoadImage src={footerbar} alt="" /> */}
 
         <div className="slider">
           <div className="slide-track">

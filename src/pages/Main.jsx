@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-// import Home from '../container/Home/Home'
+ 
 import TwoW from '../container/TwoW/TwoW'
 import Wookonomics from '../container/Wookonomic/Wookonomics'
 import Wookiemap from '../container/Wookiemap/Wookiemap'

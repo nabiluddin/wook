@@ -1,5 +1,5 @@
 .htb {
-  // color: wheat;
+   
   position: relative;
   font-family: 'Heebo';
   margin-top: 7rem;
@@ -18,7 +18,7 @@
 }
 
 .htb-ul {
-  // position: absolute;
+   
   top: 0;
   left: 0;
   width: 100%;
@@ -27,8 +27,8 @@
   padding: 0;
 
 
-  // background: whitesmoke;
-  // color: wheat;
+   
+   
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,16 +96,16 @@
 
 .htb-ul li:hover .content {
   position: relative;
-  // bottom: -10px;
-  // left: 0;
+   
+   
   width: 100%;
   border-radius: 16px;
-  // background: linear-gradient(105deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+   
 
   box-sizing: border-box;
 
   opacity: 1;
-  // color: #fff;
+   
 }
 
 .htb-ul li .content {
@@ -133,7 +133,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // gap: 30px;
+   
   padding: 1.5rem;
   top: 100px;
 }
@@ -183,11 +183,11 @@
   }
 
   .htb-ul {
-    // position: absolute;
+     
     height: 50%;
     width: 100%;
-    // position: relative;
-    // right: 10px;
+     
+     
 
   }
 
