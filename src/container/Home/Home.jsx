@@ -286,6 +286,7 @@ function Home() {
           <div className="f-text">0.015 ETH is reserved for gas. The actual amount used will depend on the network.</div>
           <button className="buy-now">Buy Now</button>
           <div className="list-price">LISTING PRICE: $0.0000336</div>
+          <div><a target="_blank" className="list-price" href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" >Not enough ETH? Top up now</a></div>
 
         </div>
         {/* <div className="la-right flex flex-col justify-center items-center gap-5 bg-cover bg-no-repeat bg-center md:w-[510px] sm:w-full md:h-[560px] sm:h-[600px] m-[-7rem] md:mt-[-4.5rem] md:mr-[-2rem] sm:mt-10 mr-[0rem]" style={{ backgroundImage: `url(${bgYel})` }} >
