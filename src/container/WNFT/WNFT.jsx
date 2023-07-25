@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import $ from 'jquery'; 
+import $ from 'jquery';
 import "./WNFT.scss";
 import { motion } from 'framer-motion';
 import logo from '../../assets/logo-wookie.png'
@@ -32,23 +32,23 @@ function WNFT() {
   const copyToClipboard = () => {
     var textToCopy = document.getElementById("myDiv").innerText;
 
-     
+
     var tempTextArea = document.createElement("textarea");
     tempTextArea.value = textToCopy;
     document.body.appendChild(tempTextArea);
 
-     
+
     tempTextArea.select();
     document.execCommand("copy");
 
-     
+
     document.body.removeChild(tempTextArea);
 
-     
+
     alert("Content copied to clipboard: " + textToCopy);
   }
   useEffect(() => {
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('.minus').off().click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
@@ -57,7 +57,7 @@ function WNFT() {
         $input.change();
         return false;
       });
-  
+
       $('.plus').off().click(function () {
         var $input = $(this).parent().find('input');
         $input.val(parseInt($input.val()) + 1);
@@ -66,7 +66,7 @@ function WNFT() {
       });
     });
   }, []);
-  
+
 
   return (
 
@@ -100,7 +100,7 @@ function WNFT() {
       </div>
 
       <div className="wnft-center-content-1">
-        
+
         <div className="c-center">
           <div className="ellipse WL1-f-1">
             <div className="pulse1"></div>
@@ -118,26 +118,11 @@ function WNFT() {
           </div>
           <div className="ellipse WL1-f-2">
             <div className="pulse2"></div>
-            {/* <motion.img
-              whileInView={{ opacity: [0, 1], scale: [1, 1.1] }}
-              transition={{ duration: 1 }}
-
-              src={wkUp} alt="wkUp" className="wk-up" /> */}
             <p className="wnft-up-1">
-              wookiees nft Drop Claim now for more airdrops
+              Top 10% NFT holders! Get ready for an incredible opportunity!
             </p>
-            <motion.img
-              whileInView={{ opacity: [0, 1], scale: [1, 1.1], }}
-              transition={{ duration: 1 }} src={wkDn} alt="wkDn" className="wk-dn-1" />
-
-            {/* <div className="WL1-audit">
-                <img src={tick} alt="tick" className="tick" />
-                <p>Audit By:</p>
-                <img src={audit} alt="audit" className="audit"/>
-              </div> */}
           </div>
 
-          {/* <img src={mainLogo} alt="logo" className="main-logo ellipse" /> */}
           <motion.img
 
             src={mainLogo}
@@ -148,44 +133,51 @@ function WNFT() {
 
         </div>
         <motion.div className="nft-drop"
-         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-         transition={{ duration: 0.5 }}
-      >
-        <div className="nft-drop-bgbox">
-          <div className="WNFT-head-txt">
-            Wookiees NFT Drop
-          </div>
-          <div className="nft-drop-desc">
-            Users have the opportunity to participate in the Wookiee NFT drop, with the ability to mint up to 2850 NFTs. As a reward, users will receive the Wookiee token (Wookiee) via airdrop.
-          </div>
-          <div className="nft-hr-rule"></div>
-          <div className="nft-flex-row">
-            <p>Total Minted</p>
-            <p>2850/2850 Claimed</p>
-          </div>
-          <div className="nft-hr-rule"></div>
-          <div className="nft-flex-row">
-            <p>Quatity</p>
-            <div class="number">
-              <span class="minus">-</span>
-              <input type="text" value="1" />
-              <span class="plus">+</span>
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="nft-drop-bgbox glass-shine-effect">
+            <div className="WNFT-head-txt">
+              Wookiees NFT Drop
             </div>
+            <div className="nft-drop-desc">Earn over $1 million in rewards by holding our exclusive $wookieeNFTs. The more NFTs you own, the greater the rewards. Don't miss out! Mint and trade our limited edition $wookieeNFTs on Opensea today to join the elite and enjoy fantastic benefits. Seize this chance to be a part of something extraordinary! Join us now!
+              <br /> Users have the opportunity to participate in the Wookiee NFT drop, with the ability to mint up to 2850 NFTs. As a reward, users will receive the Wookiee token (Wookiee) via airdrop.
+            </div>
+            <div className="nft-hr-rule"></div>
+            <div className="nft-flex-row">
+              <p>Total Minted</p>
+              <p>3820/3820 Claimed</p>
+            </div>
+            <div className="nft-hr-rule"></div>
+            <div className="nft-flex-row">
+              {/* <p>Quatity</p>
+              <div class="number">
+                <span class="minus">-</span>
+                <input type="text" value="1" />
+                <span class="plus">+</span>
+              </div> */}
+            </div>
+            <button className='nft-btn'> <img src={ethimg} alt="tri" className="triangle" />
+              <script
+                defer
+                src="https://launchpad.heymint.xyz/api/embed.js"
+                data-project-id="11609"
+                data-chain="ETH_MAINNET"
+              ></script>
+              Mint Now(0.089 ETH)</button>
           </div>
-          <button className='nft-btn'> <img src={ethimg} alt="tri"  className="triangle"/> Mint Now(0.089 ETH)</button>
-        </div>
 
-      </motion.div>
-        
+        </motion.div>
+
       </div>
 
 
 
-     
+
       {/* <iframe src="https://sweepwidget.com/c/71247-t1nsecyd" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe> */}
 
       <div className="footerbar footerbar-wnft">
-        
+
 
         {/* <img src={footerbar} alt="" /> */}
 
