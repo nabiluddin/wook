@@ -141,7 +141,7 @@ function WNFT() {
               Wookiees NFT Drop
             </div>
             <div className="nft-drop-desc">Earn over $1 million in rewards by holding our exclusive $wookieeNFTs. The more NFTs you own, the greater the rewards. Don't miss out! Mint and trade our limited edition $wookieeNFTs on Opensea today to join the elite and enjoy fantastic benefits. Seize this chance to be a part of something extraordinary! Join us now!
-              <br /> Users have the opportunity to participate in the Wookiee NFT drop, with the ability to mint up to 2850 NFTs. As a reward, users will receive the Wookiee token (Wookiee) via airdrop.
+              <br /> Users have the opportunity to participate in the Wookiee NFT drop, with the ability to mint up to 3820 NFTs. As a reward, users will receive the Wookiee token (Wookiee) via airdrop.
             </div>
             <div className="nft-hr-rule"></div>
             <div className="nft-flex-row">
@@ -150,26 +150,27 @@ function WNFT() {
             </div>
             <div className="nft-hr-rule"></div>
             <div className="nft-flex-row">
-              {/* <p>Quatity</p>
-              <div class="number">
-                <span class="minus">-</span>
-                <input type="text" value="1" />
-                <span class="plus">+</span>
-              </div> */}
             </div>
-            <button className='nft-btn'> <img src={ethimg} alt="tri" className="triangle" />
-              <script
+            <script
                 defer
                 src="https://launchpad.heymint.xyz/api/embed.js"
                 data-project-id="11609"
                 data-chain="ETH_MAINNET"
               ></script>
-              Mint Now(0.089 ETH)</button>
+
+
           </div>
 
         </motion.div>
 
       </div>
+
+       {/* <p>Quatity</p>
+              <div class="number">
+                <span class="minus">-</span>
+                <input type="text" value="1" />
+                <span class="plus">+</span>
+              </div> */}
 
 
 
