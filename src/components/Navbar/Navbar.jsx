@@ -19,18 +19,18 @@ function Navbar(props) {
       "google_translate_element"
     );
   };
-  useEffect(() => {
-    setTimeout(() => {
+  // useEffect(() => {
+  //   setTimeout(() => {
 
-      var addScript = document.createElement("script");
-      addScript.setAttribute(
-        "src",
-        "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-      );
-      document.body.appendChild(addScript);
-      window.googleTranslateElementInit = googleTranslateElementInit;
-    }, 100);
-  }, []);
+  //     var addScript = document.createElement("script");
+  //     addScript.setAttribute(
+  //       "src",
+  //       "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+  //     );
+  //     document.body.appendChild(addScript);
+  //     window.googleTranslateElementInit = googleTranslateElementInit;
+  //   }, 100);
+  // }, []);
 
 
 
@@ -39,8 +39,13 @@ function Navbar(props) {
       <div className='logo-tr'>
         <a href="/">
           <img src={logo} alt='img' className='nav-logo' /></a>
-        <div id="google_translate_element"></div>
+        { !props.nft &&
+          
+          <div id="google_translate_element"></div>}
       </div>
+      {
+        !props.nft &&
+      
       <ul className='nav-links'>
         <li><a className='a-tag' href={props.check ? "#about" : "/"}> {props.ulli ? `${props.ulli[0]}` : "About"}</a></li>
         <li><a className='a-tag' href={props.check ? "#htb" : "/"}>{props.ulli ? `${props.ulli[1]}` : "How to Buy"}</a></li>
@@ -61,6 +66,7 @@ function Navbar(props) {
         </li>}
 
       </ul>
+      }
 
       <div className='nav-side'>
 

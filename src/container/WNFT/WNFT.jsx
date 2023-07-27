@@ -74,7 +74,7 @@ function WNFT() {
 
     <div className="WL1">
 
-      <Navbar />
+      <Navbar nft="nft"/>
       <div
       >
         <div className="wl-right-bar-1">
@@ -119,7 +119,7 @@ function WNFT() {
           <div className="ellipse WL1-f-2">
             <div className="pulse2"></div>
             <p className="wnft-up-1">
-              Top 10% NFT holders! Get ready for an incredible opportunity!
+              Top 10% NFT holders! <p className="wnft-up-1 below-ht">Get ready for an incredible opportunity!</p>
             </p>
           </div>
 
@@ -140,17 +140,12 @@ function WNFT() {
             <div className="WNFT-head-txt">
               Wookiees NFT Drop
             </div>
-            <div className="nft-drop-desc">Earn over $1 million in rewards by holding our exclusive $wookieeNFTs. The more NFTs you own, the greater the rewards. Don't miss out! Mint and trade our limited edition $wookieeNFTs on Opensea today to join the elite and enjoy fantastic benefits. Seize this chance to be a part of something extraordinary! Join us now!
+            <p className="wnft-head-desc">Earn over $1 million in rewards by holding our exclusive $wookieeNFTs. The more NFTs you own, the greater the rewards. </p>
+            <div className="nft-drop-desc">Don't miss out! Mint and trade our limited edition $wookieeNFTs on Opensea today to join the elite and enjoy fantastic benefits. Seize this chance to be a part of something extraordinary! Join us now!
               <br /> Users have the opportunity to participate in the Wookiee NFT drop, with the ability to mint up to 3820 NFTs. As a reward, users will receive the Wookiee token (Wookiee) via airdrop.
             </div>
             <div className="nft-hr-rule"></div>
-            <div className="nft-flex-row">
-              <p>Total Minted</p>
-              <p>3820/3820 Claimed</p>
-            </div>
-            <div className="nft-hr-rule"></div>
-            <div className="nft-flex-row">
-            </div>
+            
             <script
                 defer
                 src="https://launchpad.heymint.xyz/api/embed.js"
@@ -165,12 +160,7 @@ function WNFT() {
 
       </div>
 
-       {/* <p>Quatity</p>
-              <div class="number">
-                <span class="minus">-</span>
-                <input type="text" value="1" />
-                <span class="plus">+</span>
-              </div> */}
+       
 
 
 
