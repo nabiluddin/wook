@@ -208,14 +208,16 @@ function WNFT() {
             <iframe
               id="iframe-03"
               title="Embedded HeyMint Project"
+              // eslint-disable-next-line no-script-url
               src="javascript: window.frameElement.getAttribute('srcdoc');"
-              srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex;  padding-top:1rem; justify-content: center'><script
+              srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex;  padding-top:5rem; justify-content: center'><script
                     defer 
                     src='https://launchpad.heymint.xyz/api/embed.js'
                     data-project-id='11609'
                     data-chain='ETH_MAINNET'
                     ></script></div></body>"
-              style={{ width: '400px', height: '400px', overflow: 'visible', transition: 'height 1.5s ease 0s' }}
+              className="wnft-iframe"
+               style={{ overflow: 'visible', transition: 'height 1.5s ease 0s' }}
             ></iframe>
           </div>
         </div>
