@@ -82,10 +82,10 @@ function WNFT() {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -193,36 +193,37 @@ function WNFT() {
             </div>
             <div className="nft-hr-rule"></div>
 
-            <div>
-      <button  className='nft-btn' onClick={handleButtonClick}>
-
-      Connect Wallet
-
-      </button>
-      {isPopupOpen && (
-        <div className="popup-overlay">
-          <div className="popup-content" ref={popupRef}>
-            <span className="close-btn" onClick={handleClosePopup}>
-              &times;
-            </span>
-            <iframe
-              id="iframe-03"
-              title="Embedded HeyMint Project"
-              // eslint-disable-next-line no-script-url
-              src="javascript: window.frameElement.getAttribute('srcdoc');"
-              srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex;  padding-top:5rem; justify-content: center'><script
+              <div className="wnft-up-iframe">
+                <iframe
+                  id="iframe-03"
+                  title="Embedded HeyMint Project"
+                  // eslint-disable-next-line no-script-url
+                  src="javascript: window.frameElement.getAttribute('srcdoc');"
+                  srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex;  padding-top:5rem; justify-content: center'><script
                     defer 
                     src='https://launchpad.heymint.xyz/api/embed.js'
                     data-project-id='11609'
                     data-chain='ETH_MAINNET'
                     ></script></div></body>"
-              className="wnft-iframe"
-               style={{ overflow: 'visible', transition: 'height 1.5s ease 0s' }}
-            ></iframe>
-          </div>
-        </div>
-      )}
-    </div>
+                  className="wnft-iframe"
+                  style={{
+                    overflow: "visible",
+                    transition: "height 1.5s ease 0s",
+                  }}
+                ></iframe>
+              </div>
+              {/* <iframe id="verify-api" src="https://verify.walletconnect.com/f650e841204fd9ebfe72e4e40ca433a5" style="display: none;" class="__web-inspector-hide-shortcut__"></iframe> */}
+              {/* <button  className='nft-btn' onClick={handleButtonClick}>Connect Wallet</button> */}
+              {/* {isPopupOpen && (
+                        <div className="popup-overlay">
+                          <div className="popup-content" ref={popupRef}>
+                            <span className="close-btn" onClick={handleClosePopup}>
+                              &times;
+                            </span>
+                            
+                          </div>
+                        </div>
+                      )} */}
           </div>
         </motion.div>
       </div>

@@ -1,6 +1,6 @@
 .WL1 {
   background: linear-gradient(180deg, rgba(136, 74, 57, 0.4) 0%, rgba(136, 74, 57, 0) 100%);
-   
+
   height: 100%;
 
   padding: 1rem;
@@ -20,7 +20,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black overlay */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +51,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-   
+
   position: relative;
   margin-right: -4rem;
   margin-top: 5rem;
@@ -74,19 +75,20 @@
 
 .nft-drop {
   width: 50%;
-   
+
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   
-   
+
+
   margin-bottom: 0;
-   
+
 
 }
-.wnft-head-desc{
+
+.wnft-head-desc {
   color: #FFF6E9;
   text-align: center;
   font-size: 1rem;
@@ -94,17 +96,17 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  width:95%;
+  width: 95%;
   box-sizing: border-box;
   padding: 2rem;
   padding-top: 0;
-  
+
 }
 
 .nft-drop-bgbox {
   background: red;
   width: 85%;
-  height: 480px;
+  height: 500px;
   margin: 3rem;
   margin-bottom: 0;
   padding: 1rem;
@@ -122,6 +124,7 @@
   margin-top: -2rem;
 
 }
+
 .glass-shine-effect {
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(107, 107, 107, 0.37);
@@ -134,6 +137,7 @@
   position: relative;
   transition: transform 200ms ease;
   overflow: hidden;
+
   &:before {
     content: "";
     position: absolute;
@@ -143,7 +147,9 @@
     background-color: rgba(255, 255, 255, 0.2);
     left: -410px;
   }
+
   &:hover {
+
     // transform: scale(1.1);
     &:before {
       transition: left 500ms ease;
@@ -160,7 +166,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  width:93%;
+  width: 93%;
   box-sizing: border-box;
   padding: 2rem;
   padding-top: 0;
@@ -191,8 +197,8 @@
   justify-content: space-between;
   align-items: center;
   width: 80%;
-   
-   
+
+
   box-sizing: border-box;
   padding: 2rem;
 
@@ -211,7 +217,7 @@ span {
 }
 
 .number {
-   
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -277,18 +283,38 @@ input {
   cursor: pointer;
 }
 
-.wnft-iframe{
+.wnft-iframe {
   width: 400px;
   height: 400px;
+  border: none;
+  z-index: 10;
+  position: absolute;
+  // width: 100%;
+
+  
 
 }
+.wnft-up-iframe{
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -300px;
+  // left: 100px;
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width:768px) {
-  .wnft-iframe{
+  .wnft-iframe {
     height: 500px;
     width: 350px;
-    
+  bottom: 0px;
+
+
   }
-  }
+}
 
 .triangle {
   width: 40px;
@@ -313,7 +339,7 @@ input {
 
   .WL1-f-1 {
     background: transparent;
-     
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,7 +354,7 @@ input {
 
   .WL1-f-2 {
     background: #422218;
-     
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,9 +372,9 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-     
-     
-     
+
+
+
 
   }
 }
@@ -365,9 +391,9 @@ input {
   align-items: center;
   border-radius: 50px;
   padding: 0.5rem;
-   
-   
-   
+
+
+
   cursor: pointer;
   left: 0;
   bottom: 0;
@@ -390,9 +416,9 @@ input {
   border-radius: 50px;
   padding: 0.5rem;
   cursor: pointer;
-   
-   
-   
+
+
+
   margin-left: 7rem;
 
   img {
@@ -412,10 +438,10 @@ input {
   align-items: center;
   border-radius: 50px;
   padding: 0.5rem;
-   
+
   margin-top: 3rem;
   margin-left: 4rem;
-   
+
   cursor: pointer;
 }
 
@@ -488,21 +514,21 @@ input {
   }
 }
 
- 
- 
- 
- 
 
- 
 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .WL1-audit {
   display: flex;
@@ -521,9 +547,9 @@ input {
 
   .tick {
     width: 10px;
-     
+
     position: absolute;
-     
+
   }
 
   p {
@@ -616,23 +642,26 @@ input {
   font-size: 2.8rem;
   font-family: Carter One;
   letter-spacing: 0.03rem;
-  animation: changec 1s linear  infinite ;
+  animation: changec 1s linear infinite;
 
 }
+
 @keyframes changec {
-  0%{
+  0% {
     color: #fff;
   }
-  50%{
+
+  50% {
     color: #f9e0bb;
   }
-  100%{
+
+  100% {
     color: #fff;
   }
 }
 
 .wk-dn-1 {
-   
+
   width: 400px;
   position: absolute;
   bottom: -40px;
@@ -647,19 +676,19 @@ input {
 
 
 
- 
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
+
+
+
+
 
 .profilepicture {
   position: absolute;
@@ -690,7 +719,7 @@ input {
   -webkit-border-radius: 999px;
   -moz-border-radius: 999px;
   border-radius: 999px;
-   }
+}
 
 .pulse1 {
   position: absolute;
@@ -972,7 +1001,7 @@ input {
 @media screen and (max-width:768px) {
 
   .wl-right-bar-1 {
-     
+
     right: -20px;
     height: 400px;
 
@@ -986,7 +1015,7 @@ input {
   .WL1 {
     width: 300px;
     width: 95vw;
-     
+
   }
 
   .wnft-center-content-1 {
@@ -995,9 +1024,7 @@ input {
     margin-top: 6rem;
     margin-right: 0;
 
-    .circles {
-       
-    }
+    .circles {}
 
     .main-logo {
       width: 220px;
@@ -1038,7 +1065,7 @@ input {
   .wk-dn-1 {
     width: 170px;
     position: absolute;
-     
+
     bottom: -20px;
     left: 170px;
     z-index: 3;
@@ -1054,7 +1081,7 @@ input {
     border-radius: 50px;
     padding: 0.9rem;
     cursor: pointer;
-     
+
     right: 0;
     bottom: -170px;
     margin: 0;
@@ -1067,8 +1094,8 @@ input {
 
   .dropdown-menu {
     position: relative;
-     
-     
+
+
     top: 0px;
     height: 100px;
     max-width: 160px;
@@ -1087,7 +1114,7 @@ input {
 
   .WNFT-head-txt {
     margin: 0;
-     
+
   }
 
   .nft-flex-row {
@@ -1118,8 +1145,8 @@ input {
 }
 
 
-.below-ht{
-  
+.below-ht {
+
   width: 500px;
   position: relative;
   top: 0;
@@ -1133,15 +1160,16 @@ input {
   text-transform: uppercase;
   // letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(90deg,#000,  #c38154, #f9e0bb, #c38154, #000);
+  background: linear-gradient(90deg, #000, #c38154, #f9e0bb, #c38154, #000);
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
 @media screen and (max-width:768px) {
-  .below-ht{
+  .below-ht {
     top: 0rem;
     left: 0;
     width: 100%;
@@ -1153,6 +1181,7 @@ input {
   0% {
     background-position: -500%;
   }
+
   100% {
     background-position: 500%;
   }
