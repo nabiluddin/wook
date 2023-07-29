@@ -193,46 +193,30 @@ function WNFT() {
             </div>
             <div className="nft-hr-rule"></div>
 
-              <div className="wnft-up-iframe">
-                <iframe
-                  id="iframe-03"
-                  title="Embedded HeyMint Project"
-                  // eslint-disable-next-line no-script-url
-                  src="javascript: window.frameElement.getAttribute('srcdoc');"
-                  srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex;  padding-top:5rem; justify-content: center'><script
-                    defer 
+            <div className="wnft-up-iframe popup-overlay">
+              <iframe
+                id="iframe-03"
+                title="Embedded HeyMint Project"
+                // eslint-disable-next-line no-script-url
+                src="javascript: window.frameElement.getAttribute('srcdoc');"
+                srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex;  padding-top:430px; justify-content: center'><script
+                    defer w
                     src='https://launchpad.heymint.xyz/api/embed.js'
                     data-project-id='11609'
                     data-chain='ETH_MAINNET'
                     ></script></div></body>"
-                  className="wnft-iframe"
-                  style={{
-                    overflow: "visible",
-                    transition: "height 1.5s ease 0s",
-                  }}
-                ></iframe>
-              </div>
-              {/* <iframe id="verify-api" src="https://verify.walletconnect.com/f650e841204fd9ebfe72e4e40ca433a5" style="display: none;" class="__web-inspector-hide-shortcut__"></iframe> */}
-              {/* <button  className='nft-btn' onClick={handleButtonClick}>Connect Wallet</button> */}
-              {/* {isPopupOpen && (
-                        <div className="popup-overlay">
-                          <div className="popup-content" ref={popupRef}>
-                            <span className="close-btn" onClick={handleClosePopup}>
-                              &times;
-                            </span>
-                            
-                          </div>
-                        </div>
-                      )} */}
+                className="wnft-iframe"
+                style={{
+                  overflow: "visible",
+                  transition: "height 1.5s ease 0s",
+                }}
+              ></iframe>
+            </div>
           </div>
         </motion.div>
       </div>
 
-      {/* <iframe src="https://sweepwidget.com/c/71247-t1nsecyd" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe> */}
-
       <div className="footerbar footerbar-wnft">
-        {/* <img src={footerbar} alt="" /> */}
-
         <div className="slider">
           <div className="slide-track">
             <div className="slide">

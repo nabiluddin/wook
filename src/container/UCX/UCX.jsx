@@ -27,6 +27,7 @@ function UCX() {
         Find Wookiees Upcoming On Exchanges
       </motion.div>
       <div className="all-cmps">  
+        <a target="_blank" href="https://www.coinbase.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={coinbase} x="16" y="0" width="200" height="90" />
@@ -42,6 +43,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.huobi.com/en-us/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={huobi} x="16" y="4" width="90%" height="100%" />
@@ -57,6 +60,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.okx.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={okx} x="16" y="0" width="200" height="90" />
@@ -72,6 +77,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.kucoin.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={kucoin} x="23" y="0" width="180" height="90" />
@@ -87,6 +94,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.bitfinex.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={bitfinex} x="16" y="0" width="200" height="90" />
@@ -102,6 +111,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.bybit.com/en-US/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={bybit} x="36" y="7" width="160" height="70" />
@@ -117,6 +128,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.gate.io/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1333)" stroke="url(#paint1_linear_679_1333)" />
           <path fill-rule="evenodd" clip-rule="evenodd" d="M167.468 43.8386H171.761V39.5444H167.468V43.8386ZM144.649 50.9898C145.469 48.814 147.57 47.2648 150.033 47.2648C152.496 47.2648 154.596 48.814 155.417 50.9898H144.649ZM150.033 43.2723C144.652 43.2723 140.288 47.6365 140.288 53.0201C140.288 58.4038 144.652 62.7673 150.033 62.7673C153.726 62.7673 156.939 60.7135 158.592 57.6863L154.991 55.9389C153.991 57.6357 152.145 58.7748 150.033 58.7748C147.365 58.7748 145.121 56.9577 144.471 54.4931H155.595C155.594 54.495 155.594 54.4975 155.594 54.4996H159.669C159.742 54.017 159.78 53.5228 159.78 53.0201C159.78 47.6365 155.416 43.2723 150.033 43.2723ZM160.912 62.2477H165.205V57.9535H160.912V62.2477ZM167.468 62.2477H171.761V45.7264H167.468V62.2477ZM183.744 58.7748C180.566 58.7748 177.99 56.1982 177.99 53.0201C177.99 49.8413 180.566 47.2648 183.744 47.2648C186.921 47.2648 189.498 49.8413 189.498 53.0201C189.498 56.1982 186.921 58.7748 183.744 58.7748ZM183.742 43.2723C178.361 43.2723 173.996 47.6365 173.996 53.0201C173.996 58.4038 178.361 62.7673 183.742 62.7673C189.125 62.7673 193.489 58.4038 193.489 53.0201C193.489 47.6365 189.125 43.2723 183.742 43.2723ZM93.9823 49.427V53.8669H99.9852C99.6718 55.1356 99.0521 56.2725 98.1634 57.1807C96.8231 58.5507 94.9653 59.3055 92.9307 59.3055C88.7086 59.3055 85.2735 55.87 85.2735 51.6469C85.2735 47.4239 88.7086 43.988 92.9307 43.988C95.1917 43.988 97.2707 44.9562 98.7118 46.6259L102.149 43.8171C99.8701 41.146 96.4887 39.5477 92.9307 39.5477C86.2608 39.5477 80.8346 44.9755 80.8346 51.6469C80.8346 58.3183 86.2608 63.7458 92.9307 63.7458C96.1687 63.7458 99.1541 62.5787 101.337 60.348C103.168 58.4756 104.382 55.8639 104.615 53.2475C104.729 51.9712 104.74 50.7036 104.672 49.427H93.9823ZM115.849 58.7758C112.672 58.7758 110.095 56.1985 110.095 53.0201C110.095 49.841 112.672 47.2645 115.849 47.2645C119.027 47.2645 121.604 49.841 121.604 53.0201C121.604 56.1985 119.027 58.7758 115.849 58.7758ZM121.604 45.172C119.991 43.9891 118.002 43.2888 115.849 43.2888C110.468 43.2888 106.106 47.6527 106.106 53.0352C106.106 58.4185 110.468 62.7816 115.849 62.7816C118.002 62.7816 119.991 62.0817 121.604 60.8988V62.2477H125.594V43.8232H121.604V45.172ZM134.157 39.5448H130.167V43.8386H127.777V47.6045H130.167V57.4597C130.167 58.4774 130.296 59.3335 130.549 60.0054C130.799 60.6701 131.181 61.1904 131.635 61.5969C132.095 62.0096 132.635 62.331 133.275 62.5133C133.926 62.6965 134.644 62.7673 135.402 62.7673C136.187 62.7673 136.887 62.6857 137.485 62.5245C138.039 62.3755 138.571 62.1647 139.066 61.8968V58.8624C138.279 59.2028 137.543 59.326 136.704 59.3651C135.818 59.4068 135.293 59.1536 134.857 58.7378C134.4 58.3021 134.157 57.7344 134.157 56.7821V47.6045H139.066V43.8386H134.157V39.5448Z" fill="white" />
@@ -133,6 +146,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.coinw.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <path d="M50.0878 38.2715C52.9716 35.6913 56.7444 34.3035 60.5822 34C64.42 34.0867 68.3445 35.2793 71.2717 37.8595C69.9924 38.9653 68.9083 40.3096 67.5206 41.307C63.6394 38.0113 57.2864 38.3365 53.6654 41.8491C52.4512 40.6783 51.237 39.5073 50.0878 38.2715Z" fill="white" />
@@ -154,6 +169,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.okx.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={okx2} x="30" y="15" width="180" height="60" />
@@ -169,6 +186,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.btcex.com/en-us/spot/MTC-USDT-SPOT">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1356)" stroke="url(#paint1_linear_679_1356)" />
           <path d="M103.688 56.6653C103.227 61.6566 98.8694 65.1147 93.8322 65.1147H81.4692L84.1602 35.9797H95.6477C100.558 35.9797 104.206 39.3111 103.757 44.1814C103.526 46.677 102.304 48.6366 100.471 50.0083C102.679 51.3397 103.97 53.6278 103.688 56.6653ZM89.4115 41.3514L88.8173 47.7605H94.5641C96.3565 47.7605 97.8148 46.3888 97.9815 44.556C98.149 42.7231 96.9844 41.3514 95.1575 41.3514H89.4115ZM98.0221 56.2906C98.201 54.3368 96.9209 52.8786 94.9671 52.8786H88.3447L87.7108 59.743H94.3278C96.2869 59.7488 97.8378 58.2906 98.0221 56.2906Z" fill="white" />
@@ -193,6 +212,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.mexc.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1373)" stroke="url(#paint1_linear_679_1373)" />
           <path d="M83.1663 57.8309L70.0911 34.6236C67.2044 29.7996 60.2422 29.7127 57.4827 34.8409L43.7282 59.0043C41.181 63.4372 44.3225 69 49.4593 69H76.9684C82.1478 69 86.0106 63.2633 83.1663 57.8309Z" fill="white" />
@@ -212,6 +233,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={panecake} x="16" y="0" width="200" height="90" />
@@ -227,6 +250,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://uniswap.org/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={uniswap} x="16" y="0" width="200" height="90" />
@@ -242,6 +267,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.huobi.com/en-us/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={huobi2} x="19" y="10" width="180" height="70" />
@@ -257,6 +284,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://bingx.com/en-us/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={bing} x="33" y="14" width="180" height="60" />
@@ -272,6 +301,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.coingecko.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={gecko} x="16" y="0" width="200" height="90" />
@@ -287,6 +318,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://www.dextools.io/app/en/pairs">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={dextol} x="33" y="10" width="180" height="70" />
@@ -302,6 +335,8 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+</a>
+        <a target="_blank" href="https://etherscan.io/">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="50" viewBox="0 0 240 90" fill="none">
           <rect x="0.5" y="0.5" width="239" height="89" rx="9.5" fill="url(#paint0_linear_679_1342)" stroke="url(#paint1_linear_679_1342)" />
           <image xlinkHref={etherscan} x="26" y="10" width="180" height="70" />
@@ -317,6 +352,7 @@ function UCX() {
             </linearGradient>
           </defs>
         </svg>
+        </a>
 
         {/* <div className="one-bg-bx">
           <LazyLoadImage src={coinbase} alt="coinbase" className='one-bg-bx-item' />

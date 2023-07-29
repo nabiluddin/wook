@@ -224,9 +224,9 @@ function Home() {
             <div className="n-c-1 progress-done"> </div>
             <div className="n-c-price text-white text-sm  pl-4 opacity-100">Until Next Price:$0.0000272</div>
           </div>
-          <div className="usdt-raised">USDT Raised: $1,319,276.99 / $1,980,000</div>
+          <div className="usdt-raised">USDT Raised: 0 / $3000000</div>
           <div className="bg-hr-gradient">
-            <div className="usdt-raised usdt2">1 $Wookiee AI = $0.0000000001200</div>
+            <div className="usdt-raised usdt2">1 $Wookiee AI = $0.0000012000</div>
           </div>
           <div className="row-btn">
             <div className="bgs-bxs">
@@ -242,7 +242,7 @@ function Home() {
               <p className="row-btn-p">CARD</p>
             </div>
           </div>
-          <div className="bnb-balance">BNB balance 0</div>
+          <div className="bnb-balance">ETH balance 0</div>
           <div className="bg-hr-gradient-2"></div>
           <div className="two-inputs">
             <div className="each-input">
