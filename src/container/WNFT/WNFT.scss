@@ -60,7 +60,7 @@
 
   position: relative;
   margin-right: -4rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 
 
 
@@ -307,12 +307,13 @@ input {
 }
 
 .wnft-iframe {
-  width: 100%;
+  width: 150%;
   height: 100%;
   border: none;
   z-index: 10;
-  position: relative;
+  position: absolute;
   // width: 100%;
+  top: 0;
 
 
 
@@ -341,6 +342,9 @@ input {
   .popup-overlay{
     padding-left: 0;
     padding-top: 8rem;
+  }
+  .wnft-iframe{
+    position: relative;
   }
 }
 
