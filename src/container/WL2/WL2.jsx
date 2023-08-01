@@ -142,7 +142,7 @@ function WL2() {
       <div className="WL1-head-txt">
         Complete all Task To get whitelisted
       </div>
-      <iframe src="https://taskon.xyz/campaign/detail/6015" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
+      <iframe src="https://taskon.xyz/campaign/detail/7866" width="100%" height="600px" frameborder="0" scrolling="yes"></iframe>
 
 
       <div className="wl-foo">
