@@ -57,7 +57,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-
   position: relative;
   margin-right: -4rem;
   margin-top: 3rem;
@@ -81,6 +80,7 @@
 
 .nft-drop {
   width: 50%;
+  grid-column: span 2 / span 2;
 
   position: relative;
   display: flex;
@@ -96,38 +96,50 @@
 
 .wnft-head-desc {
   color: #FFF6E9;
-  text-align: center;
-  font-size: 1rem;
+  text-align: left;
+  font-size: 0.88rem;
   font-family: Heebo;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   width: 95%;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 0 2rem;
   padding-top: 0;
+  padding-bottom: 1rem;
+  letter-spacing: 0.01rem;
+
 
 }
 
 .nft-drop-bgbox {
-  background: red;
-  width: 85%;
+  width: 100%;
   height: 510px;
   margin: 3rem;
-  margin-bottom: 0;
-  padding: 1rem;
-  padding-top: 0;
 
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+
+  margin-bottom: 8rem;
+  margin-top: -2rem;
+  margin-left: -2rem;
+
+}
+
+.under-bgbox {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   border-radius: 1rem;
   background: linear-gradient(105deg, #312825 0%, #1e1410 100%);
   border: 1px solid salmon;
-
-  margin-bottom: 4rem;
-  margin-top: -2rem;
+  // margin-bottom: 2rem;
+  width: 100%;
+  padding: 1.2rem 0;
+  border-radius: 1rem;
+  background: linear-gradient(0deg, #49352F 0%, #47342E 100%);
 
 }
 
@@ -164,44 +176,251 @@
   }
 }
 
+.nav-use-app {
+
+  background: #C38154;
+  border-radius: 60px;
+  padding: 7px 20px;
+  gap: 10px;
+  color: white;
+  border: 1px solid white;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
 .nft-drop-desc {
   color: #FFF6E9;
-  text-align: center;
-  font-size: 1rem;
+  text-align: left;
+  font-size: 0.88rem;
   font-family: Heebo;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
-  width: 93%;
+  width: 80%;
   box-sizing: border-box;
   padding: 2rem;
   padding-top: 0;
+  padding-right: 3rem;
+  padding-bottom: 1.3rem;
+  letter-spacing: 0.01rem;
+
+  .under-drop-desc {
+    width: 80%;
+  }
 }
+
+
+
+.drop-card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: red;
+  transform: rotate(10deg);
+
+  height: 18rem;
+  width: 13.25rem;
+  right: 0rem;
+  top: 232px;
+  animation: shadowbox 2s linear infinite;
+
+
+  .first-bg {
+    border-radius: 1rem;
+    border: 7px solid #C38154;
+    opacity: 0.4;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+
+  }
+
+  .second-bg {
+    border-radius: 1rem;
+    opacity: 0.6;
+    // background: #C38154;
+    // border: 7px solid #C38154;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    height: 18.9rem;
+    width: 13.85rem;
+  }
+
+  .main-card {
+    border-radius: 1rem;
+    background: #C38154;
+    // border: 7px solid #C38154;
+    margin: 7px;
+
+    height: inherit;
+    width: inherit;
+    height: 18.9rem;
+    width: 13.85rem;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    .cardimg-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cardimg {
+      // height: 14.6rem;
+      width: 13.2rem;
+      // padding: 7px;
+      position: relative;
+      top: -0.6rem;
+      transform: rotate(-10deg);
+
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  .drop-card{
+    display: none;
+  }
+  
+}
+
+@keyframes shadowbox {
+  
+
+  0% {
+    -moz-box-shadow: 0 0 33px #C38154;
+    -webkit-box-shadow: 0 0 33px #C38154;
+    box-shadow: 0 0 33px #C38154;
+    /* Shadow applied at 50% of the animation */
+  }
+  50% {
+    -moz-box-shadow: 0 0 33px #ca875b;
+    -webkit-box-shadow: 0 0 33px #ca875b;
+    box-shadow: 0 0 33px #ca875b;
+    scale: 1.05;
+    /* No shadow at the start of the animation */
+  }
+  100% {
+    -moz-box-shadow: 0 0 33px #C38154;
+    -webkit-box-shadow: 0 0 33px #C38154;
+    box-shadow: 0 0 33px #C38154;
+    /* Shadow applied at 50% of the animation */
+  }
+}
+
+.second-bg {
+  background-image: repeating-linear-gradient(0deg, #c38154, #c38154 26px, transparent 26px, transparent 34px, #c38154 34px), repeating-linear-gradient(90deg, #c38154, #c38154 26px, transparent 26px, transparent 34px, #c38154 34px), repeating-linear-gradient(180deg, #c38154, #c38154 26px, transparent 26px, transparent 34px, #c38154 34px), repeating-linear-gradient(270deg, #c38154, #c38154 26px, transparent 26px, transparent 34px, #c38154 34px);
+  background-size: 7px calc(100% + 34px), calc(100% + 34px) 7px, 7px calc(100% + 34px), calc(100% + 34px) 7px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+  animation: borderAnimation 0.4s infinite linear;
+}
+
+@keyframes borderAnimation {
+  from {
+    background-position: 0 0, -34px 0, 100% -34px, 0 100%;
+  }
+
+  to {
+    background-position: 0 -34px, 0 0, 100% 0, -34px 100%;
+  }
+}
+
+.card-details {
+  background: #FFF;
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+  width: 92.5%;
+  // border-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  .nft-card {
+    color: #C38154;
+    font-family: Heebo;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .hr-rule-dark {
+    background: #686465;
+    height: 1px;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .card-details-airdrops {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .written {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+
+      .bid {
+        color: #686465;
+      }
+
+      .bid-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
 /* Styles for the text with text shadow animation */
 .WNFT-head-txt {
   color: #C38154;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: Carter One;
   text-align: center;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   padding: 0 2rem;
-  animation: shadow 2s linear infinite; /* Apply the shadow animation for 3 seconds */
+  animation: shadow 2s linear infinite;
+  /* Apply the shadow animation for 3 seconds */
 }
 
 @keyframes shadow {
   0% {
-    text-shadow: none; /* No shadow at the start of the animation */
+    text-shadow: none;
+    /* No shadow at the start of the animation */
   }
 
   50% {
-    text-shadow: 2px 2px 4px #C38154; /* Shadow applied at 50% of the animation */
+    text-shadow: 2px 2px 4px #C38154;
+    /* Shadow applied at 50% of the animation */
     scale: 1.05;
   }
 
   100% {
-    text-shadow: none; /* No shadow at the end of the animation */
+    text-shadow: none;
+    /* No shadow at the end of the animation */
   }
 }
 
@@ -339,11 +558,13 @@ input {
 
 
   }
-  .popup-overlay{
+
+  .popup-overlay {
     padding-left: 0;
     padding-top: 8rem;
   }
-  .wnft-iframe{
+
+  .wnft-iframe {
     position: relative;
   }
 }
@@ -362,6 +583,7 @@ input {
   align-items: center;
   z-index: 0;
   margin-top: 2rem;
+  position: relative;
 
 
   .ellipse {
@@ -1140,7 +1362,7 @@ input {
 
   .nft-drop {
     width: 98%;
-    height: 1000px;
+    // height: 1000px;
     margin: 9rem 0;
   }
 
@@ -1160,18 +1382,32 @@ input {
 
   .nft-drop-desc {
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem;
     font-size: 1.1rem;
+    .under-drop-desc{
+      width: 100%;
+    }
   }
 
   .nft-drop-bgbox {
     width: 96%;
     height: 100%;
+    margin: 0;
 
   }
 
   .footerbar-wnft {
     bottom: 210px;
+  }
+  .wnft-head-desc{
+    font-size: 1.1rem;
+  }
+  .drop-card{
+   position: relative; 
+   display: flex;
+   inset: 0;
+   left: 4rem;
+   top: 4rem;
   }
 
 }

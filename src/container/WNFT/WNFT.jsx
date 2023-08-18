@@ -24,6 +24,7 @@ import i6 from "../../assets/i6.png";
 import i7 from "../../assets/i7.png";
 import i8 from "../../assets/i8.png";
 import i9 from "../../assets/gitbook_logo.png";
+import cardimg from '../../assets/cardimg.png';
 
 function WNFT() {
   const copyToClipboard = () => {
@@ -91,7 +92,8 @@ function WNFT() {
 
   return (
     <div className="WL1">
-      <Navbar nft="nft" />
+      {/* <Navbar nft="nft" /> */}
+      <Navbar />
       <div>
         <div className="wl-right-bar-1">
           <a
@@ -158,7 +160,8 @@ function WNFT() {
           <div className="ellipse WL1-f-2">
             <div className="pulse2"></div>
             <p className="wnft-up-1">
-              Top 10% NFT holders!{" "}
+              Wookiee NFT Drop Sale
+
               <p className="wnft-up-1 below-ht">
                 Get ready for an incredible opportunity!
               </p>
@@ -176,26 +179,99 @@ function WNFT() {
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 0.5 }}
         >
-          <div className="nft-drop-bgbox glass-shine-effect">
-            <div className="WNFT-head-txt">Wookiees NFT Drop</div>
-            <p className="wnft-head-desc">
-              Earn over $1 million in rewards by holding our exclusive
-              $wookieeNFTs. The more NFTs you own, the greater the rewards.{" "}
-            </p>
+          <div className="nft-drop-bgbox ">
+            <div className="under-bgbox glass-shine-effect">
+              <div className="WNFT-head-txt">Wookiees NFT Drop</div>
+              <p className="wnft-head-desc">
+                Earn over $1 million in rewards by holding our exclusive
+                $wookieeNFTs. The more NFTs you own, the greater the rewards.{" "}
+              </p>
 
-            <div className="nft-drop-desc">
-              Don't miss out! Mint and trade our limited edition $wookieeNFTs on
-              Opensea today to join the elite and enjoy fantastic benefits.
-              Seize this chance to be a part of something extraordinary! Join us
-              now!
-              <br /> Users have the opportunity to participate in the Wookiee
-              NFT drop, with the ability to mint up to 3820 NFTs. As a reward,
-              users will receive the Wookiee token (Wookiee) via airdrop.
+              <div className="nft-drop-desc">
+                {/* Don't miss out! Mint and trade our limited edition $wookieeNFTs on
+                Opensea today to join the elite and enjoy fantastic benefits.
+                Seize this chance to be a part of something extraordinary! Join us
+                now! */}
+
+
+                A collection of 3820 NFT’s.
+                Each NFT will cost 0.145 ETH each but we are keeping quiet on the benefits of owning an NFT until nearer the launch.
+                You will only be able to purchase A private sale of wookiee token if you own Wookiees NFT tokens.
+                <br />
+                <p className="under-drop-desc">
+                  Users have the opportunity to participate in the Wookiee
+                  NFT drop, with the ability to mint up to 3820 NFTs. As a reward,
+                  users will receive the Wookiee token (Wookiee) via airdrop.
+                </p>
+              </div>
+              <button className='nav-use-app'>Buy Now</button>
+
+              {/* <div className="nft-hr-rule"></div> */}
             </div>
-            <div className="nft-hr-rule"></div>
+            <div className="drop-card">
+              <div className="first-bg"></div>
+              <div className="second-bg"></div>
+              <div className="main-card">
+                <div className="cardimg-container">
+
+                <img src={cardimg} alt="cardimg" className="cardimg" />
+                </div>
+                <div className="card-details">
+                  <p className="nft-card">Wookiees NFT Airdrops</p>
+                  <div className="hr-rule-dark"></div>
+                  <div className="card-details-airdrops">
+                    <div className="written">
+                      <p className="bid">Current Bid</p>
+                      <div className="bid-p"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                        <g clip-path="url(#clip0_874_180)">
+                          <path d="M10.0231 19.4921C14.4468 20.2721 18.6652 17.3182 19.4452 12.8945C20.2252 8.47083 17.2715 4.25237 12.8478 3.47235C8.42402 2.69233 4.20556 5.64613 3.42554 10.0698C2.64552 14.4935 5.59931 18.712 10.0231 19.4921Z" fill="url(#paint0_linear_874_180)" />
+                          <path d="M12.282 6.67638L11.1114 13.3151L8.21499 11.0065L12.282 6.67638Z" fill="#FFF6E9" />
+                          <path d="M12.2812 6.67627L14.622 12.1363L11.1107 13.315L12.2812 6.67627Z" fill="#FFF6E9" />
+                          <path d="M11.0137 13.8739L10.588 16.2881L8.11719 11.5662L11.0137 13.8739Z" fill="#FFF6E9" />
+                          <path d="M10.5873 16.288L11.013 13.8737L14.5244 12.6959L10.5873 16.288Z" fill="#FFF6E9" />
+                        </g>
+                        <defs>
+                          <linearGradient id="paint0_linear_874_180" x1="3.99398" y1="10.1704" x2="17.2287" y2="24.8923" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#6580EB" />
+                            <stop offset="1" stop-color="#8EA2F2" />
+                          </linearGradient>
+                          <clipPath id="clip0_874_180">
+                            <rect width="19.5202" height="19.5202" fill="white" transform="translate(3.51758 0.175537) rotate(10)" />
+                          </clipPath>
+                        </defs>
+                      </svg> 0.145</div>
+                    </div>
+                    <div className="written">
+                      <p className="bid">List Price</p>
+                      <div className="bid-p">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                          <g clip-path="url(#clip0_874_180)">
+                            <path d="M10.0231 19.4921C14.4468 20.2721 18.6652 17.3182 19.4452 12.8945C20.2252 8.47083 17.2715 4.25237 12.8478 3.47235C8.42402 2.69233 4.20556 5.64613 3.42554 10.0698C2.64552 14.4935 5.59931 18.712 10.0231 19.4921Z" fill="url(#paint0_linear_874_180)" />
+                            <path d="M12.282 6.67638L11.1114 13.3151L8.21499 11.0065L12.282 6.67638Z" fill="#FFF6E9" />
+                            <path d="M12.2812 6.67627L14.622 12.1363L11.1107 13.315L12.2812 6.67627Z" fill="#FFF6E9" />
+                            <path d="M11.0137 13.8739L10.588 16.2881L8.11719 11.5662L11.0137 13.8739Z" fill="#FFF6E9" />
+                            <path d="M10.5873 16.288L11.013 13.8737L14.5244 12.6959L10.5873 16.288Z" fill="#FFF6E9" />
+                          </g>
+                          <defs>
+                            <linearGradient id="paint0_linear_874_180" x1="3.99398" y1="10.1704" x2="17.2287" y2="24.8923" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#6580EB" />
+                              <stop offset="1" stop-color="#8EA2F2" />
+                            </linearGradient>
+                            <clipPath id="clip0_874_180">
+                              <rect width="19.5202" height="19.5202" fill="white" transform="translate(3.51758 0.175537) rotate(10)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        0.87
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
-        <div className="wnft-up-iframe popup-overlay">
+        {/* <div className="wnft-up-iframe popup-overlay">
           <iframe
             id="iframe-03"
             title="Embedded HeyMint Project"
@@ -213,7 +289,7 @@ function WNFT() {
               transition: "height 1.5s ease 0s",
             }}
           ></iframe>
-        </div>
+        </div> */}
       </div>
 
       <div className="footerbar footerbar-wnft">
