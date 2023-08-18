@@ -24,7 +24,7 @@ import i6 from "../../assets/i6.png";
 import i7 from "../../assets/i7.png";
 import i8 from "../../assets/i8.png";
 import i9 from "../../assets/gitbook_logo.png";
-import cardimg from '../../assets/cardimg.png';
+import cardimg from '../../assets/cardimg.webp';
 
 function WNFT() {
   const copyToClipboard = () => {
