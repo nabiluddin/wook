@@ -558,6 +558,10 @@ input {
   .wnft-iframe {
     position: relative;
   }
+  .wnft-up-iframe{
+    z-index: 10;
+
+  }
 }
 
 .triangle {
