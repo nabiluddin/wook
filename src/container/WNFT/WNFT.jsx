@@ -204,17 +204,38 @@ function WNFT() {
                   users will receive the Wookiee token (Wookiee) via airdrop.
                 </p>
               </div>
-              <button className='nav-use-app'>Buy Now</button>
 
               {/* <div className="nft-hr-rule"></div> */}
+
             </div>
+            {/* <button className='nav-use-app'>Buy Now</button> */}
+            <div className="wnft-up-iframe popup-overlay">
+              <iframe
+                id="iframe-03"
+                title="Embedded HeyMint Project"
+                // eslint-disable-next-line no-script-url
+                src="javascript: window.frameElement.getAttribute('srcdoc');"
+                srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex; justify-content: center; margin-top:82vh;'><script
+                  defer
+                  src='https://launchpad.heymint.xyz/embed.js'
+                  data-project-id='11609'
+                  data-chain='ETH_MAINNET'
+                  ></script></div></body>"
+                className="wnft-iframe"
+                style={{
+                  overflow: "visible",
+                  transition: "height 1.5s ease 0s",
+                }}
+              ></iframe>
+            </div>
+
             <div className="drop-card">
               <div className="first-bg"></div>
               <div className="second-bg"></div>
               <div className="main-card">
                 <div className="cardimg-container">
 
-                <img src={cardimg} alt="cardimg" className="cardimg" />
+                  <img src={cardimg} alt="cardimg" className="cardimg" />
                 </div>
                 <div className="card-details">
                   <p className="nft-card">Wookiees NFT Airdrops</p>

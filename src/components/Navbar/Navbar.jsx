@@ -70,7 +70,7 @@ function Navbar(props) {
 
       <div className='nav-side'>
 
-        <button className='nav-use-app'>Connect Wallet <div className='coming-soon-badge'>coming soon</div></button>
+        {/* <button className='nav-use-app'>Connect Wallet <div className='coming-soon-badge'>coming soon</div></button> */}
 
         <nav className='mobile-menu' role="navigation">
           <div id="menuToggle">
