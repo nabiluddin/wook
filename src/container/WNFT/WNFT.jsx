@@ -215,7 +215,7 @@ function WNFT() {
                 title="Embedded HeyMint Project"
                 // eslint-disable-next-line no-script-url
                 src="javascript: window.frameElement.getAttribute('srcdoc');"
-                srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex; justify-content: center; margin-top:82vh;'><script
+                srcdoc="<script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script><body style='margin: 0; '><div style='display: flex; justify-content: center; margin-top:70vh;'><script
                   defer
                   src='https://launchpad.heymint.xyz/embed.js'
                   data-project-id='11609'
