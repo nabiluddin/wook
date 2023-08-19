@@ -53,7 +53,6 @@ function Navbar(props) {
         <li><a className='a-tag' href={props.check ? "#woomap" : "/"}>{props.ulli ? `${props.ulli[3]}` : "Wookieemap"}</a> </li>
         {props.ulli ? `` : <li><a className='a-tag' href="#">{props.ulli ? '' : "App"} <div className='coming-soon-badge'>coming soon</div> </a></li>}
         {props.ulli ? `` : <li><a className='a-tag' href="/wnft">{props.ulli ? '' : "WNFT"}
-          {/* <div className='coming-soon-badge'>coming soon</div>  */}
         </a></li>}
         {props.ulli ? `` : <li className="dropdown-nav">
           {props.ulli ? "" : "Whitelists ->"}
