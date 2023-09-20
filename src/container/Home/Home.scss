@@ -13,7 +13,7 @@
 .popup{
   position: absolute;
   z-index: 100;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -884,7 +884,9 @@
     .n-c-price {
       color: black;
       z-index: 5;
-      padding-left: 54px;
+      width: 100%;
+      display: flex;
+      place-content: center;
 
     }
   }
@@ -895,6 +897,7 @@
   color: white;
   background: #c38154;
   padding: 0 3px;
+  z-index: 10;
 }
 
 .bg-hr-gradient {
@@ -904,6 +907,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 700;
+  z-index: 10;
    
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 25%, #FFF 56.90%, #FFF 75%, rgba(255, 255, 255, 0.00) 100%);
 }
@@ -916,6 +920,7 @@
   align-items: center;
   font-weight: 700;
   margin: -0.4rem 0;
+  z-index: 10;
 
    
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 56.90%, rgba(255, 255, 255, 0.00) 100%);
@@ -927,6 +932,7 @@
   justify-content: space-between;
   align-items: center;
   width: 70%;
+  z-index: 10;
 }
 
 .bgs-bxs {
@@ -940,6 +946,11 @@
   border-radius: 10px;
   color: white;
   font-weight: 500;
+  cursor: pointer;
+}
+.bg-white{
+  background-color: #fff;
+  color: #C38154;
 }
 
 .bgs-bxs:hover {
@@ -949,6 +960,7 @@
 
 .row-btn-logo {
   width: 30px;
+  padding-right: 0.5rem;
 }
 
 .usdt {
@@ -968,14 +980,17 @@
   color: white;
   font-weight: 700;
   font-size: 1.2rem;
+  z-index: 10;
 }
 
 .two-inputs {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  // gap: 1rem;
+  z-index: 10;
 }
 
 .each-input {
@@ -984,6 +999,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 90%;
+  padding: 0 1rem;
 }
 
 .each-input p {
@@ -1023,6 +1040,7 @@
   font-size: 1rem;
   font-weight: 500;
   width: 80%;
+  z-index: 10;
 }
 .buy-now{
   background-color: #fff;
@@ -1032,6 +1050,8 @@
   padding: 0.8rem 1.5rem;
   font-size: 1.27rem;
   border-radius: 999px;
+  z-index: 10;
+  cursor: pointer;
 }
 .buy-now:hover{
   background-color: #dbb398;
@@ -1044,6 +1064,7 @@
   font-size: 1rem;
   font-weight: 500;
   width: 80%;
+  z-index: 10;
 }
 
 
@@ -1086,7 +1107,12 @@
   }
 }
 
-
+.bg-yel{
+  position: absolute;
+  width: 40%;
+  height: 110%;
+  z-index: 0;
+}
 
 
 

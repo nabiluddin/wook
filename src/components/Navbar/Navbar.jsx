@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import logo from '../../assets/logo-wookie.png'
 import './Navbar.scss'
+import ConnectWallet from '../ConnectWallet'
 
 function Navbar(props) {
   const dropdown = document.querySelector('.dropdown');
@@ -68,6 +69,7 @@ function Navbar(props) {
       }
 
       <div className='nav-side'>
+        <ConnectWallet />
 
         {/* <button className='nav-use-app'>Connect Wallet <div className='coming-soon-badge'>coming soon</div></button> */}
 

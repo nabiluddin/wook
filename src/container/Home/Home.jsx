@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import { motion } from 'framer-motion';
 import Navbar from "../../components/Navbar/Navbar";
@@ -53,31 +53,31 @@ function Home() {
   const copyToClipboard = () => {
     var textToCopy = document.getElementById("myDiv").innerText;
 
-     
+
     var tempTextArea = document.createElement("textarea");
     tempTextArea.value = textToCopy;
     document.body.appendChild(tempTextArea);
 
-     
+
     tempTextArea.select();
     document.execCommand("copy");
 
-     
+
     document.body.removeChild(tempTextArea);
 
-     
+
     alert("Content copied to clipboard: " + textToCopy);
   }
 
   useEffect(() => {
     window.addEventListener("load", function () {
       setTimeout(() => {
-        open();  
+        open();
       }, 100);
     });
 
     function open() {
-      document.querySelector(".popup").style.display = "flex";
+      document.querySelector(".popup").style.display = "none";
     }
 
     document.querySelector("#close").addEventListener("click", function () {
@@ -85,25 +85,28 @@ function Home() {
     })
   })
 
+  //progress-bar in bracket(payment box)
   useEffect(() => {
-    const input = document.querySelector('.input');
     const progress = document.querySelector('.progress-done');
-    let finalValue = 50;
-    let max = 0;
-
+    let finalValue = 30; //30 stands for 30 percent. it should be dynamic.
     function changeWidth() {
       progress.style.width = `${finalValue}%`
     }
-
-   
     changeWidth()
-
-     
     return () => {
-
     };
-  }, []); 
+  }, []);
 
+
+  //switching payments methods
+  const [balance, setBalance ] = useState(0);
+  const [paymethod, setPaymethod] = useState("ETH");
+  const [paymethodLogo, setPaymethodLogo] = useState(ethinputlogo);
+  const handlePayMethod = (method, logo) => {
+    if (method === "Card") return;
+    setPaymethod(method);
+    setPaymethodLogo(logo);
+  };
 
 
 
@@ -124,7 +127,7 @@ function Home() {
         <div className="right-bar">
           <a target="_blank" href="https://wookiees.medium.com/" rel="noreferrer">
             <LazyLoadImage src={i1} alt="i1" className="home-side-icons" /></a>
-         <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
+          <a target="_blank" href="https://t.me/wookieescoin" rel="noreferrer">
             <LazyLoadImage src={i3} alt="i3" className="home-side-icons" /></a>
           <a target="_blank" href="https://twitter.com/wookieescoin" rel="noreferrer">
             <LazyLoadImage src={i5} alt="i5" className="home-side-icons" /></a>
@@ -194,12 +197,12 @@ function Home() {
 
 
 
-              <LazyLoadImage 
-                src={mainLogo}
-                effect="blur"
-                className="main-logo ellipse "
+            <LazyLoadImage
+              src={mainLogo}
+              effect="blur"
+              className="main-logo ellipse "
 
-              />
+            />
 
 
 
@@ -219,37 +222,57 @@ function Home() {
           </div>
         </div>
 
-        <div className="la-right " style={{ backgroundImage: `url(${bgYel})` }}>
+        <div className="la-right " style={{ backgroundImage: `url()` }}>
+          <img src={bgYel} alt="bg" className="bg-yel" />
           <div className="next-price">
             <div className="n-c-1 progress-done"> </div>
             <div className="n-c-price text-white text-sm  pl-4 opacity-100">Until Next Price:$0.0000272</div>
           </div>
-          <div className="usdt-raised">USDT Raised: 0 / $3000000</div>
+          <div className="usdt-raised">USDT Raised: $0 / 1 billions</div>
           <div className="bg-hr-gradient">
             <div className="usdt-raised usdt2">1 $Wookiee AI = $0.0000012000</div>
           </div>
           <div className="row-btn">
-            <div className="bgs-bxs">
+            <div onClick={() => handlePayMethod("ETH", ethinputlogo)} className={`bgs-bxs ${paymethod === "ETH" ? "bg-white" : ""}`} >
               <LazyLoadImage src={ethinputlogo} alt="eth" className="row-btn-logo" />
               <p className="row-btn-p">ETH</p>
             </div>
-            <div className="bgs-bxs">
+            <div onClick={() => handlePayMethod("USDT", usdt)} className={`bgs-bxs ${paymethod === "USDT" ? "bg-white" : ""}`} >
               <LazyLoadImage src={usdt} alt="eth" className="row-btn-logo" />
               <p className="row-btn-p usdt"><p style={{ fontSize: "1rem", marginBottom: "-3px", fontWeight: "500" }}> USDT</p> <p>ERC20</p> </p>
             </div>
-            <div className="bgs-bxs">
+            <div onClick={() => handlePayMethod("Card", ethinputlogo)} className={`bgs-bxs ${paymethod === "Card" ? "bg-white" : ""}`} >
               <LazyLoadImage src={card} alt="eth" className="row-btn-logo" />
               <p className="row-btn-p">CARD</p>
             </div>
           </div>
-          <div className="bnb-balance">ETH balance 0</div>
+          <div className="bnb-balance">{paymethod} balance {balance}</div>
           <div className="bg-hr-gradient-2"></div>
-          <div className="two-inputs">
+          {
+            paymethod === "ETH" && <div className="two-inputs">
+              <div className="each-input">
+                <p>Amount in ETH you pay</p>
+                <div className="input-container">
+                  <input type="number" name="" id="" />
+                  <LazyLoadImage src={paymethodLogo} alt="eth" className="row-btn-logo" />
+                </div>
+              </div>
+              <div className="each-input">
+                <p>Amount Wookiee you receive</p>
+                <div className="input-container">
+                  <input type="number" name="" id="" />
+                  <LazyLoadImage src={wookieeinputlogo} alt="eth" className="row-btn-logo" />
+                </div>
+              </div>
+            </div>
+          }
+          { paymethod === "USDT" &&
+            <div className="two-inputs">
             <div className="each-input">
-              <p>Amount in ETH you pay</p>
+              <p>Amount in USDT you pay</p>
               <div className="input-container">
                 <input type="number" name="" id="" />
-                <LazyLoadImage src={ethinputlogo} alt="eth" className="row-btn-logo" />
+                <LazyLoadImage src={paymethodLogo} alt="eth" className="row-btn-logo" />
               </div>
             </div>
             <div className="each-input">
@@ -260,10 +283,27 @@ function Home() {
               </div>
             </div>
           </div>
+          }
+          {/* <div className="two-inputs">
+            <div className="each-input">
+              <p>Amount in ETH you pay</p>
+              <div className="input-container">
+                <input type="number" name="" id="" />
+                <LazyLoadImage src={paymethodLogo} alt="eth" className="row-btn-logo" />
+              </div>
+            </div>
+            <div className="each-input">
+              <p>Amount Wookiee you receive</p>
+              <div className="input-container">
+                <input type="number" name="" id="" />
+                <LazyLoadImage src={wookieeinputlogo} alt="eth" className="row-btn-logo" />
+              </div>
+            </div>
+          </div> */}
           <div className="f-text">0.015 ETH is reserved for gas. The actual amount used will depend on the network.</div>
           <button className="buy-now">Buy Now</button>
           <div className="list-price">LISTING PRICE: $0.0000336</div>
-          <div><a target="_blank" className="list-price" href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" >Not enough ETH? Top up now</a></div>
+          <a target="_blank" className="list-price" href="https://widget.wert.io/default/widget/?commodity=ETH%3AEthereum" >Not enough ETH? Top up now</a>
 
         </div>
       </div>
